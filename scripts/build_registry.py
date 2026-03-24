@@ -2,8 +2,8 @@
 """
 REGA/MOJ Data Registry Builder
 
-Scans all CSVs in ~/rega-data/, introspects their structure, and builds
-a self-describing SQLite registry database at ~/rega-data/registry.db.
+Scans all CSVs in the repository, introspects their structure, and builds
+a self-describing SQLite registry database at registry.db.
 
 No external dependencies — stdlib only.
 """

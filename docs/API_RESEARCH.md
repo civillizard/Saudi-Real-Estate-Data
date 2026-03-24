@@ -1,7 +1,7 @@
 # Saudi Real Estate API Research
 
 Researched: 2026-03-12
-Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة العدل)** / **Real Estate General Authority (REGA; الهيئة العامة للعقار)** open data analysis in `~/rega-data`.
+Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة العدل)** / **Real Estate General Authority (REGA; الهيئة العامة للعقار)** open data analysis in `this repository`.
 
 ---
 
@@ -152,7 +152,7 @@ Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة ا
   - Real-time monitoring of live transactions
 - **API/bulk access:** None confirmed — portal is interactive only
 - **Cost:** Free (citizen service)
-- **Notes:** This is the most comprehensive transaction database, but it's behind Nafath authentication and has no public API. Our existing MOJ open data CSVs (4.96M rows in `~/rega-data`) are the bulk-download version of this. Wathq's Real Estate Deeds API (section 1.2) provides programmatic deed lookup. For anything beyond that, direct MOJ data cooperation may be needed.
+- **Notes:** This is the most comprehensive transaction database, but it's behind Nafath authentication and has no public API. Our existing MOJ open data CSVs (4.96M rows in `this repository`) are the bulk-download version of this. Wathq's Real Estate Deeds API (section 1.2) provides programmatic deed lookup. For anything beyond that, direct MOJ data cooperation may be needed.
 
 ---
 
@@ -164,7 +164,7 @@ Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة ا
   - Published datasets on the national data portal
   - Real estate transaction aggregates
   - Links to datasets on data.gov.sa
-- **Notes:** The datasets we already use (`~/rega-data/moj/`) come from here. Check periodically for new dataset additions or schema changes.
+- **Notes:** The datasets we already use (`moj/`) come from here. Check periodically for new dataset additions or schema changes.
 
 ---
 
@@ -452,10 +452,10 @@ Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة ا
 ## 6. Existing Data We Already Have
 
 For context, do not re-acquire:
-- MOJ transaction CSVs: 4.96M rows, 170 CSVs in `~/rega-data/moj/` (sales + 18 operation categories)
-- REGA rental/sales indicators: `~/rega-data/rega/`
+- MOJ transaction CSVs: 4.96M rows, 170 CSVs in `moj/` (sales + 18 operation categories)
+- REGA rental/sales indicators: `rega/`
 - Ejar rental contracts: 104K+ rows in registry via `~/rega-ejar-collector`
-- Registry DB: `~/rega-data/registry.db`
+- Registry DB: `registry.db`
 
 ---
 
