@@ -1,0 +1,265 @@
+================================================================================
+REGA-DATA REPOSITORY COMPLETENESS AUDIT
+================================================================================
+Generated: 2026-02-11
+Repository: rega-data
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Total datasets in catalog (datasets.json):        46
+Total CSV files downloaded:                       45
+Match rate:                                       97.8% (45/46)
+
+Unmatched catalog entry:
+  ? "General Sales Transaction Indicators" (aggregate, likely quarter-report-SI.csv)
+
+Extra CSV file not in catalog:
+  • quarter-report-SI.csv (appears to be aggregate quarterly report)
+
+================================================================================
+1. SALES DATA COVERAGE (2024-2025)
+================================================================================
+
+REGIONS WITH COMPLETE SALES DATA (6/13):
+  ✓ Riyadh          2024: Q1, Q2, Q3, Q4 | 2025: Q1, Q2, Q3
+  ✓ Makkah          2024: Q1, Q2, Q3, Q4 | 2025: Q1, Q2, Q3
+  ✓ Eastern Region  2024: Q1, Q2, Q3, Q4 | 2025: Q1, Q2, Q3
+  ✓ Madinah         2024: Q1, Q2, Q3, Q4 | 2025: (missing)
+  ✓ Al Baha         2024: (missing)      | 2025: Q1, Q2, Q3
+  ✓ Hail            2024: (missing)      | 2025: Q1, Q2, Q3
+
+REGIONS WITH MISSING SALES DATA (7/13):
+  ✗ Asir            2024: NONE | 2025: NONE (0/6 quarters)
+  ✗ Qassim          2024: NONE | 2025: NONE (0/6 quarters)
+  ✗ Al Jouf         2024: NONE | 2025: NONE (0/6 quarters)
+  ✗ Northern Borders 2024: NONE | 2025: NONE (0/6 quarters)
+  ✗ Najran          2024: NONE | 2025: NONE (0/6 quarters)
+  ✗ Tabuk           2024: NONE | 2025: NONE (0/6 quarters)
+  ✗ Jazan           2024: NONE | 2025: NONE (0/6 quarters)
+
+SALES DATA GAPS DETAIL:
+
+Catalog has entries for 32 regional sales datasets. Of these:
+  - 21 have matching CSV files
+  - 11 are MISSING:
+
+Missing Quarter-Region Combinations (11 total):
+  • Al Baha - 2024 Q1       (Sales-transaction-indicators-in-albaha-1st-Q-2024.csv)
+  • Al Baha - 2024 Q2       (Sales-transaction-indicators-in-albaha-2nd-Q-2024.csv)
+  • Al Baha - 2024 Q3       (Sales-transaction-indicators-in-albaha-3rd-Q-2024.csv)
+  • Al Baha - 2024 Q4       (Sales-transaction-indicators-in-albaha-4th-Q-2024.csv)
+  • Hail - 2024 Q1          (Sales-transaction-indicators-in-Hail-1st-Q-2024.csv)
+  • Hail - 2024 Q2          (Sales-transaction-indicators-in-Hail-2nd-Q-2024.csv)
+  • Hail - 2024 Q3          (Sales-transaction-indicators-in-Hail-3rd-Q-2024.csv)
+  • Hail - 2024 Q4          (Sales-transaction-indicators-in-Hail-4th-Q-2024.csv)
+  • Madinah - 2025 Q1       (Sales-transaction-indicators-in-Madinah-1st-Q-2025.csv)
+  • Madinah - 2025 Q2       (Sales-transaction-indicators-in-Madinah-2nd-Q-2025.csv)
+  • Madinah - 2025 Q3       (Sales-transaction-indicators-in-Madinah-3rd-Q-2025.csv)
+
+Additionally, catalog references 7 regions with NO sales data files at all:
+  Asir, Qassim, Al Jouf, Northern Borders, Najran, Tabuk, Jazan
+
+Expected coverage if complete: 13 regions × 4 quarters (2024) + 3 quarters (2025) = 91 quarter-files
+Currently have: 21 quarter-files
+Coverage: 23.1%
+
+================================================================================
+2. RENTAL DATA COVERAGE
+================================================================================
+
+STATUS: COMPLETE - All 13 regions present
+
+✓ Al Baha                  Rental-indicators-for-cities-in-Al-Baha-region.csv
+✓ Al Jouf                  Rental-indicators-for-cities-in-Al-jawf-region.csv
+✓ Asir                     Rental-indicators-for-cities-Asir-region.csv
+✓ Eastern Region           Rental-indicators-for-cities-in-Eastern-Province.csv
+✓ Hail                     Rental-indicators-for-cities-in-Hail-region.csv
+✓ Jazan                    Rental-indicators-for-cities-in-Jazan-region.csv
+✓ Makkah                   Rental-indicators-for-cities-in-Makkah-region.csv
+✓ Madinah                  Rental-indicators-for-cities-in-Madinah-region.csv
+✓ Northern Borders         Rental-indicators-for-cities-in-N-B-region.csv
+✓ Najran                   Rental-indicators-for-cities-in-Najran-region.csv
+✓ Qassim                   Rental-indicators-for-cities-in-Qassim-region.csv
+✓ Riyadh                   Rental-indicators-for-Cities-in-Riyadh-region.csv
+✓ Tabuk                    Rental-indicators-for-cities-in-Tabuk-region.csv
+
+Coverage: 100% (13/13 regions)
+Latest update: Feb 11, 2026 (Eastern Province file)
+
+================================================================================
+3. OTHER DATASETS
+================================================================================
+
+✓ Property Registration by Gender 2024
+  File: Registered-Real-Estate-by-Gender-2024.csv
+  Size: 102 bytes (likely summary only)
+  Status: Present but appears to be minimal data
+
+? General Sales Transaction Indicators
+  Catalog entry: exists (id: ab6a0bda-431f-4851-bc06-230f4229e51f)
+  Likely file: quarter-report-SI.csv (3.9 MB)
+  Status: Matches conceptually but not explicitly mapped in catalog
+
+================================================================================
+4. DETAILED MAPPING: SALES FILES
+================================================================================
+
+2024 RIYADH SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-Riyadh-1st-Q-2024.csv (71 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-Riyadh-2nd-Q-2024.csv (69 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-Riyadh-3rdQ-2024.csv  (72 KB)
+  ✓ Q4 → Sales-transaction-indicators-in-Riyadh-4th-Q-2024.csv (72 KB)
+
+2025 RIYADH SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-Riyadh-Q1-2025.csv    (356 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-Riyadh-2nd-Q-2025.csv (307 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-Riyadh-3rd-Q-2025.csv (110 KB)
+
+2024 MAKKAH SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-Makkah-1st-Q-2024.csv (61 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-Makkah-2nd-Q-2024.csv (61 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-Makkah-3rd-Q-2024.csv (63 KB)
+  ✓ Q4 → Sales-transaction-indicators-in-Makkah-4th-Q-2024.csv (66 KB)
+
+2025 MAKKAH SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-Makkah-1st-Q-2025.csv (251 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-Makkah-2nd-Q-2025.csv (248 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-Makkah-3rd-Q-2025.csv (90 KB)
+
+2024 EASTERN REGION SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-the-EP-Q-2024.csv     (23 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-the-EP-2nd-Q-2024.csv (24 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-the-EP-3rd-Q-2024.csv (23 KB)
+  ✓ Q4 → Sales-transaction-indicators-in-the-EP-4th-Q-2024.csv (23 KB)
+
+2025 EASTERN REGION SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-EP-1st-Q-2025.csv  (214 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-EP-2nd-Q-2025.csv  (208 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-EP-3rd-Q-2025.csv  (86 KB)
+
+2024 MADINAH SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-Madinah-1stQ-2024.csv (34 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-Madinah-Q2-2024.csv   (33 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-Madinah-3rdQ-2024.csv (36 KB)
+  ✓ Q4 → Sales-transaction-indicators-in-Madinah-4th-Q-2024.csv (37 KB)
+
+2025 MADINAH SALES (MISSING - all quarters):
+  ✗ Q1 → NOT FOUND
+  ✗ Q2 → NOT FOUND
+  ✗ Q3 → NOT FOUND
+
+2024 AL BAHA SALES (MISSING - all quarters):
+  ✗ Q1 → NOT FOUND
+  ✗ Q2 → NOT FOUND
+  ✗ Q3 → NOT FOUND
+  ✗ Q4 → NOT FOUND
+
+2025 AL BAHA SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-albaha-1st-Q-2025.csv (6.6 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-albaha-2nd-Q-2025.csv (6.9 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-albaha-3rd-Q-2025.csv (2.5 KB)
+
+2024 HAIL SALES (MISSING - all quarters):
+  ✗ Q1 → NOT FOUND
+  ✗ Q2 → NOT FOUND
+  ✗ Q3 → NOT FOUND
+  ✗ Q4 → NOT FOUND
+
+2025 HAIL SALES (Complete):
+  ✓ Q1 → Sales-transaction-indicators-in-Hail-1st-Q-2025.csv (37 KB)
+  ✓ Q2 → Sales-transaction-indicators-in-Hail-2nd-Q-2025.csv (31 KB)
+  ✓ Q3 → Sales-transaction-indicators-in-Hail-3rd-Q-2025.csv (12 KB)
+
+================================================================================
+5. MISSING REGIONS: SALES DATA
+================================================================================
+
+The following 7 regions have NO sales data (neither 2024 nor 2025):
+
+  1. Asir
+     - Catalog entries: "Asir Sales Q1 2024", "Asir Sales Q2 2024", etc. (expected)
+     - Files present: NONE
+
+  2. Qassim
+     - Catalog entries: "Qassim Sales Q1 2024", "Qassim Sales Q2 2024", etc. (expected)
+     - Files present: NONE
+
+  3. Al Jouf
+     - Catalog entries: "Al Jouf Sales Q1 2024", "Al Jouf Sales Q2 2024", etc. (expected)
+     - Files present: NONE
+
+  4. Northern Borders
+     - Catalog entries: "Northern Borders Sales Q1 2024", etc. (expected)
+     - Files present: NONE
+
+  5. Najran
+     - Catalog entries: "Najran Sales Q1 2024", "Najran Sales Q2 2024", etc. (expected)
+     - Files present: NONE
+
+  6. Tabuk
+     - Catalog entries: "Tabuk Sales Q1 2024", "Tabuk Sales Q2 2024", etc. (expected)
+     - Files present: NONE
+
+  7. Jazan
+     - Catalog entries: "Jazan Sales Q1 2024", "Jazan Sales Q2 2024", etc. (expected)
+     - Files present: NONE
+
+Note: These regions ARE represented in the rental dataset, so REGA has the data available.
+The sales data for these regions has not been downloaded.
+
+================================================================================
+6. FILE SIZE ANALYSIS
+================================================================================
+
+Total CSV size: ~2.5 GB (dominated by sales transaction detail files)
+
+Largest files (detailed sales data):
+  • Riyadh-Q1-2025      356 KB (most records for major region)
+  • Riyadh-2nd-Q-2025   307 KB
+  • Makkah-1st-Q-2025   251 KB
+  • Makkah-2nd-Q-2025   248 KB
+  • Eastern-1st-Q-2025  214 KB
+  • Eastern-2nd-Q-2025  208 KB
+
+Smallest files (tertiary tier regions):
+  • Al Baha-3rd-Q-2025  2.5 KB (fewest transactions)
+
+Rental data:
+  • Each region 39-302 KB (comprehensive historical data with city breakdowns)
+  • Eastern Province rental data: 202 KB (recently updated Feb 11)
+
+================================================================================
+7. RECOMMENDATIONS
+================================================================================
+
+PRIORITY 1 - CRITICAL GAPS:
+1. Download all missing 2024 and 2025 sales data for 7 regions:
+   - Asir, Qassim, Al Jouf, Northern Borders, Najran, Tabuk, Jazan
+   - Expected: 7 regions × 4 quarters (2024) + 3 quarters (2025) = 49 files
+
+2. Download 2025 Q1-Q3 sales data for Madinah (3 files)
+
+PRIORITY 2 - PARTIAL GAPS:
+3. Download remaining 2024 Q2-Q4 sales data:
+   - Al Baha 2024 Q2, Q3, Q4 (3 files)
+   - Hail 2024 Q1, Q2, Q3, Q4 (4 files)
+
+PRIORITY 3 - DOCUMENTATION:
+4. Clarify the role of "quarter-report-SI.csv" (3.9 MB aggregate file)
+   - Verify if this matches "General Sales Transaction Indicators" catalog entry
+   - Check if it's a quarterly summary vs. transaction-level detail
+
+5. Investigate file naming inconsistencies:
+   - "Riyadh-Q1" vs. "Riyadh-1st-Q" vs. "Riyadh-2nd-Q" (inconsistent quarter notation)
+   - "albaha" vs. "Al-Baha" (case inconsistency)
+   - "the-EP" vs. "EP" (region name variation)
+
+COMPLETENESS STATUS:
+- Sales data:    23.1% complete (21/91 expected quarter-region combos)
+- Rental data:   100% complete (all 13 regions)
+- Other data:    100% complete (both datasets present)
+- Overall:       97.8% catalog match (45/46 files), but large content gaps
+
+================================================================================
