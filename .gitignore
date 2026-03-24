@@ -1,0 +1,24 @@
+# Database files (rebuild with scripts/build_registry.py)
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Deployment artifacts (machine-specific)
+*.plist
+
+# Python
+__pycache__/
+*.pyc
+.ruff_cache/
+
+# Monitor state (machine-specific)
+monitor/monitor_state.db
+
+# Social media drafts (not for public repo)
+social/
