@@ -142,7 +142,7 @@ See [notebooks/](notebooks/) for the full code and analysis.
 └── DISCLAIMER.md                     # Not official, not investment advice
 ```
 
-> **Clone size:** ~600 MB (data-heavy repo). For faster clone: `git clone --depth 1 https://github.com/civillizard/REGA-Data.git`
+> **Clone size:** ~600 MB (data-heavy repo). For faster clone: `git clone --depth 1 https://github.com/civillizard/saudi-real-estate-data.git`
 
 ---
 
