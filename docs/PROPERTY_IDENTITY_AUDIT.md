@@ -108,7 +108,7 @@ Zero cross-quarter overlap was also confirmed for logically related pairs (Seizu
 
 ## Cross-File Column Header Survey
 
-Every CSV file in `~/rega-data/moj/real-estate/` and `~/rega-data/moj/sales/` was scanned for any identifier columns beyond الرقم المرجعي.
+Every CSV file in `moj/real-estate/` and `moj/sales/` was scanned for any identifier columns beyond الرقم المرجعي.
 
 ### Column Schema Distribution (2025 Real-Estate Files)
 
