@@ -4,6 +4,8 @@
 [![Data: KSA Open Data License](https://img.shields.io/badge/data-KSA%20Open%20Data%20License-green.svg)](LICENSE-DATA.md)
 [![Last Updated](https://img.shields.io/badge/data%20updated-2026--03--24-orange.svg)](CHANGELOG.md)
 
+🌐 [النسخة العربية](README-AR.md)
+
 Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)** and **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, covering **4.93 million** real estate transaction records across **159 CSV files** from 2018 to 2025.
 
 Saudi real estate data is scattered across multiple government portals, published in inconsistent formats with Arabic-only headers and undocumented schema changes. This project consolidates it into one place with clean documentation, a self-describing metadata registry, quality audits, and initial analysis — making it usable for researchers, analysts, investors, and developers.
