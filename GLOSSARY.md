@@ -47,6 +47,19 @@ Arabic terms used in the data files, grouped by category.
 | قرار بيع | Qarar Bay' | Enforcement sale | Court-ordered forced sale (e.g., debt enforcement, bankruptcy) |
 | نقل ملكية | Naql Milkiyya | Ownership transfer | Transferring property ownership (same as إفراغ in practice) |
 
+### Usage Note: صفقة vs عملية vs سجل
+
+These three terms all translate loosely to "transaction" but are used differently in the data:
+
+| Arabic | Transliteration | English | Usage in data |
+|--------|----------------|---------|---------------|
+| صفقة | Safqa | Deal / sale transaction | Used by MOJ specifically for **sales**. Appears in `الرقم المرجعي للصفقة` (transaction reference) and `تاريخ الصفقة` (transaction date). Refers to a buy/sell deal with a price |
+| عملية | Amaliya | Operation / process | Used by MOJ for the **18 non-sale categories** (mortgages, seizures, transfers, etc.). Appears in `نوع العملية` (operation type) and `عدد العمليات` (operation count). Broader than صفقة — covers any registered RE action |
+| سجل | Sijill | Record | General term for any data row. Used as an umbrella when referring to all records collectively (e.g., "4.93 million سجل عقاري" covers both sales and operations) |
+| معاملة | Mu'amala | Transaction (bureaucratic) | Generic term for any government-processed transaction. Not used as a column name in the data but common in general discourse |
+
+When writing about this data: use **صفقة** for sales specifically, **عملية** for non-sale operations, and **سجل** or **معاملة** as umbrella terms for the full dataset.
+
 ## Property Classification
 
 | Arabic | English | In data as |
