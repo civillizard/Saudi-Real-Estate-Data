@@ -77,7 +77,7 @@ This pattern works because the Open Data Portal stores files in a predictable pa
 
 ---
 
-For a cross-source field catalog covering all 159 files (MOJ + REGA) with canonical English names, data types, and enum translations, see the [Data Dictionary](DATA_DICTIONARY.md). The CSV exports at `data/registry_*.csv` provide the same information in machine-readable form.
+For a cross-source field catalog covering all 159 files (MOJ + REGA) with canonical English names, data types, and enum translations, see the [Data Dictionary](DATA_DICTIONARY.md). Machine-readable exports: [`data/schema.json`](../data/schema.json) (compact, for AI tools), [`data/registry.json`](../data/registry.json) (full), and `data/registry_*.csv` files.
 
 ## Data Structure
 
