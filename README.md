@@ -128,7 +128,10 @@ See [notebooks/](notebooks/) for the full code and analysis.
 │   ├── charts/                       # 8 infographic visualizations
 │   └── complementary/                # Supplementary rental data
 ├── data/
-│   └── region_mapping.csv            # 33 region spelling variants → 13 canonical names
+│   ├── region_mapping.csv            # 33 region spelling variants → 13 canonical names
+│   ├── registry_files.csv            # Metadata for all 159 CSVs (from registry)
+│   ├── registry_fields.csv           # Field catalog: types, nulls, min/max, samples
+│   └── registry_enums.csv            # Enum values for categorical fields
 ├── docs/                             # Research, audits, and deep-dives (see below)
 ├── scripts/
 │   └── build_registry.py             # Metadata registry builder
@@ -157,6 +160,7 @@ This repo includes extensive research and audit documentation. Here's what each 
 | Document | Summary | Why it matters |
 |----------|---------|---------------|
 | [**GLOSSARY.md**](GLOSSARY.md) | 50+ Arabic real estate terms with English translations, grouped by category: entities, property types, transaction types, classifications, regulatory terms | Start here if you're new to Saudi RE terminology |
+| [**docs/DATA_DICTIONARY.md**](docs/DATA_DICTIONARY.md) | Complete field catalog: 41 canonical fields mapped from Arabic, all 26 categories with schemas, enum values with translations, formatting notes | The definitive reference for understanding what each column means across all files |
 | [**docs/MOJ-DATA.md**](docs/MOJ-DATA.md) | Complete MOJ data documentation: API endpoints for downloading, schema for all 18+ operation categories, transactions broken down by region/year/city, data quality notes | The definitive reference for working with MOJ data |
 | [**data/region_mapping.csv**](data/region_mapping.csv) | Maps all 33 known Arabic spelling variants to 13 canonical region names (Arabic + English) | Essential for any cross-file aggregation — apply before grouping |
 
@@ -182,7 +186,7 @@ This repo includes extensive research and audit documentation. Here's what each 
 
 | Tool | Purpose |
 |------|---------|
-| [**scripts/build_registry.py**](scripts/build_registry.py) | Scans all CSVs and builds `registry.db` — a SQLite catalog with schema, field types, enum values, and sample rows for every file. Maps Arabic headers to 41 canonical English field names |
+| [**scripts/build_registry.py**](scripts/build_registry.py) | Scans all CSVs and builds `registry.db` — a SQLite catalog with schema, field types, enum values, and sample rows for every file. Maps Arabic headers to 41 canonical English field names. Exported as CSV in [`data/registry_*.csv`](docs/DATA_DICTIONARY.md#csv-exports) |
 | [**monitor/re_data_monitor.py**](monitor/re_data_monitor.py) | Daily automated check of the Open Data Portal + REGA + White Land Tax portal for new datasets. Sends email alerts when new data appears |
 
 ---
@@ -259,7 +263,7 @@ sales['region_en'] = sales['المنطقة'].map(variant_to_canonical)
 
 ### Registry Queries
 
-The metadata registry catalogs every CSV's schema, field types, enum values, and sample rows:
+The metadata registry catalogs every CSV's schema, field types, enum values, and sample rows. CSV exports are available in `data/registry_*.csv` for use without SQLite — see the [Data Dictionary](docs/DATA_DICTIONARY.md) for field definitions and enum translations.
 
 ```bash
 # Rebuild the registry after adding new data
@@ -340,7 +344,8 @@ Full API research with 13 sources rated by relevance: [docs/API_RESEARCH.md](doc
 This repository is structured for automated consumption:
 
 - **`data/region_mapping.csv`** — machine-readable region normalization table
-- **`registry.db`** — SQLite database cataloging all 159 files with schema, types, enums, and sample rows (rebuild with `python3 scripts/build_registry.py`)
+- **`data/registry_files.csv`**, **`data/registry_fields.csv`**, **`data/registry_enums.csv`** — full metadata catalog as CSV ([documentation](docs/DATA_DICTIONARY.md#csv-exports))
+- **`registry.db`** — same metadata as SQLite (rebuild with `python3 scripts/build_registry.py`)
 - **`rega/datasets.json`** — REGA dataset catalog in JSON format
 - **`GLOSSARY.md`** — structured Arabic↔English term mapping
 - **All CSVs** use UTF-8 encoding (most with BOM), comma delimiters, CRLF line endings
