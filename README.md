@@ -129,6 +129,8 @@ See [notebooks/](notebooks/) for the full code and analysis.
 │   └── complementary/                # Supplementary rental data
 ├── data/
 │   ├── region_mapping.csv            # 33 region spelling variants → 13 canonical names
+│   ├── schema.json                   # Compact schema per category (for AI tools)
+│   ├── registry.json                 # Full metadata catalog as JSON
 │   ├── registry_files.csv            # Metadata for all 159 CSVs (from registry)
 │   ├── registry_fields.csv           # Field catalog: types, nulls, min/max, samples
 │   └── registry_enums.csv            # Enum values for categorical fields
@@ -344,7 +346,9 @@ Full API research with 13 sources rated by relevance: [docs/API_RESEARCH.md](doc
 This repository is structured for automated consumption:
 
 - **`data/region_mapping.csv`** — machine-readable region normalization table
-- **`data/registry_files.csv`**, **`data/registry_fields.csv`**, **`data/registry_enums.csv`** — full metadata catalog as CSV ([documentation](docs/DATA_DICTIONARY.md#csv-exports))
+- **`data/schema.json`** — compact schema for each category: fields, types, enums, date formats (80 KB, ideal for AI tools)
+- **`data/registry.json`** — full metadata catalog as JSON: every file, every field, sample values (478 KB)
+- **`data/registry_files.csv`**, **`data/registry_fields.csv`**, **`data/registry_enums.csv`** — same metadata as CSV ([documentation](docs/DATA_DICTIONARY.md#csv-exports))
 - **`registry.db`** — same metadata as SQLite (rebuild with `python3 scripts/build_registry.py`)
 - **`rega/datasets.json`** — REGA dataset catalog in JSON format
 - **`GLOSSARY.md`** — structured Arabic↔English term mapping
