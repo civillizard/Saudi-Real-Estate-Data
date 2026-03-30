@@ -195,6 +195,22 @@ Enforcement sales only:
 
 ---
 
+## Date Formats by Category
+
+Date columns use two different formats across the CSVs. Most files use `YYYY/MM/DD`, but several categories switched to `M/D/YYYY`. Both Gregorian and Hijri calendars are present. REGA files have no per-record dates — they use separate `year` + `quarter` integer columns instead.
+
+| Format | Example | Categories |
+|--------|---------|------------|
+| `YYYY/MM/DD` | `2025/01/01` | sales (2020–2022, 2024–2025), operations, mortgage, mortgage_release, transfer, division, physical_reg, poa, poa_fund, register_old_deed, register_no_deed, update_deed, update_old_deed, deed_define_divide, merge_re, merge_deed, ownership, enforcement |
+| `M/D/YYYY` | `1/1/2025` | property_identity, release_seizure, seizure, sales (2023 Q2–Q4) |
+| Year + Quarter columns | `2024` + `Q1` | All REGA categories (sales_indicators, rental_indicators, consolidated) |
+
+**Hijri dates** (`date_hijri` / `تاريخ الصفقة هجري`) follow the same format as their Gregorian counterpart in each file. Present in sales and operations files. Not present in REGA files.
+
+**Parsing tip:** Detect format per file by checking whether the first date component is >12 (must be `YYYY/...`) or ≤12 (ambiguous — check the third component length). Or use the category table above.
+
+---
+
 ## Formatting Notes
 
 Automatically detected quirks in the raw CSV data:
