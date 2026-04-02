@@ -1,5 +1,11 @@
 # Disclaimer
 
+<p align="center">
+  <a href="https://www.[redacted]/track/r/rega-site-disclaimer?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/disclaimer" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.[redacted]/track/r/moj-site-disclaimer?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/disclaimer" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 ## Not an Official Government Publication
 
 This repository is an independent community project that consolidates publicly available open data from Saudi government portals. It is **not** affiliated with, endorsed by, or officially connected to:

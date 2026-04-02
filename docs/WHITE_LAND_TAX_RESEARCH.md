@@ -1,5 +1,11 @@
 # Saudi White Land Tax (رسوم الأراضي البيضاء) — Research File
 
+<p align="center">
+  <a href="https://www.[redacted]/track/r/rega-site-white-land-tax?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/white-land-tax" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.[redacted]/track/r/moj-site-white-land-tax?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/white-land-tax" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 **Compiled:** 2026-03-12
 **Sources:** Ministry of Municipal, Rural Affairs and Housing (MOMAH; وزارة الشؤون البلدية والقروية والإسكان), official gazette (Umm Al-Qura), legal firms (King & Spalding, BCLP, Al Tamimi, Deloitte, KPMG, Grant Thornton), Arabic press
 

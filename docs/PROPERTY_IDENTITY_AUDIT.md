@@ -1,5 +1,11 @@
 # Ministry of Justice (MOJ; وزارة العدل) Property Identity Audit — Cross-Category Linkage Investigation
 
+<p align="center">
+  <a href="https://www.[redacted]/track/r/rega-site-property-identity-audit?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/property-identity-audit" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.[redacted]/track/r/moj-site-property-identity-audit?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/property-identity-audit" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 **Date:** 2026-03-12
 **Analyst:** Mamdoh AlOqiel
 **Objective:** Determine whether Property Identity files contain deed numbers, property IDs, or parcel identifiers that could bridge transactions across MOJ categories (seizure, transfer, mortgage, enforcement sale, etc.)

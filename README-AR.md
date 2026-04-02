@@ -1,4 +1,10 @@
 # بيانات العقار المفتوحة في المملكة العربية السعودية
+<p align="center">
+  <a href="https://www.[redacted]/track/r/rega-site-readme-ar?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/readme-ar" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.[redacted]/track/r/moj-site-readme-ar?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/readme-ar" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 ## Saudi Real Estate Open Data
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)

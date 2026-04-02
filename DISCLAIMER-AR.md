@@ -1,5 +1,11 @@
 # إخلاء مسؤولية
 
+<p align="center">
+  <a href="https://www.[redacted]/track/r/rega-site-disclaimer-ar?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/disclaimer-ar" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.[redacted]/track/r/moj-site-disclaimer-ar?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/disclaimer-ar" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 🌐 [English version](DISCLAIMER.md)
 
 ## ليس منشوراً حكومياً رسمياً
