@@ -1,4 +1,10 @@
 # Ministry of Justice (MOJ; وزارة العدل) Real Estate Reference Number Audit
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-reference-number-audit?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/reference-number-audit" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-reference-number-audit?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/reference-number-audit" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 **Date:** 2026-03-12
 **Scope:** Seizure, Release-Seizure, Enforcement-Sale, Mortgage, Mortgage-Release, Transfers — 2025 Q1–Q4
 **Purpose:** Determine whether الرقم المرجعي can be used to link assets across transaction lifecycle stages

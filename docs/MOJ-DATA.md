@@ -1,5 +1,11 @@
 # Ministry of Justice (MOJ; وزارة العدل) — Real Estate Data
 
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-moj-data?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/moj-data" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-moj-data?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/moj-data" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 ## Overview
 
 **Source:** Saudi National Open Data Platform (open.data.gov.sa)

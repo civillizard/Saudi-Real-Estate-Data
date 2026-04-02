@@ -1,4 +1,10 @@
 # Asset Type Audit — Saudi Real Estate Dataset
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-asset-type-audit?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/asset-type-audit" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-asset-type-audit?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/asset-type-audit" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 *Scanned: 159 CSV files across moj/sales, moj/real-estate, rega/*
 *Date: 2026-03-12*
 

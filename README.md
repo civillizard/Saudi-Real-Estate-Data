@@ -1,5 +1,11 @@
 # Saudi Real Estate Open Data (بيانات العقار المفتوحة)
 
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-readme?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/readme" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-readme?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/readme" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: KSA Open Data License](https://img.shields.io/badge/data-KSA%20Open%20Data%20License-green.svg)](LICENSE-DATA.md)
 [![Last Updated](https://img.shields.io/badge/data%20updated-2026--03--24-orange.svg)](CHANGELOG.md)
@@ -325,17 +331,17 @@ Scripts and tools: [MIT License](LICENSE). Not investment advice: [DISCLAIMER.md
 ## Related Resources
 
 ### Government Portals
-- [Saudi National Open Data Portal](https://open.data.gov.sa) — primary data source for MOJ and REGA
-- [REGA Rental Indicators Portal](https://rentalrei.rega.gov.sa) — rental market API (Ejar data)
-- [MOJ Open Data](https://www.moj.gov.sa/ar/opendata/Pages/reports.aspx) — MOJ data catalog
-- [White Land Tax Portal](https://idlelands.momah.gov.sa) — vacant land zone maps and regulations
-- [Saudi National Data Bank](https://data.gov.sa) — CKAN-based portal with 11K+ government datasets
+- [Saudi National Open Data Portal](https://www.6ra3.com/track/r/open-data-portal?dest=https://open.data.gov.sa) — primary data source for MOJ and REGA
+- [REGA Rental Indicators Portal](https://www.6ra3.com/track/r/rega-rental-portal?dest=https://rentalrei.rega.gov.sa) — rental market API (Ejar data)
+- [MOJ Open Data](https://www.6ra3.com/track/r/moj-opendata?dest=https://www.moj.gov.sa/ar/opendata/Pages/reports.aspx) — MOJ data catalog
+- [White Land Tax Portal](https://www.6ra3.com/track/r/white-land-tax?dest=https://idlelands.momah.gov.sa) — vacant land zone maps and regulations
+- [Saudi National Data Bank](https://www.6ra3.com/track/r/national-data-bank?dest=https://data.gov.sa) — CKAN-based portal with 11K+ government datasets
 
 ### APIs for Enrichment
-- [Wathq Developer Portal](https://developer.wathq.sa) — paid API for deed-level property lookups
-- [National Address API](https://api.address.gov.sa) — free geocoding for Saudi addresses
-- [KAPSARC Data Portal](https://data.kapsarc.org) — real estate price index timeseries (free)
-- [SAMA Open Data](https://www.sama.gov.sa/en-us/EconomicReports/) — central bank mortgage and lending statistics
+- [Wathq Developer Portal](https://www.6ra3.com/track/r/wathq-api?dest=https://developer.wathq.sa) — paid API for deed-level property lookups
+- [National Address API](https://www.6ra3.com/track/r/national-address-api?dest=https://api.address.gov.sa) — free geocoding for Saudi addresses
+- [KAPSARC Data Portal](https://www.6ra3.com/track/r/kapsarc-data?dest=https://data.kapsarc.org) — real estate price index timeseries (free)
+- [SAMA Open Data](https://www.6ra3.com/track/r/sama-opendata?dest=https://www.sama.gov.sa/en-us/EconomicReports/) — central bank mortgage and lending statistics
 
 Full API research with 13 sources rated by relevance: [docs/API_RESEARCH.md](docs/API_RESEARCH.md)
 

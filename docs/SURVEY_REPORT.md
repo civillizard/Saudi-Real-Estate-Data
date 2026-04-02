@@ -1,5 +1,11 @@
 # Saudi Real Estate CSV Survey Report
 
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-survey-report?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/survey-report" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-survey-report?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/survey-report" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 _Generated: 2026-03-12 02:56:44_
 
 ## 1. Executive Summary

@@ -1,5 +1,11 @@
 # Glossary — Saudi Real Estate Terms
 
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-glossary?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/glossary" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-glossary?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/glossary" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 Arabic terms used in the data files, grouped by category.
 
 ## Government Entities

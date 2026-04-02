@@ -1,5 +1,11 @@
 # Data License & Legal Status
 
+<p align="center">
+  <a href="https://www.6ra3.com/track/r/rega-site-license-data?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/license-data" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.6ra3.com/track/r/moj-site-license-data?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/license-data" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+</p>
+
 ## Source Data
 
 All CSV data files in this repository originate from the following Saudi government open data portals:
