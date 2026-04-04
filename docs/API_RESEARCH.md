@@ -1,9 +1,9 @@
 # Saudi Real Estate API Research
 
 <p align="center">
-  <a href="https://www.6ra3.com/track/r/rega-site-api-research?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/api-research" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.6ra3.com/track/r/moj-site-api-research?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/api-research" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
 </p>
 
 Researched: 2026-03-12
@@ -231,7 +231,7 @@ Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة ا
 - **URL:** https://www.ejar.sa/en (REGA-operated)
 - **What's available:** Rental contract registration, documentation, renewal
 - **API:** Not public — no developer portal found
-- **Notes:** Our existing Ejar Collector (in `~/rega-ejar-collector`) scrapes open data CSV exports from REGA's open data. Ejar open data is published on data.gov.sa with 104K+ rental rows in our DB. No live API. For more granular rental data, contact REGA directly for data partnership.
+- **Notes:** Ejar open data is published on data.gov.sa with 104K+ rental contract rows. No live API. For more granular rental data, contact REGA directly for data partnership.
 
 ---
 
@@ -460,7 +460,7 @@ Purpose: Identify APIs that can enrich **Ministry of Justice (MOJ; وزارة ا
 For context, do not re-acquire:
 - MOJ transaction CSVs: 4.96M rows, 170 CSVs in `moj/` (sales + 18 operation categories)
 - REGA rental/sales indicators: `rega/`
-- Ejar rental contracts: 104K+ rows in registry via `~/rega-ejar-collector`
+- Ejar rental contracts: 104K+ rows (collected from REGA open data exports)
 - Registry DB: `registry.db`
 
 ---

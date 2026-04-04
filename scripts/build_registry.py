@@ -18,7 +18,7 @@ import sqlite3
 from collections import Counter
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.resolve()
+BASE_DIR = Path(__file__).parent.parent.resolve()  # repo root
 DB_PATH = BASE_DIR / "registry.db"
 
 # How many rows to sample for type inference
