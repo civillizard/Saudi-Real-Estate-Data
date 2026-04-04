@@ -396,3 +396,13 @@ Possible contributions:
 - Visualizations and dashboards
 - Translations of documentation to Arabic
 - Integration with external APIs (KAPSARC price indices, National Address geocoding)
+
+## Author & Contact
+
+**Mamdoh AlOqiel** — Riyadh, Saudi Arabia
+
+- **Email:** [mao@6ra3.com](mailto:mao@6ra3.com)
+- **Issues & feedback:** [GitHub Issues](https://github.com/civillizard/Saudi-Real-Estate-Data/issues)
+- **Contributions:** Pull requests welcome — open an issue first to discuss bigger changes
+
+Open to collaboration on Saudi real estate data analysis, government open data projects, and market research.
