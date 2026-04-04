@@ -1,9 +1,9 @@
 # Saudi Real Estate Open Data (بيانات العقار المفتوحة)
 
 <p align="center">
-  <a href="https://www.[redacted]/track/r/rega-site-readme?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/readme" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.[redacted]/track/r/moj-site-readme?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/readme" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
@@ -44,7 +44,7 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 | Source | Category | Files | Rows | Period | Description |
 |--------|----------|-------|------|--------|-------------|
 | **MOJ** | Sales transactions | 24 | 1,410,000 | 2020–2025 | Individual sale records: price, area, location, classification, reference number |
-| **MOJ** | RE operations (18 types) | 85 | 3,620,000 | 2024–2025 | Mortgages, seizures, transfers, POAs, enforcement sales, deed updates, mergers, divisions |
+| **MOJ** | RE operations (18 types) | 86 | 3,620,000 | 2024–2025 | Mortgages, seizures, transfers, POAs, enforcement sales, deed updates, mergers, divisions |
 | **MOJ** | Market indices | 3 | 3,000 | 2018–2021 | Historical price indices by region, city, district |
 | **REGA** | Sales indicators | 31 | 20,900 | 2024–2025 | Aggregate sales by region: avg/min/max price per m², deed counts |
 | **REGA** | Rental indicators | 13 | 20,000 | 2019–2024 | Rental market by city for all 13 administrative regions |
@@ -127,12 +127,15 @@ See [notebooks/](notebooks/) for the full code and analysis.
 ```
 ├── moj/                              # Ministry of Justice data
 │   ├── sales/                        # 24 quarterly transaction files (2020–2025)
-│   └── real-estate/                  # 85 files across 18 operation categories
+│   └── real-estate/                  # 86 files across 18 operation categories
 ├── rega/                             # Real Estate General Authority data
 │   ├── Sales-transaction-*           # Regional quarterly sales indicators
 │   ├── Rental-indicators-*           # Regional rental indicators (all 13 regions)
 │   ├── charts/                       # 8 infographic visualizations
-│   └── complementary/                # Supplementary rental data
+│   ├── complementary/                # Supplementary rental data
+│   ├── Open-Data-Toolkit-EN.pdf      # REGA open data methodology guide
+│   ├── User-Manual-AR.pdf            # REGA portal user manual (Arabic)
+│   └── User-Manual-EN.pdf            # REGA portal user manual (English)
 ├── data/
 │   ├── region_mapping.csv            # 33 region spelling variants → 13 canonical names
 │   ├── schema.json                   # Compact schema per category (for AI tools)
@@ -209,7 +212,7 @@ We've audited the data thoroughly and documented what it **can't** do — so you
 
 3. **Property Identity files are service logs**, not a property registry bridge. Despite the promising name, they contain constant region/city values and no deed or parcel numbers. ([Details](docs/PROPERTY_IDENTITY_AUDIT.md))
 
-4. **36 region name variants** — the same region appears with different Arabic spellings across files. Use [`data/region_mapping.csv`](data/region_mapping.csv) to normalize before aggregation.
+4. **33 region name variants** — the same region appears with different Arabic spellings across files. Use [`data/region_mapping.csv`](data/region_mapping.csv) to normalize before aggregation.
 
 5. **Date format inconsistency** — most files use `YYYY/MM/DD`, some 2024 monthly files use `M/D/YYYY`. Dual Gregorian + Hijri dating in most files.
 
@@ -218,6 +221,10 @@ We've audited the data thoroughly and documented what it **can't** do — so you
 7. **REGA sales coverage gaps** — only 6 of 13 regions have REGA sales indicator data. 7 regions (Asir, Qassim, Al Jouf, Northern Borders, Najran, Tabuk, Jazan) have zero REGA sales files. MOJ data covers all 13 regions.
 
 8. **2023 data anomaly** — transaction volume dropped to 140K from 282K in 2021. Also, 2023 Q1 has a different schema (13 columns vs standard 10, includes `نوع العقار`). Reason for the dip is unclear — could be a real market slowdown or a data collection change.
+
+9. **MOJ Transfers Q2/Q3 row count anomaly** — `MOJ-Transfers-2025-Q1.csv` has 219,591 rows, while Q2 and Q3 have ~800 rows each (a 270x drop). The Q2/Q3 files likely represent truncated or differently-scoped portal exports. Verify against the source portal before using transfer data for trend analysis.
+
+10. **Enforcement Sale schema change** — Q1 has 6 columns (includes Hijri date `تاريخ القرارهجري`), while Q2–Q4 have 5 columns (Hijri date dropped). Account for this when merging across quarters.
 
 ---
 
@@ -331,17 +338,17 @@ Scripts and tools: [MIT License](LICENSE). Not investment advice: [DISCLAIMER.md
 ## Related Resources
 
 ### Government Portals
-- [Saudi National Open Data Portal](https://www.[redacted]/track/r/open-data-portal?dest=https://open.data.gov.sa) — primary data source for MOJ and REGA
-- [REGA Rental Indicators Portal](https://www.[redacted]/track/r/rega-rental-portal?dest=https://rentalrei.rega.gov.sa) — rental market API (Ejar data)
-- [MOJ Open Data](https://www.[redacted]/track/r/moj-opendata?dest=https://www.moj.gov.sa/ar/opendata/Pages/reports.aspx) — MOJ data catalog
-- [White Land Tax Portal](https://www.[redacted]/track/r/white-land-tax?dest=https://idlelands.momah.gov.sa) — vacant land zone maps and regulations
-- [Saudi National Data Bank](https://www.[redacted]/track/r/national-data-bank?dest=https://data.gov.sa) — CKAN-based portal with 11K+ government datasets
+- [Saudi National Open Data Portal](https://open.data.gov.sa) — primary data source for MOJ and REGA
+- [REGA Rental Indicators Portal](https://rentalrei.rega.gov.sa) — rental market API (Ejar data)
+- [MOJ Open Data](https://www.moj.gov.sa/ar/opendata/Pages/reports.aspx) — MOJ data catalog
+- [White Land Tax Portal](https://idlelands.momah.gov.sa) — vacant land zone maps and regulations
+- [Saudi National Data Bank](https://data.gov.sa) — CKAN-based portal with 11K+ government datasets
 
 ### APIs for Enrichment
-- [Wathq Developer Portal](https://www.[redacted]/track/r/wathq-api?dest=https://developer.wathq.sa) — paid API for deed-level property lookups
-- [National Address API](https://www.[redacted]/track/r/national-address-api?dest=https://api.address.gov.sa) — free geocoding for Saudi addresses
-- [KAPSARC Data Portal](https://www.[redacted]/track/r/kapsarc-data?dest=https://data.kapsarc.org) — real estate price index timeseries (free)
-- [SAMA Open Data](https://www.[redacted]/track/r/sama-opendata?dest=https://www.sama.gov.sa/en-us/EconomicReports/) — central bank mortgage and lending statistics
+- [Wathq Developer Portal](https://developer.wathq.sa) — paid API for deed-level property lookups
+- [National Address API](https://api.address.gov.sa) — free geocoding for Saudi addresses
+- [KAPSARC Data Portal](https://data.kapsarc.org) — real estate price index timeseries (free)
+- [SAMA Open Data](https://www.sama.gov.sa/en-us/EconomicReports/) — central bank mortgage and lending statistics
 
 Full API research with 13 sources rated by relevance: [docs/API_RESEARCH.md](docs/API_RESEARCH.md)
 
@@ -374,7 +381,7 @@ Language: Arabic headers with English canonical mappings in registry
 License: KSA Open Data License (redistribution + derivatives allowed with attribution)
 Update frequency: Quarterly (MOJ/REGA sales), monthly (MOJ operations)
 Known gaps: No property-level IDs, land/building type only in 2023 Q1-Q3,
-  36 region spelling variants (mapping file provided)
+  33 region spelling variants (mapping file provided)
 ```
 
 ---

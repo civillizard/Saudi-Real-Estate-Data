@@ -3,9 +3,9 @@
 Real Estate Data Source Monitor
 
 Checks Saudi Open Data portal for new MOJ/REGA datasets and monitors
-regulatory announcement pages for changes. Sends email alerts via [redacted-host].
+regulatory announcement pages for changes. Sends email alerts via SSH relay.
 
-Runs via launchd. State tracked in local SQLite.
+Runs via launchd or cron. State tracked in local SQLite.
 No external dependencies — stdlib only (Python 3.9+).
 """
 
@@ -21,6 +21,7 @@ import subprocess
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -413,8 +414,19 @@ def check_pages(conn: sqlite3.Connection) -> list[dict]:
 # ── Email Notification ────────────────────────────────────────────────
 
 
-def send_email_via_mred(subject: str, body: str) -> bool:
-    """Send email through [redacted-host]'s Postfix via SSH."""
+def send_email(subject: str, body: str) -> bool:
+    """Send email through a remote mail relay via SSH.
+
+    Configure via environment variables:
+        MAIL_RELAY: SSH hostname of the mail relay (required for email alerts)
+        NOTIFY_EMAIL: recipient address
+        SENDER_EMAIL: sender address
+    """
+    mail_relay = os.environ.get("MAIL_RELAY", "")
+    if not mail_relay:
+        log.warning("MAIL_RELAY not set — email alerts disabled")
+        return False
+
     message = f"""From: {SENDER_EMAIL}
 To: {NOTIFY_EMAIL}
 Subject: {subject}
@@ -425,7 +437,7 @@ MIME-Version: 1.0
 
     try:
         result = subprocess.run(
-            ["ssh", "[redacted-host]", "sendmail", "-t"],
+            ["ssh", mail_relay, "sendmail", "-t"],
             input=message,
             capture_output=True,
             text=True,
@@ -539,7 +551,7 @@ def main():
     email_sent = 0
     if new_datasets or new_resources or page_changes:
         subject, body = build_alert_email(new_datasets, new_resources, page_changes)
-        if send_email_via_mred(subject, body):
+        if send_email(subject, body):
             email_sent = 1
     else:
         log.info("No new data or changes detected")

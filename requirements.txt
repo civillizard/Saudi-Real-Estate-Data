@@ -1,0 +1,4 @@
+# Dependencies for running notebooks and scripts
+pandas>=2.0
+matplotlib>=3.7
+nbformat>=5.9       # only needed for notebooks/build_notebooks.py

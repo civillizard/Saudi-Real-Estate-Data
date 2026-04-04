@@ -1,9 +1,9 @@
 # Ministry of Justice (MOJ; وزارة العدل) Property Identity Audit — Cross-Category Linkage Investigation
 
 <p align="center">
-  <a href="https://www.[redacted]/track/r/rega-site-property-identity-audit?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/property-identity-audit" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
+  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.[redacted]/track/r/moj-site-property-identity-audit?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/property-identity-audit" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
+  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
 </p>
 
 **Date:** 2026-03-12
