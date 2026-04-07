@@ -12,7 +12,7 @@
 
 🌐 [النسخة العربية](README-AR.md)
 
-Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)** and **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, covering **4.93 million** real estate transaction records across **159 CSV files** from 2018 to 2025.
+Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)** and **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, covering **5.10 million** real estate transaction records across **159 CSV files** from 2018 to 2025.
 
 Saudi real estate data is scattered across multiple government portals, published in inconsistent formats with Arabic-only headers and undocumented schema changes. This project consolidates it into one place with clean documentation, a self-describing metadata registry, quality audits, and initial analysis — making it usable for researchers, analysts, investors, and developers.
 
@@ -46,11 +46,11 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 | **MOJ** | Sales transactions | 24 | 1,410,000 | 2020–2025 | Individual sale records: price, area, location, classification, reference number |
 | **MOJ** | RE operations (18 types) | 86 | 3,620,000 | 2024–2025 | Mortgages, seizures, transfers, POAs, enforcement sales, deed updates, mergers, divisions |
 | **MOJ** | Market indices | 3 | 3,000 | 2018–2021 | Historical price indices by region, city, district |
-| **REGA** | Sales indicators | 31 | 20,900 | 2024–2025 | Aggregate sales by region: avg/min/max price per m², deed counts |
+| **REGA** | Sales indicators | 31 | 22,000 | 2024–2025 | Aggregate sales by region: avg/min/max price per m², deed counts |
 | **REGA** | Rental indicators | 13 | 20,000 | 2019–2024 | Rental market by city for all 13 administrative regions |
 | **REGA** | Other | 2 | 32,700 | 2024–2025 | Gender registration stats, consolidated quarterly report |
 | **REGA** | Charts | 8 | — | 2024–2025 | Infographic visualizations |
-| | **Total** | **159 CSVs** | **~4,930,000** | **2018–2025** | **554 MB** |
+| | **Total** | **159 CSVs** | **~5,100,000** | **2018–2025** | **565 MB** |
 
 ### Key Numbers
 
@@ -126,7 +126,7 @@ See [notebooks/](notebooks/) for the full code and analysis.
 
 ```
 ├── moj/                              # Ministry of Justice data
-│   ├── sales/                        # 24 quarterly transaction files (2020–2025)
+│   ├── sales/                        # 24 quarterly sales + 3 historical index files (2018–2025)
 │   └── real-estate/                  # 86 files across 18 operation categories
 ├── rega/                             # Real Estate General Authority data
 │   ├── Sales-transaction-*           # Regional quarterly sales indicators
@@ -373,7 +373,7 @@ This repository is structured for automated consumption:
 Dataset: Saudi Real Estate Open Data
 Coverage: 2018-2025, 13 administrative regions, 175 cities
 Sources: MOJ, REGA
-Records: 4,930,000 across 159 CSV files
+Records: 5,100,000 across 159 CSV files
 Categories: Sales (1.41M), Mortgages (36K), Seizures (737K), Transfers (221K),
   POAs (758K), Enforcement Sales (8.3K), Property Divisions (90K), and 11 more
 Formats: CSV (UTF-8-BOM, comma-delimited), SQLite registry, JSON catalog
