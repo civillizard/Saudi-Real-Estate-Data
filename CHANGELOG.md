@@ -16,14 +16,14 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 
 ### Data
 - **Ministry of Justice (MOJ; وزارة العدل) Sales:** 24 quarterly files (2020-Q1 through 2025-Q4), 1.41M transaction rows
-- **MOJ Real Estate Operations:** 85 files across 18 categories (2024-2025), 3.62M rows
+- **MOJ Real Estate Operations:** 86 files across 18 categories (2024-2025), 3.62M rows
 - **MOJ Historical Index:** 3 files (2018-2021 market indices by region/city/district)
-- **Real Estate General Authority (REGA; الهيئة العامة للعقار) Sales Indicators:** 31 quarterly files for 6 regions (2024-2025), 20.9K rows
+- **Real Estate General Authority (REGA; الهيئة العامة للعقار) Sales Indicators:** 31 quarterly files for 6 regions (2024-2025), 22K rows
 - **REGA Rental Indicators:** 13 files covering all regions, 20K rows
 - **REGA Gender Registration:** 1 file (2024)
 - **REGA Consolidated Report:** 1 file (quarter-report-SI.csv), 32.7K rows
 - **REGA Charts:** 8 infographic visualizations
-- **Total:** 159 CSV files, ~4.93M rows, 554 MB
+- **Total:** 159 CSV files, ~5.10M rows, 565 MB
 
 ### Documentation
 - Full repository documentation: README, glossary, data primer, legal status

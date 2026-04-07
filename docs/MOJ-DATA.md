@@ -192,7 +192,7 @@ Note: Some region names have slight Arabic spelling variations across files (e.g
 
 ### 3. Other Real Estate Operations (MOJ-RealEstate/)
 
-**85 files, 367 MB, 3,617,899 rows — all from 2024-2025**
+**86 files, 367 MB, 3,617,899 rows — all from 2024-2025**
 
 Individual transaction-level records for various real estate operations processed through MOJ services.
 
@@ -303,7 +303,7 @@ Individual transaction-level records for various real estate operations processe
 | MOJ-RE-Index-Districts-2018-2021.csv | 2,128 | 137 KB |
 | MOJ-RE-Index-Cities-2018-2021.csv | 220 | 19 KB |
 
-### MOJ-RealEstate/ (85 files, 367 MB)
+### MOJ-RealEstate/ (86 files, 367 MB)
 
 See category breakdown table above for row counts per file.
 

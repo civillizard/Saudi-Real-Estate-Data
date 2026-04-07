@@ -61,7 +61,7 @@ These three terms all translate loosely to "transaction" but are used differentl
 |--------|----------------|---------|---------------|
 | صفقة | Safqa | Deal / sale transaction | Used by MOJ specifically for **sales**. Appears in `الرقم المرجعي للصفقة` (transaction reference) and `تاريخ الصفقة` (transaction date). Refers to a buy/sell deal with a price |
 | عملية | Amaliya | Operation / process | Used by MOJ for the **18 non-sale categories** (mortgages, seizures, transfers, etc.). Appears in `نوع العملية` (operation type) and `عدد العمليات` (operation count). Broader than صفقة — covers any registered RE action |
-| سجل | Sijill | Record | General term for any data row. Used as an umbrella when referring to all records collectively (e.g., "4.93 million سجل عقاري" covers both sales and operations) |
+| سجل | Sijill | Record | General term for any data row. Used as an umbrella when referring to all records collectively (e.g., "5.10 million سجل عقاري" covers both sales and operations) |
 | معاملة | Mu'amala | Transaction (bureaucratic) | Generic term for any government-processed transaction. Not used as a column name in the data but common in general discourse |
 
 When writing about this data: use **صفقة** for sales specifically, **عملية** for non-sale operations, and **سجل** or **معاملة** as umbrella terms for the full dataset.
