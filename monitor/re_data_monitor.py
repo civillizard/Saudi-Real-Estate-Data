@@ -43,9 +43,10 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.
 ORGANIZATIONS = {
     "MOJ": "وزارة العدل",
     "REGA": "الهيئة العامة للعقار",
+    "GASTAT": "الهيئة العامة للإحصاء",
 }
 
-# Real estate keywords to filter MOJ datasets (they have 998 total)
+# Real estate keywords to filter MOJ/GASTAT datasets (they have 998/1180 total)
 RE_KEYWORDS = [
     "عقار",
     "صك",
@@ -63,6 +64,13 @@ RE_KEYWORDS = [
     "عيني",
     "وكال",
     "تسجيل",
+    # GASTAT-specific
+    "سكن",
+    "مسكن",
+    "بناء",
+    "تشييد",
+    "إسكان",
+    "تضخم",
 ]
 
 # Pages to monitor for changes (regulatory announcements)
@@ -262,8 +270,8 @@ def check_datasets(conn: sqlite3.Connection) -> tuple[list[dict], list[dict]]:
             if not ds_id:
                 continue
 
-            # For MOJ, filter to RE-related datasets only
-            if source == "MOJ" and not is_re_dataset(ds):
+            # For MOJ/GASTAT, filter to RE-related datasets only (998/1180 total)
+            if source in ("MOJ", "GASTAT") and not is_re_dataset(ds):
                 continue
 
             # Check if we've seen this dataset before
