@@ -12,6 +12,28 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 
 ---
 
+## 2026-04-07 — Major Data Update
+
+### Data
+- **129 new CSV files** added (72 in first batch + 57 in follow-up)
+- **MOJ Monthly Operations:** 26 new monthly aggregate files (Feb 2024–Feb 2026), 8-column schema with operation type breakdowns by region/city
+- **MOJ POA Issued:** 30 monthly files (Apr 2023–Feb 2026), power-of-attorney issuance by region
+- **MOJ Q4 2025 backfills:** 13 files across existing categories (enforcement, mortgage, transfer, seizure, etc.)
+- **18 new MOJ categories:** compensation, compensation ruins, enforcement auction sale, enforcement award buyer, enforcement sell property, grants, grant alternative, monthly operations, POA Ejar, POA issued, POA white land fee, transfer ownership, transfer will (no ownership), ownership rate (men), ownership rate (women), register old deed, register no deed
+- **Total:** 288 CSVs, ~7.44M rows, 853 MB (was 159 CSVs, ~5.10M rows, 565 MB)
+
+### Tools
+- `scripts/download_new_data.py` — automated downloader using `odp-public` URL pattern (bypasses WAF)
+- Registry builder updated with 42 classification rules (was 26), all new categories properly classified
+
+### Notes
+- Monthly files use a different schema (8 cols, aggregated counts) vs quarterly files (6 cols, individual records)
+- Enforcement schema break: Q1 has 6 cols, Q2+ has 5 cols (Hijri date column dropped)
+- Leading spaces in region names present in some new files (portal data quality issue)
+- 67 files still missing from portal (mostly POA monthly — low priority)
+
+---
+
 ## 2026-03-24 — Initial Public Release
 
 ### Data
