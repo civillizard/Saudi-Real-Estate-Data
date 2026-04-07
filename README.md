@@ -35,6 +35,7 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 - [Data Sources & Update Cadence](#data-sources--update-cadence)
 - [Legal Status](#legal-status)
 - [Related Resources](#related-resources)
+- [Stay Updated](#stay-updated)
 - [Contributing](#contributing)
 
 ---
@@ -385,6 +386,16 @@ Update frequency: Quarterly (MOJ/REGA sales), monthly (MOJ operations)
 Known gaps: No property-level IDs, land/building type only in 2023 Q1-Q3,
   33 region spelling variants (mapping file provided)
 ```
+
+---
+
+## Stay Updated
+
+New data is published quarterly by MOJ and REGA. This repo tracks it with automated monitoring.
+
+- **Watch this repo** — click **Watch → Custom → Releases** (top right) to get notified when new data is added
+- **Discussions** — join the [Announcements](https://github.com/civillizard/Saudi-Real-Estate-Data/discussions) for update summaries
+- **Changelog** — see [CHANGELOG.md](CHANGELOG.md) for a full history of data additions
 
 ---
 
