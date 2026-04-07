@@ -8,11 +8,11 @@
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: KSA Open Data License](https://img.shields.io/badge/data-KSA%20Open%20Data%20License-green.svg)](LICENSE-DATA.md)
-[![Last Updated](https://img.shields.io/badge/data%20updated-2026--03--24-orange.svg)](CHANGELOG.md)
+[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--07-orange.svg)](CHANGELOG.md)
 
 🌐 [النسخة العربية](README-AR.md)
 
-Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)** and **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, covering **5.10 million** real estate transaction records across **159 CSV files** from 2018 to 2025.
+Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)** and **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, covering **7.4 million** real estate transaction records across **288 CSV files** from 2018 to 2026.
 
 Saudi real estate data is scattered across multiple government portals, published in inconsistent formats with Arabic-only headers and undocumented schema changes. This project consolidates it into one place with clean documentation, a self-describing metadata registry, quality audits, and initial analysis — making it usable for researchers, analysts, investors, and developers.
 
@@ -43,14 +43,14 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 
 | Source | Category | Files | Rows | Period | Description |
 |--------|----------|-------|------|--------|-------------|
-| **MOJ** | Sales transactions | 24 | 1,410,000 | 2020–2025 | Individual sale records: price, area, location, classification, reference number |
-| **MOJ** | RE operations (18 types) | 86 | 3,620,000 | 2024–2025 | Mortgages, seizures, transfers, POAs, enforcement sales, deed updates, mergers, divisions |
+| **MOJ** | Sales transactions | 24 | 1,407,000 | 2020–2025 | Individual sale records: price, area, location, classification, reference number |
+| **MOJ** | RE operations (36 types) | 215 | 5,959,000 | 2023–2026 | Mortgages, seizures, transfers, POAs, enforcement, grants, compensation, deed updates, mergers, divisions, monthly aggregates |
 | **MOJ** | Market indices | 3 | 3,000 | 2018–2021 | Historical price indices by region, city, district |
-| **REGA** | Sales indicators | 31 | 22,000 | 2024–2025 | Aggregate sales by region: avg/min/max price per m², deed counts |
+| **REGA** | Sales indicators | 31 | 21,000 | 2024–2025 | Aggregate sales by region: avg/min/max price per m², deed counts |
 | **REGA** | Rental indicators | 13 | 20,000 | 2019–2024 | Rental market by city for all 13 administrative regions |
 | **REGA** | Other | 2 | 32,700 | 2024–2025 | Gender registration stats, consolidated quarterly report |
 | **REGA** | Charts | 8 | — | 2024–2025 | Infographic visualizations |
-| | **Total** | **159 CSVs** | **~5,100,000** | **2018–2025** | **565 MB** |
+| | **Total** | **288 CSVs** | **~7,440,000** | **2018–2026** | **853 MB** |
 
 ### Key Numbers
 
@@ -59,7 +59,7 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 - **85% residential**, 10.6% commercial, 4% agricultural, <0.1% industrial
 - **Riyadh** dominates: 34% of all transactions, 49% of total value
 - **Top 5 cities:** Riyadh (330K deals), Jeddah (164K), Buraydah (62K), Makkah (53K), Madinah (52K)
-- **18 transaction categories** beyond sales: mortgages, seizures, property divisions, POAs, enforcement sales, and more
+- **36 transaction categories** beyond sales: mortgages, seizures, property divisions, POAs, enforcement (3 sub-types), grants, compensation, ownership rates, monthly aggregates, and more
 
 ---
 
@@ -127,7 +127,8 @@ See [notebooks/](notebooks/) for the full code and analysis.
 ```
 ├── moj/                              # Ministry of Justice data
 │   ├── sales/                        # 24 quarterly sales + 3 historical index files (2018–2025)
-│   └── real-estate/                  # 86 files across 18 operation categories
+│   ├── real-estate/                  # 190 files across 36 operation categories (2024–2025)
+│   └── monthly/                      # 52 monthly aggregate files (operations + POAs, 2023–2026)
 ├── rega/                             # Real Estate General Authority data
 │   ├── Sales-transaction-*           # Regional quarterly sales indicators
 │   ├── Rental-indicators-*           # Regional rental indicators (all 13 regions)
@@ -140,12 +141,13 @@ See [notebooks/](notebooks/) for the full code and analysis.
 │   ├── region_mapping.csv            # 33 region spelling variants → 13 canonical names
 │   ├── schema.json                   # Compact schema per category (for AI tools)
 │   ├── registry.json                 # Full metadata catalog as JSON
-│   ├── registry_files.csv            # Metadata for all 159 CSVs (from registry)
+│   ├── registry_files.csv            # Metadata for all 292 CSVs (from registry)
 │   ├── registry_fields.csv           # Field catalog: types, nulls, min/max, samples
 │   └── registry_enums.csv            # Enum values for categorical fields
 ├── docs/                             # Research, audits, and deep-dives (see below)
 ├── scripts/
-│   └── build_registry.py             # Metadata registry builder
+│   ├── build_registry.py             # Metadata registry builder (42 categories)
+│   └── download_new_data.py          # Automated downloader for new MOJ/REGA datasets
 ├── monitor/
 │   └── re_data_monitor.py            # Automated new-data detection
 ├── notebooks/                        # Sample analyses with charts
@@ -158,7 +160,7 @@ See [notebooks/](notebooks/) for the full code and analysis.
 └── DISCLAIMER.md                     # Not official, not investment advice
 ```
 
-> **Clone size:** ~600 MB (data-heavy repo). For faster clone: `git clone --depth 1 https://github.com/civillizard/Saudi-Real-Estate-Data.git`
+> **Clone size:** ~850 MB (data-heavy repo). For faster clone: `git clone --depth 1 https://github.com/civillizard/Saudi-Real-Estate-Data.git`
 
 ---
 
