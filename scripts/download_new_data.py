@@ -35,8 +35,10 @@ MOJ_SALES = REPO_ROOT / "moj" / "sales"  # Sales + RE-Index
 MOJ_RE = REPO_ROOT / "moj" / "real-estate"  # per-category quarterly
 MOJ_MONTHLY = REPO_ROOT / "moj" / "monthly"  # monthly aggregate ops + POA
 
-DOWNLOAD_BASE = "https://open.data.gov.sa/data/api/datasets/resources/download"
+DOWNLOAD_API = "https://open.data.gov.sa/data/api/datasets/resources/download"
+DOWNLOAD_ODP = "https://open.data.gov.sa/odp-public"
 RESOURCES_API = "https://open.data.gov.sa/data/api/datasets/resources"
+MOJ_ORG_ID = "35c63412-c4ae-4303-8fef-56cfd71303cf"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
 REQUEST_TIMEOUT = 60
 DOWNLOAD_DELAY = 5.0  # seconds between downloads (WAF rate-limit avoidance)
@@ -393,13 +395,14 @@ def parse_dataset(title_ar: str) -> tuple[str | None, str | None] | None:
 
 
 def load_moj_datasets(conn: sqlite3.Connection) -> list[dict]:
-    """Return all MOJ RE-related datasets with their CSV resource IDs."""
+    """Return all MOJ RE-related datasets with their CSV resource IDs and filenames."""
     rows = conn.execute("""
         SELECT
             d.dataset_id,
             d.title_ar,
             r.resource_id,
-            r.format
+            r.format,
+            r.filename
         FROM known_datasets d
         LEFT JOIN known_resources r
             ON r.dataset_id = d.dataset_id
@@ -409,15 +412,17 @@ def load_moj_datasets(conn: sqlite3.Connection) -> list[dict]:
 
     # Group by dataset_id, prefer CSV resource
     datasets: dict[str, dict] = {}
-    for ds_id, title_ar, res_id, fmt in rows:
+    for ds_id, title_ar, res_id, fmt, filename in rows:
         if ds_id not in datasets:
             datasets[ds_id] = {
                 "dataset_id": ds_id,
                 "title_ar": title_ar,
                 "csv_resource_id": None,
+                "csv_filename": None,
             }
         if fmt and fmt.upper() == "CSV" and res_id:
             datasets[ds_id]["csv_resource_id"] = res_id
+            datasets[ds_id]["csv_filename"] = filename
 
     return list(datasets.values())
 
@@ -449,34 +454,57 @@ def _is_waf_block(data: bytes) -> bool:
     return False
 
 
-def download_file(resource_id: str, dest_path: Path, dry_run: bool = False) -> str:
+def download_file(
+    dataset_id: str,
+    resource_id: str | None,
+    csv_filename: str | None,
+    dest_path: Path,
+    dry_run: bool = False,
+) -> str:
     """
     Download a CSV resource to dest_path.
+    Tries odp-public URL first (static file, WAF-resistant), falls back to API.
     Returns "ok", "waf" (WAF block), or "fail" (network error).
     """
-    url = f"{DOWNLOAD_BASE}/{resource_id}"
     if dry_run:
-        log.info("  [DRY-RUN] would download: %s -> %s", url, dest_path)
+        log.info("  [DRY-RUN] would download -> %s", dest_path.relative_to(REPO_ROOT))
         return "ok"
 
-    log.info("  Downloading %s -> %s", url, dest_path.name)
-    data = fetch_url(url)
-    if data is None:
-        log.error("  Download failed for resource %s", resource_id)
-        return "fail"
+    # Strategy 1: odp-public direct file URL (bypasses WAF)
+    if csv_filename:
+        encoded_name = urllib.parse.quote(f"{csv_filename}.csv")
+        url = f"{DOWNLOAD_ODP}/{MOJ_ORG_ID}/{dataset_id}/v1/{encoded_name}"
+        log.info("  Trying odp-public: %s", dest_path.name)
+        data = fetch_url(url)
+        if data and not _is_waf_block(data) and len(data) > 100:
+            if not data.startswith(b"\xef\xbb\xbf"):
+                data = b"\xef\xbb\xbf" + data
+            dest_path.parent.mkdir(parents=True, exist_ok=True)
+            dest_path.write_bytes(data)
+            log.info("  OK (odp-public) %d bytes -> %s", len(data), dest_path.name)
+            return "ok"
+        log.debug("  odp-public failed, trying API fallback...")
 
-    if _is_waf_block(data):
-        log.warning("  WAF BLOCK detected for %s (%d bytes)", dest_path.name, len(data))
-        return "waf"
+    # Strategy 2: API download endpoint (may be WAF-blocked)
+    if resource_id:
+        url = f"{DOWNLOAD_API}/{resource_id}"
+        log.info("  Trying API download: %s", dest_path.name)
+        data = fetch_url(url)
+        if data is None:
+            log.error("  Download failed for %s", dest_path.name)
+            return "fail"
+        if _is_waf_block(data):
+            log.warning("  WAF BLOCK on %s (%d bytes)", dest_path.name, len(data))
+            return "waf"
+        if not data.startswith(b"\xef\xbb\xbf"):
+            data = b"\xef\xbb\xbf" + data
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        dest_path.write_bytes(data)
+        log.info("  OK (API) %d bytes -> %s", len(data), dest_path.name)
+        return "ok"
 
-    # Ensure UTF-8 BOM for consistency with existing repo data
-    if not data.startswith(b"\xef\xbb\xbf"):
-        data = b"\xef\xbb\xbf" + data
-
-    dest_path.parent.mkdir(parents=True, exist_ok=True)
-    dest_path.write_bytes(data)
-    log.info("  Saved %d bytes to %s", len(data), dest_path)
-    return "ok"
+    log.error("  No download method available for %s", dest_path.name)
+    return "fail"
 
 
 # ── Main logic ────────────────────────────────────────────────────────
@@ -510,6 +538,7 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
         title_ar = ds["title_ar"]
         ds_id = ds["dataset_id"]
         res_id = ds["csv_resource_id"]
+        csv_filename = ds["csv_filename"]
 
         # Parse title into path + filename
         parsed = parse_dataset(title_ar)
@@ -527,8 +556,8 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
             stats["already_exists"] += 1
             continue
 
-        # No CSV resource in DB — try live API
-        if res_id is None:
+        # No CSV resource in DB — try live API for resource_id
+        if res_id is None and csv_filename is None:
             log.info("No CSV resource in DB for '%s', querying API...", title_ar)
             res_id = fetch_resources_from_api(ds_id)
             time.sleep(DOWNLOAD_DELAY)
@@ -538,7 +567,13 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
                 continue
 
         log.info("NEW: %s -> %s", title_ar, dest_path.relative_to(REPO_ROOT))
-        result = download_file(res_id, dest_path, dry_run=dry_run)
+        result = download_file(
+            dataset_id=ds_id,
+            resource_id=res_id,
+            csv_filename=csv_filename,
+            dest_path=dest_path,
+            dry_run=dry_run,
+        )
 
         if result == "ok":
             stats["downloaded"] += 1
