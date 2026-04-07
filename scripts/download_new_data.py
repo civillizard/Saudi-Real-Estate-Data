@@ -556,15 +556,11 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
             stats["already_exists"] += 1
             continue
 
-        # No CSV resource in DB — try live API for resource_id
+        # No download method available — skip (avoid WAF-blocked API calls)
         if res_id is None and csv_filename is None:
-            log.info("No CSV resource in DB for '%s', querying API...", title_ar)
-            res_id = fetch_resources_from_api(ds_id)
-            time.sleep(DOWNLOAD_DELAY)
-            if res_id is None:
-                log.warning("No CSV resource found for: %s", title_ar)
-                stats["skipped_no_csv"] += 1
-                continue
+            log.info("No CSV resource or filename for '%s' — skipping", title_ar)
+            stats["skipped_no_csv"] += 1
+            continue
 
         log.info("NEW: %s -> %s", title_ar, dest_path.relative_to(REPO_ROOT))
         result = download_file(
