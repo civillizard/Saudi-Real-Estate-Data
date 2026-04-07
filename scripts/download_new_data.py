@@ -35,15 +35,12 @@ MOJ_SALES = REPO_ROOT / "moj" / "sales"  # Sales + RE-Index
 MOJ_RE = REPO_ROOT / "moj" / "real-estate"  # per-category quarterly
 MOJ_MONTHLY = REPO_ROOT / "moj" / "monthly"  # monthly aggregate ops + POA
 
-DOWNLOAD_API = "https://open.data.gov.sa/data/api/datasets/resources/download"
 DOWNLOAD_ODP = "https://open.data.gov.sa/odp-public"
-RESOURCES_API = "https://open.data.gov.sa/data/api/datasets/resources"
+DATASET_DETAIL_API = "https://open.data.gov.sa/api/datasets"
 MOJ_ORG_ID = "35c63412-c4ae-4303-8fef-56cfd71303cf"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
 REQUEST_TIMEOUT = 60
-DOWNLOAD_DELAY = 5.0  # seconds between downloads (WAF rate-limit avoidance)
-WAF_BACKOFF = 30.0  # seconds to wait after WAF block before retrying
-MAX_CONSECUTIVE_WAF = 5  # stop after this many consecutive WAF blocks
+DOWNLOAD_DELAY = 3.0  # seconds between downloads
 
 # ── Quarter / Month mappings ───────────────────────────────────────────
 
@@ -427,18 +424,32 @@ def load_moj_datasets(conn: sqlite3.Connection) -> list[dict]:
     return list(datasets.values())
 
 
-def fetch_resources_from_api(dataset_id: str) -> str | None:
-    """Try to fetch the CSV resource_id directly from the portal API."""
-    url = f"{RESOURCES_API}?version=-1&dataset={dataset_id}"
+def fetch_csv_url_from_detail_api(dataset_id: str) -> str | None:
+    """
+    Get the exact CSV download URL from the dataset detail API.
+
+    Uses /api/datasets/{id} which returns resource entries with a 'url' field
+    containing the relative path on odp-public (with correct casing).
+    This endpoint is NOT WAF-blocked (unlike /data/api/datasets/resources/download/).
+    """
+    url = f"{DATASET_DETAIL_API}/{dataset_id}"
     result = fetch_json(url)
     if result is None:
         return None
-    resources = result if isinstance(result, list) else result.get("resources", [])
+    if not isinstance(result, dict):
+        return None
+    resources = result.get("resources", [])
     for res in resources:
         fmt = res.get("format", "")
-        res_id = res.get("id", res.get("resourceId", ""))
-        if fmt and fmt.upper() == "CSV" and res_id:
-            return res_id
+        url_path = res.get("url", "")
+        if fmt and fmt.upper() == "CSV" and url_path:
+            # url_path is like: ORG_ID/DATASET_ID/v1/filename.csv
+            # Split to URL-encode just the filename part (may have spaces)
+            parts = url_path.split("/")
+            if len(parts) >= 4:
+                encoded_filename = urllib.parse.quote(parts[-1])
+                return f"{DOWNLOAD_ODP}/{'/'.join(parts[:-1])}/{encoded_filename}"
+            return f"{DOWNLOAD_ODP}/{urllib.parse.quote(url_path)}"
     return None
 
 
@@ -454,56 +465,72 @@ def _is_waf_block(data: bytes) -> bool:
     return False
 
 
+def _save_csv(data: bytes, dest_path: Path) -> None:
+    """Save CSV data with BOM consistency check."""
+    if not data.startswith(b"\xef\xbb\xbf"):
+        data = b"\xef\xbb\xbf" + data
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+    dest_path.write_bytes(data)
+
+
 def download_file(
     dataset_id: str,
     resource_id: str | None,
     csv_filename: str | None,
     dest_path: Path,
     dry_run: bool = False,
+    direct_url: str | None = None,
 ) -> str:
     """
     Download a CSV resource to dest_path.
-    Tries odp-public URL first (static file, WAF-resistant), falls back to API.
-    Returns "ok", "waf" (WAF block), or "fail" (network error).
+
+    Strategies tried in order:
+    1. direct_url — exact URL from dataset detail API (correct casing, always works)
+    2. odp-public with csv_filename from monitor DB (works for newer files)
+    3. odp-public with UPPERCASE IDs (works for older files like POA 2023)
+
+    The /data/api/datasets/resources/download/ endpoint is permanently WAF-blocked
+    and is no longer attempted.
+
+    Returns "ok", "waf" (WAF block), or "fail" (network/404 error).
     """
     if dry_run:
         log.info("  [DRY-RUN] would download -> %s", dest_path.relative_to(REPO_ROOT))
         return "ok"
 
-    # Strategy 1: odp-public direct file URL (bypasses WAF)
+    # Strategy 1: direct URL from dataset detail API (most reliable)
+    if direct_url:
+        log.info("  Trying direct URL: %s", dest_path.name)
+        data = fetch_url(direct_url)
+        if data and not _is_waf_block(data) and len(data) > 50:
+            _save_csv(data, dest_path)
+            log.info("  OK (direct) %d bytes -> %s", len(data), dest_path.name)
+            return "ok"
+        log.debug("  Direct URL failed for %s", dest_path.name)
+
+    # Strategy 2: odp-public with csv_filename (lowercase IDs — works for 2024+ files)
     if csv_filename:
         encoded_name = urllib.parse.quote(f"{csv_filename}.csv")
         url = f"{DOWNLOAD_ODP}/{MOJ_ORG_ID}/{dataset_id}/v1/{encoded_name}"
-        log.info("  Trying odp-public: %s", dest_path.name)
+        log.info("  Trying odp-public (lowercase): %s", dest_path.name)
         data = fetch_url(url)
-        if data and not _is_waf_block(data) and len(data) > 100:
-            if not data.startswith(b"\xef\xbb\xbf"):
-                data = b"\xef\xbb\xbf" + data
-            dest_path.parent.mkdir(parents=True, exist_ok=True)
-            dest_path.write_bytes(data)
+        if data and not _is_waf_block(data) and len(data) > 50:
+            _save_csv(data, dest_path)
             log.info("  OK (odp-public) %d bytes -> %s", len(data), dest_path.name)
             return "ok"
-        log.debug("  odp-public failed, trying API fallback...")
 
-    # Strategy 2: API download endpoint (may be WAF-blocked)
-    if resource_id:
-        url = f"{DOWNLOAD_API}/{resource_id}"
-        log.info("  Trying API download: %s", dest_path.name)
-        data = fetch_url(url)
-        if data is None:
-            log.error("  Download failed for %s", dest_path.name)
-            return "fail"
-        if _is_waf_block(data):
-            log.warning("  WAF BLOCK on %s (%d bytes)", dest_path.name, len(data))
-            return "waf"
-        if not data.startswith(b"\xef\xbb\xbf"):
-            data = b"\xef\xbb\xbf" + data
-        dest_path.parent.mkdir(parents=True, exist_ok=True)
-        dest_path.write_bytes(data)
-        log.info("  OK (API) %d bytes -> %s", len(data), dest_path.name)
-        return "ok"
+        # Strategy 3: same but with UPPERCASE IDs (works for older files)
+        url_upper = f"{DOWNLOAD_ODP}/{MOJ_ORG_ID.upper()}/{dataset_id.upper()}/v1/{encoded_name}"
+        log.info("  Trying odp-public (UPPERCASE): %s", dest_path.name)
+        data = fetch_url(url_upper)
+        if data and not _is_waf_block(data) and len(data) > 50:
+            _save_csv(data, dest_path)
+            log.info(
+                "  OK (odp-public-upper) %d bytes -> %s", len(data), dest_path.name
+            )
+            return "ok"
 
-    log.error("  No download method available for %s", dest_path.name)
+    log.warning("  All strategies failed for %s", dest_path.name)
     return "fail"
 
 
@@ -529,10 +556,8 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
         "already_exists": 0,
         "skipped_no_csv": 0,
         "skipped_unrecognised": 0,
-        "waf_blocked": 0,
         "failed": 0,
     }
-    consecutive_waf = 0
 
     for ds in datasets:
         title_ar = ds["title_ar"]
@@ -556,11 +581,17 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
             stats["already_exists"] += 1
             continue
 
-        # No download method available — skip (avoid WAF-blocked API calls)
-        if res_id is None and csv_filename is None:
-            log.info("No CSV resource or filename for '%s' — skipping", title_ar)
-            stats["skipped_no_csv"] += 1
-            continue
+        # No local filename — query the dataset detail API for exact URL
+        if csv_filename is None:
+            log.info("No local filename for '%s', querying detail API...", title_ar)
+            direct_url = fetch_csv_url_from_detail_api(ds_id)
+            time.sleep(DOWNLOAD_DELAY)
+            if direct_url is None:
+                log.warning("No CSV found via detail API for: %s", title_ar)
+                stats["skipped_no_csv"] += 1
+                continue
+            # Store the URL for download_file to use
+            ds["_direct_url"] = direct_url
 
         log.info("NEW: %s -> %s", title_ar, dest_path.relative_to(REPO_ROOT))
         result = download_file(
@@ -569,27 +600,13 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
             csv_filename=csv_filename,
             dest_path=dest_path,
             dry_run=dry_run,
+            direct_url=ds.get("_direct_url"),
         )
 
         if result == "ok":
             stats["downloaded"] += 1
-            consecutive_waf = 0
-        elif result == "waf":
-            stats["waf_blocked"] += 1
-            consecutive_waf += 1
-            if consecutive_waf >= MAX_CONSECUTIVE_WAF:
-                log.error(
-                    "WAF blocked %d consecutive downloads — stopping. "
-                    "Try again later or run from a different IP (mr-ed).",
-                    consecutive_waf,
-                )
-                break
-            log.info("  Backing off %ds after WAF block...", int(WAF_BACKOFF))
-            time.sleep(WAF_BACKOFF)
-            continue  # skip the normal delay
         else:
             stats["failed"] += 1
-            consecutive_waf = 0
 
         if not dry_run:
             time.sleep(DOWNLOAD_DELAY)
@@ -601,7 +618,6 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
     print("=" * 55)
     print(f"  Downloaded:          {stats['downloaded']}")
     print(f"  Already on disk:     {stats['already_exists']}")
-    print(f"  WAF blocked:         {stats['waf_blocked']}")
     print(f"  Skipped (no CSV):    {stats['skipped_no_csv']}")
     print(f"  Skipped (unrecognised): {stats['skipped_unrecognised']}")
     print(f"  Failed:              {stats['failed']}")
