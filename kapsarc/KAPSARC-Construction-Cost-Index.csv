@@ -1,0 +1,449 @@
+﻿time_period;general_index_sector_and_section;weight;index
+2025-05;General Index;100.00000000000003;101.26279097990094
+2025-06;Costs of Basic Materials/Raw Materials;1.224326392604051;102.08865367031797
+2025-08;Costs of Basic Materials/Raw Materials;1.224326392604051;102.16308443194016
+2024-06;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;100.39221460901831
+2024-07;Costs of Basic Materials/Cement and Concrete;15.014061049743795;102.09986570132772
+2025-06;Costs of Basic Materials/Cement and Concrete;15.014061049743795;103.42489586853787
+2024-06;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.45249324805869
+2025-08;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.78084583064938
+2024-06;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;100.48280299132159
+2024-07;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;103.86458354670829
+2025-05;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;105.65985136907801
+2025-08;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;105.66806502871108
+2024-07;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;100.88231539518479
+2025-05;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;101.8662432430263
+2025-08;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;102.7074681409752
+2024-07;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;99.96909077195532
+2025-07;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;101.27397633731181
+2024-06;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;102.6752956939825
+2025-07;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;101.91033440751181
+2025-08;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;101.94829366525391
+2025-05;Costs of Basic Materials/Metal Products;15.377165706624824;96.40648162889546
+2025-05;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;98.91382490094324
+2025-06;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;91.62964415550402
+2024-06;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;101.82490053684302
+2025-07;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;104.2961109451599
+2024-07;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;99.05831978335615
+2025-06;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;98.93778474914822
+2025-07;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;98.94416474732546
+2024-07;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;98.3817620891798
+2024-06;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;97.82717819238458
+2024-07;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;98.9149114891158
+2025-07;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;99.09187551533356
+2025-06;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;93.7680515173082
+2025-07;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;93.77295161983807
+2024-06;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;102.08284201716813
+2024-08;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;100.85139191732661
+2025-05;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;100.15535199905806
+2025-08;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;101.6617305701665
+2024-06;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;100.1783499070656
+2025-07;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;98.77231497584883
+2024-06;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;101.41105232570399
+2024-08;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;101.4482962137477
+2025-07;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;99.79599036870077
+2024-06;Costs of Basic Materials/Other Building Materials;8.627519161563399;97.41697966942833
+2025-07;Costs of Basic Materials/Other Building Materials;8.627519161563399;95.59872313562202
+2025-06;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;98.16243253073169
+2024-07;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;98.30671506471081
+2024-08;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;98.0901877443173
+2024-08;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;98.08565825272935
+2024-08;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;93.67632279683956
+2025-08;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;92.44526845810117
+2025-06;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.16592676303631
+2025-08;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.22709301162222
+2024-06;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;98.02906270898855
+2025-08;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;94.24095678525836
+2025-08;Labor Costs/ Builder;4.233212533913815;103.00570368574799
+2024-08;Labor Costs/ Machinery Operator;0.489413850903724;102.1923698503167
+2025-08;Labor Costs/ Machinery Operator;0.489413850903724;102.95979140905229
+2024-07;Labor Costs/ General Laborer;3.770771953432385;109.5483240795988
+2025-05;Labor Costs/ General Laborer;3.770771953432385;109.4747007610088
+2025-06;Labor Costs/ General Laborer;3.770771953432385;109.48016485737799
+2024-08;Labor Costs/ Electrician;1.761823805505812;99.06424602947772
+2025-06;Labor Costs/ Electrician;1.761823805505812;99.33585562419199
+2025-07;Labor Costs/ Electrician;1.761823805505812;100.74533073491989
+2024-07;Labor Costs/Painter;5.530943970717742;102.4758967464415
+2025-05;Labor Costs/Painter;5.530943970717742;103.32342295472989
+2025-08;Labor Costs/Tiler;1.749428706389266;104.52267117395819
+2024-07;Labor Costs/ Carpenter;3.435565769080221;98.45659324519933
+2024-08;Labor Costs/ Carpenter;3.435565769080221;98.23961233983954
+2024-07;Labor Costs/ Structural Steel Worker;1.857241065663922;99.81347045455769
+2025-07;Labor Costs/ Structural Steel Worker;1.857241065663922;101.1632451703293
+2024-06;Labor Costs/Support services;1.030219230076554;97.70832771762369
+2024-07;Labor Costs/Support services;1.030219230076554;95.19669920392214
+2024-08;Labor Costs/Support services;1.030219230076554;95.19669920392214
+2025-06;Labor Costs/Support services;1.030219230076554;95.47896916197148
+2024-06;Equipment and Machinery Rental Costs;19.010938673227308;99.91275818744967
+2024-08;Equipment and Machinery Rental Costs;19.010938673227308;101.79181476985647
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;99.63686090427858
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;102.08728737797006
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;102.99045563932133
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;101.59528609829029
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;103.0412895873859
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;103.65060269234381
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;99.64050366468308
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;103.4355119129779
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;104.2676172496583
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;100.0303529909246
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;104.5454104808849
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.2993683367307
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.75165751236861
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.7777032859178
+2024-08;Energy Costs;2.538768109998645;119.26733968149554
+2024-08;Energy Costs/Petroleum / Gasoline;0.9578826523622508;100.0
+2025-08;Energy Costs/Petroleum / Gasoline;0.9578826523622508;99.9999958142115
+2025-05;Energy Costs/Diesel Fuel;0.9896878518673696;199.9999999999999
+2024-06;General Index;100.00000000000003;100.12406237386095
+2025-07;General Index;100.00000000000003;101.69482226374296
+2025-08;Costs of Basic Materials;48.524464500624056;98.94425228106837
+2025-07;Costs of Basic Materials/Raw Materials;1.224326392604051;102.12020675264469
+2024-06;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;99.6908924743837
+2025-05;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;99.53159192262387
+2024-08;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;101.0362565361876
+2025-06;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;104.1456183675285
+2025-08;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;104.2611384977689
+2025-08;Costs of Basic Materials/Cement and Concrete;15.014061049743795;103.49237541904381
+2025-05;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;106.7352956882675
+2024-08;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;98.56839121298295
+2025-08;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;105.5412577000357
+2025-05;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;104.76544592373811
+2025-06;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;105.65492312281731
+2024-06;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;99.99607845582449
+2025-08;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;101.274355133342
+2024-07;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;99.84678068003551
+2025-06;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;94.38512644408978
+2025-07;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;94.42170774971062
+2025-08;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;104.64163045500729
+2025-07;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;96.49647940766346
+2024-07;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;98.04746682502673
+2025-05;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;99.17274083213772
+2024-07;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;103.11335394435719
+2025-07;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;100.3253493489831
+2025-07;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;101.72658420728149
+2025-08;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;101.7444303978686
+2024-07;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;101.42628119928641
+2025-05;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;99.76986841312859
+2024-07;Costs of Basic Materials/Other Building Materials;8.627519161563399;97.212598220148
+2025-05;Costs of Basic Materials/Other Building Materials;8.627519161563399;95.58481198950354
+2025-08;Costs of Basic Materials/Other Building Materials;8.627519161563399;95.74695890595002
+2024-08;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;97.75527879220327
+2024-06;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;99.55576926867144
+2024-07;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;98.05039179102954
+2025-07;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;92.01664748335324
+2024-06;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.36587714617264
+2024-08;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.17515306007893
+2024-08;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;97.09284472555129
+2025-05;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;93.65740024642554
+2024-06;Labor Costs;29.925828716150015;99.88364492406072
+2024-08;Labor Costs;29.925828716150015;101.96118441949784
+2025-05;Labor Costs;29.925828716150015;102.24416744928659
+2025-07;Labor Costs;29.925828716150015;103.46806058484135
+2025-05;Labor Costs/ Builder;4.233212533913815;102.9098200941042
+2024-07;Labor Costs/ Machinery Operator;0.489413850903724;102.21875249484991
+2025-06;Labor Costs/ Machinery Operator;0.489413850903724;102.7125377791047
+2025-07;Labor Costs/ Machinery Operator;0.489413850903724;103.00033115630329
+2024-06;Labor Costs/ General Laborer;3.770771953432385;103.02546997595039
+2025-05;Labor Costs/ Plumber;6.067207830466572;101.0499005438071
+2025-06;Labor Costs/ Plumber;6.067207830466572;101.0508479873093
+2025-08;Labor Costs/ Plumber;6.067207830466572;101.25702438233739
+2024-06;Labor Costs/Painter;5.530943970717742;99.54945691050447
+2024-08;Labor Costs/Painter;5.530943970717742;102.4282058761063
+2025-07;Labor Costs/Painter;5.530943970717742;105.94581124156659
+2024-07;Labor Costs/Tiler;1.749428706389266;101.95893769915129
+2025-07;Labor Costs/Tiler;1.749428706389266;104.6458848644204
+2024-08;Labor Costs/ Structural Steel Worker;1.857241065663922;99.85627892882154
+2025-05;Equipment and Machinery Rental Costs;19.010938673227308;102.35243352620645
+2025-07;Equipment and Machinery Rental Costs;19.010938673227308;102.96165879616699
+2025-08;Equipment and Machinery Rental Costs;19.010938673227308;103.0558469209835
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;101.34281769700833
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;102.13116132959834
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;102.1206943479438
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;103.0867184464297
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;102.6842924994537
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;102.2052038768753
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;103.48076046834751
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;99.05364649317679
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;99.4663361879274
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;99.72201589925417
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;104.3588747533805
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;104.5202879196918
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.5125510916126
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.5125510916126
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.7563288450991
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Loader without Operator;1.253703883464596;100.7777032859178
+2025-06;Energy Costs;2.538768109998645;131.0238938939359
+2024-06;Energy Costs/Petroleum / Gasoline;0.9578826523622508;100.0
+2025-05;Energy Costs/Petroleum / Gasoline;0.9578826523622508;99.9999958142115
+2024-07;Energy Costs/Diesel Fuel;0.9896878518673696;157.1428571428572
+2025-07;Energy Costs/Electricity;0.5911976057690246;100.0
+2025-08;Energy Costs/Electricity;0.5911976057690246;100.0
+2025-06;General Index;100.00000000000003;101.24224641521441
+2025-08;General Index;100.00000000000003;101.7555141267686
+2024-08;Costs of Basic Materials;48.524464500624056;99.29693278002365
+2025-06;Costs of Basic Materials;48.524464500624056;98.79030196407776
+2025-07;Costs of Basic Materials;48.524464500624056;98.81083099044156
+2024-08;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;99.30602432427895
+2025-06;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;99.25322337360869
+2025-08;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;99.27233685282884
+2025-05;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;104.0006179589581
+2025-05;Costs of Basic Materials/Cement and Concrete;15.014061049743795;103.41950877637083
+2024-07;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;102.04652636405301
+2025-07;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;106.81048416719341
+2024-08;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.43263954667547
+2025-05;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.67782098316023
+2025-08;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;104.7950944967458
+2024-07;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;104.2868794890012
+2024-06;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;100.55846675843809
+2024-08;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;100.54439760716029
+2024-07;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;102.6752956939825
+2024-08;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;102.6752956939825
+2025-06;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;101.88186773426959
+2024-06;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;98.59020635188283
+2024-08;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;99.05107994529794
+2025-06;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;97.86722105078837
+2025-08;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;97.77703043482663
+2024-06;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;97.94846626484453
+2025-05;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;91.64442497062166
+2025-05;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;104.24259231414462
+2025-06;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;104.2359487145867
+2025-08;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;99.00779195706235
+2024-08;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;98.16297668983026
+2025-05;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;96.53243392075798
+2024-08;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;98.77360252461422
+2025-06;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;99.16179197661485
+2024-07;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;97.02635345168312
+2025-08;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;100.65070411423129
+2024-08;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;100.8989113865255
+2024-07;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;100.20192538724051
+2025-06;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;101.7229451776112
+2025-06;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;98.78751158149856
+2025-06;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;99.77017399979428
+2025-08;Costs of Basic Materials/Timber and Joinery/Exterior Plywood;1.200764195303606;99.84140393161714
+2024-06;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;98.72739579511754
+2025-06;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;98.39291560302944
+2025-07;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;95.62165097297563
+2025-06;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;92.00826648977166
+2024-07;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;97.56735292562352
+2024-08;Labor Costs/ Builder;4.233212533913815;102.240126249924
+2024-06;Labor Costs/ Machinery Operator;0.489413850903724;100.67491917235789
+2025-05;Labor Costs/ Machinery Operator;0.489413850903724;102.6351508738883
+2024-08;Labor Costs/ General Laborer;3.770771953432385;109.5483240795988
+2025-07;Labor Costs/ General Laborer;3.770771953432385;112.8240689259421
+2024-07;Labor Costs/ Electrician;1.761823805505812;99.41368262508726
+2025-05;Labor Costs/ Electrician;1.761823805505812;99.30465997011837
+2025-06;Labor Costs/Painter;5.530943970717742;103.538563478675
+2025-06;Labor Costs/ Structural Steel Worker;1.857241065663922;100.4535079831733
+2025-06;Equipment and Machinery Rental Costs;19.010938673227308;102.41347982949945
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;101.52854442563236
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;103.8293003327654
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;99.52717955907595
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;100.52081052306949
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;100.69598326821641
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;103.0664070927883
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;103.33665123044679
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;103.0610635006945
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;103.511960339347
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;103.85355019461859
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;99.84513209637474
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;100.03380669005479
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;100.61426372764714
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;103.02639889879639
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;103.15302054854244
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;104.2660280857858
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;104.3221065459782
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;99.1780396947721
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;101.49011908194629
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;104.50122035453052
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;104.3883244522386
+2024-06;Energy Costs;2.538768109998645;119.26733968149554
+2024-07;Energy Costs;2.538768109998645;119.26733968149554
+2025-08;Energy Costs;2.538768109998645;131.0238938939359
+2025-07;Energy Costs/Diesel Fuel;0.9896878518673696;199.9999999999999
+2025-08;Energy Costs/Diesel Fuel;0.9896878518673696;199.9999999999999
+2024-07;General Index;100.00000000000003;101.03789361363408
+2024-08;General Index;100.00000000000003;101.02906314562767
+2024-06;Costs of Basic Materials;48.524464500624056;99.44121980122323
+2024-07;Costs of Basic Materials;48.524464500624056;99.52645500670891
+2025-05;Costs of Basic Materials;48.524464500624056;98.89879788800297
+2025-05;Costs of Basic Materials/Raw Materials;1.224326392604051;102.12393521258758
+2024-06;Costs of Basic Materials/Cement and Concrete;15.014061049743795;101.9767572145058
+2025-08;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;106.83085058529029
+2024-07;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.45249324805869
+2024-07;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;99.09200776463803
+2025-06;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;105.4740557223161
+2024-06;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;101.9923860667192
+2024-08;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;103.8415906973403
+2025-06;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;104.78580464442
+2025-07;Costs of Basic Materials/Cement and Concrete/Hollow Concrete Blocks;1.765485382507075;104.78624584892671
+2024-08;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;104.22139109042321
+2025-07;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;102.266348205105
+2025-06;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;101.27397633731181
+2024-06;Costs of Basic Materials/Metal Products;15.377165706624824;97.69896857384907
+2024-07;Costs of Basic Materials/Metal Products;15.377165706624824;97.97456909668705
+2025-07;Costs of Basic Materials/Metal Products;15.377165706624824;96.1007472367901
+2025-08;Costs of Basic Materials/Metal Products;15.377165706624824;96.11541889324515
+2025-07;Costs of Basic Materials/Metal Products/High-Production Steel Reinforcements;4.685523188114081;97.86771736565575
+2024-07;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;97.20116184550592
+2024-06;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;95.27951483674825
+2024-08;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;94.38747601054958
+2025-07;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;91.69778313823707
+2024-06;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;98.95574092460568
+2025-05;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;98.91616437095983
+2025-06;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;96.65980978730386
+2024-06;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;96.72017859434965
+2024-08;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;97.08966831049118
+2025-05;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;93.7610894166612
+2025-08;Costs of Basic Materials/Plastic and Glass Products/Float Glass / Sheet Glass;1.652534892250927;95.03999213089901
+2024-07;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;101.77279729412042
+2024-06;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;103.50266405733011
+2025-05;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;100.1789824277021
+2025-06;Costs of Basic Materials/Timber and Joinery/Flexible Wood for Carpentry;1.45165683267293;100.3183846286023
+2024-08;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;100.2405426014664
+2024-06;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;102.9873416043869
+2024-07;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;101.9808593429081
+2024-08;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;100.72091344696629
+2025-05;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;98.79510833096998
+2025-08;Costs of Basic Materials/Timber and Joinery/Wooden Plank;0.9320140119878176;98.8854766483006
+2025-06;Costs of Basic Materials/Other Building Materials;8.627519161563399;95.58197924765012
+2025-05;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;98.0159296722728
+2025-07;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;98.28307096575811
+2025-05;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;98.21341387823641
+2025-07;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;98.47593496663187
+2025-08;Costs of Basic Materials/Other Building Materials/Oil-Based Paint;0.6399367861858573;98.62559204183475
+2025-06;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;95.61895391124162
+2025-08;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;95.28590234364353
+2024-07;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.36587714617264
+2025-05;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.19586826806278
+2025-07;Costs of Basic Materials/Other Building Materials/Clay Roof Tiles;2.129968527881478;99.19570860902678
+2025-07;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;93.65318222018217
+2025-06;Labor Costs;29.925828716150015;102.31811786190823
+2025-08;Labor Costs;29.925828716150015;103.38788710859
+2025-08;Labor Costs/ Electrician;1.761823805505812;100.8816787585264
+2024-07;Labor Costs/ Plumber;6.067207830466572;101.5123685935796
+2024-06;Labor Costs/Tiler;1.749428706389266;99.7875542841433
+2025-06;Labor Costs/Tiler;1.749428706389266;102.78382281735429
+2025-06;Labor Costs/ Carpenter;3.435565769080221;98.68302436824366
+2025-08;Labor Costs/ Carpenter;3.435565769080221;98.63563901615586
+2024-06;Labor Costs/ Structural Steel Worker;1.857241065663922;99.38815043380843
+2025-05;Labor Costs/Support services;1.030219230076554;95.39736227469915
+2025-07;Labor Costs/Support services;1.030219230076554;95.65781508532982
+2025-08;Labor Costs/Support services;1.030219230076554;95.60150928041338
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;100.320624557357
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;101.56869693438071
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;102.31755367221369
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;102.3859051609789
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;102.17279375891091
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Twin Drum Vibratory Roller with Operator;2.998311861301761;103.903374184085
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;99.28461714703873
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;99.8584563673447
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;100.65002025468671
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;102.46100717380185
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;103.13130615563071
+2025-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator);5.385155944276338;103.22148860362573
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;101.1107201818176
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;101.1107201818176
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Wheel Loader and Excavator without Operator;1.347778000669768;104.2539493856979
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;99.1780396947721
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;103.87131690355189
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;104.2837942282133
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;99.94687570236422
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;104.20188574832841
+2025-07;Energy Costs;2.538768109998645;131.0238938939359
+2025-07;Energy Costs/Petroleum / Gasoline;0.9578826523622508;99.9999958142115
+2024-08;Energy Costs/Diesel Fuel;0.9896878518673696;157.1428571428572
+2025-06;Energy Costs/Diesel Fuel;0.9896878518673696;199.9999999999999
+2024-06;Energy Costs/Electricity;0.5911976057690246;100.0
+2024-08;Energy Costs/Electricity;0.5911976057690246;100.0
+2025-05;Energy Costs/Electricity;0.5911976057690246;100.0
+2025-06;Energy Costs/Electricity;0.5911976057690246;100.0
+2024-06;Costs of Basic Materials/Raw Materials;1.224326392604051;100.10085352361055
+2024-07;Costs of Basic Materials/Raw Materials;1.224326392604051;100.45447578446469
+2024-08;Costs of Basic Materials/Raw Materials;1.224326392604051;100.31528309890506
+2024-07;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;100.1470761914516
+2025-07;Costs of Basic Materials/Raw Materials/Sand for Cement and Mortar;0.5075990493840745;99.19369402945682
+2024-07;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;100.6727522254437
+2025-07;Costs of Basic Materials/Raw Materials/Cement Aggregates;0.7167273432199766;104.2448938579714
+2024-08;Costs of Basic Materials/Cement and Concrete;15.014061049743795;102.02008913750772
+2025-07;Costs of Basic Materials/Cement and Concrete;15.014061049743795;103.4459865010713
+2024-06;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;102.15350511564681
+2024-08;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;101.9933948537183
+2025-06;Costs of Basic Materials/Cement and Concrete/Standard Brick;1.367579607708376;106.7513839700289
+2025-06;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.67782098316023
+2025-07;Costs of Basic Materials/Cement and Concrete/Facade Brick;0.9169525513587498;99.78084583064938
+2025-05;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;105.7565071844834
+2025-07;Costs of Basic Materials/Cement and Concrete/Portland Cement;1.079817860037439;105.48526770511151
+2024-06;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;104.29040615337071
+2025-07;Costs of Basic Materials/Cement and Concrete/Solid Concrete Blocks;2.84629309951504;105.66608526981061
+2025-06;Costs of Basic Materials/Cement and Concrete/Ready-Mix Concrete Cement;0.9778233998365627;102.2846449742665
+2024-08;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;99.98536030839892
+2025-05;Costs of Basic Materials/Cement and Concrete/Precast Cement Panels;2.089568015718785;101.233063058077
+2025-05;Costs of Basic Materials/Cement and Concrete/Cement Roof Tiles;3.970541133061768;101.9229034449519
+2024-08;Costs of Basic Materials/Metal Products;15.377165706624824;97.75658464411184
+2025-06;Costs of Basic Materials/Metal Products;15.377165706624824;96.06248340576016
+2024-08;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;96.7414640607922
+2025-05;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;94.93379427755832
+2025-08;Costs of Basic Materials/Metal Products/Mild Steel Reinforcements;0.6931384948609667;94.6159795372977
+2024-07;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;94.51042326739095
+2025-08;Costs of Basic Materials/Metal Products/Structural Steel Sections;6.05085180598314;91.65855952401981
+2024-07;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;103.65331687301361
+2024-08;Costs of Basic Materials/Metal Products/Copper Tubes;2.103365249989138;104.2960971468017
+2024-08;Costs of Basic Materials/Metal Products/Metal Sheet Roofing;1.234168347802671;99.27978739051409
+2024-06;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;98.44445055946173
+2025-06;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;96.49010487299296
+2025-08;Costs of Basic Materials/Metal Products/Double Glazed Units;0.6101186198748281;96.51313189668198
+2024-08;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;98.0005800284971
+2025-05;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;96.6623261663007
+2025-07;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;96.62509896798312
+2025-08;Costs of Basic Materials/Plastic and Glass Products;3.616656039223942;97.20134219454567
+2024-06;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;98.76837305994636
+2025-08;Costs of Basic Materials/Plastic and Glass Products/PVC-U Drainage Pipes;1.964121146973015;99.05784689472866
+2025-06;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;100.19175939530604
+2025-07;Costs of Basic Materials/Timber and Joinery;4.6647361508640435;100.19834727795755
+2025-05;Costs of Basic Materials/Timber and Joinery/Interior Plywood;1.08030111089969;101.7469841125609
+2024-08;Costs of Basic Materials/Other Building Materials;8.627519161563399;96.98531913032893
+2024-07;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;97.62466523887916
+2025-08;Costs of Basic Materials/Other Building Materials/Emulsion Paint;0.4911334225057361;98.49692232630134
+2024-06;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;97.97064017931436
+2025-05;Costs of Basic Materials/Other Building Materials/Limestone Wash Basins;1.956543840964152;95.62289237313912
+2024-06;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;94.1575067389892
+2024-07;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;94.11128426804406
+2025-05;Costs of Basic Materials/Other Building Materials/Ceramic Wall Brick;2.360034675264795;92.08347472969413
+2025-06;Costs of Basic Materials/Other Building Materials/Gypsum Boards;1.049901908761381;93.70149302593857
+2024-07;Labor Costs;29.925828716150015;102.02146873672991
+2024-06;Labor Costs/ Builder;4.233212533913815;101.3125308045555
+2024-07;Labor Costs/ Builder;4.233212533913815;102.4384303990843
+2025-06;Labor Costs/ Builder;4.233212533913815;102.9705965768808
+2025-07;Labor Costs/ Builder;4.233212533913815;103.0359266829105
+2025-08;Labor Costs/ General Laborer;3.770771953432385;112.7638533638803
+2024-06;Labor Costs/ Electrician;1.761823805505812;93.96988465816453
+2024-06;Labor Costs/ Plumber;6.067207830466572;100.09461984307211
+2024-08;Labor Costs/ Plumber;6.067207830466572;101.61619597789631
+2025-07;Labor Costs/ Plumber;6.067207830466572;101.3269337641076
+2025-08;Labor Costs/Painter;5.530943970717742;105.6860724623065
+2024-08;Labor Costs/Tiler;1.749428706389266;101.95893769915129
+2025-05;Labor Costs/Tiler;1.749428706389266;102.6572780828652
+2024-06;Labor Costs/ Carpenter;3.435565769080221;98.90270772870696
+2025-05;Labor Costs/ Carpenter;3.435565769080221;98.62511633820951
+2025-07;Labor Costs/ Carpenter;3.435565769080221;98.74173400834869
+2025-05;Labor Costs/ Structural Steel Worker;1.857241065663922;100.3771239392659
+2025-08;Labor Costs/ Structural Steel Worker;1.857241065663922;101.2718224572275
+2024-07;Equipment and Machinery Rental Costs;19.010938673227308;101.146088948256
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator);13.62578272895097;102.88612708108464
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Wheel Loader and Excavator with Operator;3.083591167520451;102.1407350972126
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Bulldozer with Operator;3.435687833578237;99.30851751498426
+2025-05;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;102.0415568928166
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Skid-Steer Loader with Operator;1.922579944323509;102.13499612074311
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;98.5605597592213
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (With Operator)/Tracked Loader with Operator;2.185611922227011;100.031066339917
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;98.22848931158236
+2025-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Tracked Bulldozer without Operator;0.4407780216106862;99.70200331558951
+2024-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;101.49011908194629
+2025-07;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Skid-Steer Loader without Operator;1.205883378385753;104.5391818831435
+2024-06;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;99.77881915223848
+2024-08;Equipment and Machinery Rental Costs/Equipment and Machinery Rental Costs (Without Operator)/Twin Drum Vibratory Roller without Operator;1.137012660145535;103.9207186396867
+2025-05;Energy Costs;2.538768109998645;131.0238938939359
+2024-07;Energy Costs/Petroleum / Gasoline;0.9578826523622508;100.0
+2025-06;Energy Costs/Petroleum / Gasoline;0.9578826523622508;99.9999958142115
+2024-06;Energy Costs/Diesel Fuel;0.9896878518673696;157.1428571428572
+2024-07;Energy Costs/Electricity;0.5911976057690246;100.0
