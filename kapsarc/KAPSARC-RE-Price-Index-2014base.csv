@@ -1,0 +1,831 @@
+﻿periodicity;year;quarter;indicator;value
+Annually;2014;-;General index;99.99991071428575
+Annually;2014;-;Residential: Plot;100.00037499999999
+Annually;2014;-;Commercial;100.00064285714284
+Annually;2014;-;Commercial: Center;100.00129166666665
+Annually;2015;-;Residential: Villa;100.85735714285715
+Annually;2015;-;Commercial: Plot;96.05605357142858
+Annually;2016;-;General index;90.41324999999999
+Annually;2016;-;Residential: Building;101.10239285714286
+Annually;2016;-;Agricultural: Land;99.17863461538465
+Annually;2017;-;General index;85.41412499999998
+Annually;2017;-;Agricultural: Land;98.52790384615388
+Annually;2018;-;Residential: Apartment;86.14349999999999
+Annually;2018;-;Commercial: Gallery/Shop;93.77245000000002
+Annually;2019;-;Commercial: Gallery/Shop;92.50482500000001
+Annually;2020;-;Residential: Building;98.61139285714286
+Annually;2020;-;Agricultural: Land;97.86853846153848
+Annually;2021;-;Residential: Plot;84.71267857142855
+Annually;2021;-;Residential Plot;85.77250000000001
+Annually;2021;-;Residential: House;94.218675
+Annually;2021;-;Commercial: Plot;82.92492857142857
+Annually;2021;-;Agricultural: Land;96.68685714285714
+Annually;2022;-;General index;90.38141071428575
+Annually;2022;-;Commercial;83.61338333333333
+Annually;2022;-;Commercial: Plot;82.82708928571428
+Annually;2023;-;Residential: Apartment;86.10958928571434
+Annually;2024;-;Commercial: Center;100.94395833333333
+Quarterly;2014;Q1;Residential: House;100.29459999999999
+Quarterly;2014;Q1;Commercial: Building;100.0
+Quarterly;2014;Q2;Residential;100.34407142857143
+Quarterly;2014;Q2;Residential: Plot;100.34271428571428
+Quarterly;2014;Q2;Residential: Building;97.941
+Quarterly;2014;Q2;Commercial: Plot;100.41714285714285
+Quarterly;2014;Q2;Commercial: Gallery/Shop;100.132
+Quarterly;2014;Q2;Agricultural: Land;100.62699999999998
+Quarterly;2014;Q3;General index;100.45921428571428
+Quarterly;2014;Q3;Commercial: Plot;100.94885714285715
+Quarterly;2014;Q4;General index;100.50057142857142
+Quarterly;2014;Q4;Residential;100.85871428571427
+Quarterly;2014;Q4;Residential: Villa;101.94471428571428
+Quarterly;2014;Q4;Commercial: Building;100.0
+Quarterly;2015;Q1;Residential: Villa;101.64028571428571
+Quarterly;2015;Q1;Residential: House;99.789
+Quarterly;2015;Q2;Residential: Villa;100.00814285714286
+Quarterly;2015;Q2;Residential: House;99.6779
+Quarterly;2015;Q2;Commercial;96.22349999999999
+Quarterly;2015;Q2;Agricultural: Land;99.22761538461538
+Quarterly;2015;Q3;General index;95.04921428571427
+Quarterly;2015;Q3;Commercial: Center;100.815
+Quarterly;2015;Q4;Residential: Plot;94.86921428571429
+Quarterly;2015;Q4;Residential: Building;102.45857142857143
+Quarterly;2015;Q4;Commercial: Gallery/Shop;100.70599999999999
+Quarterly;2015;Q4;Commercial: Center;100.68216666666666
+Quarterly;2015;Q4;Agricultural: Land;99.30646153846155
+Quarterly;2016;Q1;General index;93.01207142857143
+Quarterly;2016;Q1;Residential: Building;101.481
+Quarterly;2016;Q1;Commercial: Building;101.25666666666666
+Quarterly;2016;Q1;Agricultural;99.49330769230768
+Quarterly;2016;Q2;Residential: Plot;90.80300000000001
+Quarterly;2016;Q2;Residential: Apartment;94.18646153846154
+Quarterly;2016;Q2;Residential: House;98.6496
+Quarterly;2016;Q2;Commercial: Gallery/Shop;97.5593
+Quarterly;2016;Q3;Residential;89.69807142857144
+Quarterly;2016;Q3;Residential: Villa;97.84128571428572
+Quarterly;2016;Q3;Residential: House;98.7483
+Quarterly;2016;Q3;Commercial: Gallery/Shop;99.07410000000002
+Quarterly;2016;Q4;Residential: Plot;87.83235714285713
+Quarterly;2016;Q4;Residential: Villa;96.90185714285714
+Quarterly;2016;Q4;Commercial: Plot;88.13878571428572
+Quarterly;2016;Q4;Commercial: Building;101.47000000000001
+Quarterly;2017;Q1;Residential: Villa;96.592
+Quarterly;2017;Q1;Commercial: Center;100.19833333333334
+Quarterly;2017;Q2;General index;85.24907142857144
+Quarterly;2017;Q2;Residential;84.75064285714286
+Quarterly;2017;Q2;Residential: Plot;84.58621428571428
+Quarterly;2017;Q2;Residential: Building;99.53328571428571
+Quarterly;2017;Q2;Commercial: Center;100.19833333333334
+Quarterly;2017;Q3;Residential: Building;99.178
+Quarterly;2017;Q4;General index;85.06985714285715
+Quarterly;2017;Q4;Residential: Plot;84.63628571428572
+Quarterly;2017;Q4;Residential: Building;99.20242857142857
+Quarterly;2017;Q4;Residential: Apartment;87.4586923076923
+Quarterly;2017;Q4;Commercial;86.073
+Quarterly;2018;Q1;General index;84.74249999999999
+Quarterly;2018;Q1;Residential;84.41778571428571
+Quarterly;2018;Q1;Residential: Plot;84.28164285714286
+Quarterly;2018;Q1;Commercial;85.69235714285715
+Quarterly;2018;Q1;Agricultural;98.28053846153846
+Quarterly;2018;Q2;Residential: Building;99.35142857142857
+Quarterly;2018;Q2;Residential: Apartment;86.51430769230771
+Quarterly;2018;Q2;Agricultural: Land;98.0876923076923
+Quarterly;2018;Q3;Residential: Villa;92.851
+Quarterly;2018;Q3;Agricultural: Land;98.02023076923078
+Quarterly;2018;Q4;Residential: Building;99.19285714285715
+Quarterly;2018;Q4;Residential: Villa;93.00571428571428
+Quarterly;2018;Q4;Commercial: Gallery/Shop;93.962
+Quarterly;2018;Q4;Commercial: Center;98.54
+Quarterly;2019;Q1;General index;83.23292857142857
+Quarterly;2019;Q1;Agricultural;97.8053076923077
+Quarterly;2019;Q2;Residential;83.37564285714286
+Quarterly;2019;Q2;Commercial;84.36442857142859
+Quarterly;2019;Q3;Commercial: Gallery/Shop;91.94200000000001
+Quarterly;2019;Q3;Commercial: Center;100.39166666666667
+Quarterly;2019;Q3;Agricultural;97.67200000000001
+Quarterly;2019;Q4;Residential: Villa;91.64285714285714
+Quarterly;2019;Q4;Commercial: Gallery/Shop;92.12570000000001
+Quarterly;2019;Q4;Commercial: Center;100.39166666666667
+Quarterly;2019;Q4;Agricultural;97.85415384615386
+Quarterly;2020;Q1;Residential;84.92407142857142
+Quarterly;2020;Q1;Residential: Building;98.58042857142857
+Quarterly;2020;Q1;Residential: Villa;90.95899999999999
+Quarterly;2020;Q1;Agricultural;97.97723076923077
+Quarterly;2020;Q2;Residential: Building;98.53142857142858
+Quarterly;2020;Q3;Residential: Apartment;83.63230769230769
+Quarterly;2020;Q3;Residential: House;94.5194
+Quarterly;2020;Q3;Commercial: Plot;83.29357142857144
+Quarterly;2020;Q3;Commercial: Center;100.39316666666667
+Quarterly;2020;Q4;General index;84.30785714285715
+Quarterly;2020;Q4;Commercial;83.01978571428572
+Quarterly;2020;Q4;Commercial: Plot;82.95707142857144
+Quarterly;2020;Q4;Commercial: Building;101.49566666666668
+Quarterly;2020;Q4;Commercial: Center;100.39316666666667
+Quarterly;2020;Q4;Agricultural: Land;97.59969230769231
+Quarterly;2021;Q1;Residential: Building;98.58657142857143
+Quarterly;2021;Q1;Commercial: Center;100.39316666666667
+Quarterly;2021;Q2;General index;87.90228571428574
+Quarterly;2021;Q2;Residential;85.0972
+Quarterly;2021;Q2;Agricultural;96.67092857142856
+Quarterly;2021;Q3;Residential: Plot;84.25800000000002
+Quarterly;2021;Q3;Residential: Apartment;83.48649999999999
+Quarterly;2021;Q3;Residential: Floor;89.35
+Quarterly;2021;Q4;Residential: Apartment;83.38485714285714
+Quarterly;2021;Q4;Residential: Floor;91.74
+Quarterly;2021;Q4;Residential: House;94.19250000000001
+Quarterly;2021;Q4;Commercial Plot;88.1
+Quarterly;2021;Q4;Agricultural: Land;96.94742857142857
+Quarterly;2022;Q1;Commercial: Building;97.66925
+Quarterly;2022;Q2;General index;90.24157142857145
+Quarterly;2022;Q2;Residential Plot;96.42
+Quarterly;2022;Q2;Residential: Floor;96.95
+Quarterly;2022;Q2;Commercial;83.74073333333332
+Quarterly;2022;Q2;Commercial: Gallery/Shop;92.34845454545456
+Quarterly;2022;Q3;Residential: Building;98.66871428571429
+Quarterly;2022;Q4;Residential: Building;98.66871428571427
+Quarterly;2022;Q4;Commercial;83.4872
+Quarterly;2022;Q4;Commercial: Gallery/Shop;91.85427272727271
+Quarterly;2022;Q4;Commercial: Center;100.42683333333332
+Quarterly;2023;Q1;General index;92.15110714285713
+Quarterly;2023;Q1;Residential: Apartment;85.70135714285712
+Quarterly;2023;Q1;Commercial: Building;100.89425000000001
+Quarterly;2023;Q2;General index;92.89407142857145
+Quarterly;2023;Q2;Residential: Building;98.32457142857143
+Quarterly;2023;Q2;Residential: Villa;88.60875
+Quarterly;2023;Q2;Residential: House;94.88919999999999
+Quarterly;2023;Q2;Commercial Plot;98.86
+Quarterly;2023;Q3;Residential: Plot;85.64799999999998
+Quarterly;2023;Q3;Commercial;83.68906666666666
+Quarterly;2023;Q3;Commercial: Plot;82.47021428571429
+Quarterly;2023;Q3;Agricultural: Land;96.73435714285715
+Quarterly;2023;Q4;Residential: Building;98.32457142857142
+Quarterly;2023;Q4;Commercial Plot;104.75
+Quarterly;2023;Q4;Commercial: Plot;82.31335714285714
+Quarterly;2024;Q1;General index;90.67489285714286
+Quarterly;2024;Q1;Residential Plot;100.21
+Quarterly;2024;Q1;Residential: Building;98.26971428571429
+Quarterly;2024;Q1;Residential: Apartment;86.74514285714285
+Quarterly;2024;Q1;Residential: Floor;96.28
+Quarterly;2024;Q1;Agricultural: Land;95.97492857142858
+Quarterly;2024;Q2;Residential: Building;98.27357142857143
+Quarterly;2024;Q2;Residential: Apartment;87.7547142857143
+Quarterly;2024;Q3;Residential;91.77633333333333
+Quarterly;2024;Q3;Residential: Plot;91.10992857142857
+Quarterly;2024;Q3;Residential Plot;101.38
+Quarterly;2024;Q3;Residential: Building;98.5732857142857
+Quarterly;2024;Q3;Residential: House;94.6772
+Quarterly;2024;Q4;Commercial;88.99626666666667
+Quarterly;2024;Q4;Commercial Plot;110.17
+Annually;2014;-;Residential;100.00010714285713
+Annually;2014;-;Residential: House;100.00050000000002
+Annually;2014;-;Commercial: Plot;100.00064285714289
+Annually;2015;-;General index;96.29939285714285
+Annually;2015;-;Residential;96.69358928571425
+Annually;2015;-;Residential: Building;102.87489285714283
+Annually;2015;-;Commercial;96.08014285714289
+Annually;2015;-;Commercial: Gallery/Shop;99.555675
+Annually;2015;-;Commercial: Center;100.67416666666668
+Annually;2015;-;Agricultural: Land;99.45038461538462
+Annually;2016;-;Residential: Villa;98.23939285714287
+Annually;2016;-;Residential: House;98.29019999999998
+Annually;2016;-;Commercial;90.73776785714283
+Annually;2016;-;Commercial: Gallery/Shop;98.599775
+Annually;2016;-;Agricultural;99.17863461538467
+Annually;2017;-;Residential: Building;99.44878571428569
+Annually;2017;-;Residential: Villa;95.87182142857144
+Annually;2017;-;Residential: House;97.027625
+Annually;2017;-;Commercial;86.45067857142854
+Annually;2017;-;Commercial: Gallery/Shop;93.32872499999999
+Annually;2017;-;Agricultural;98.52790384615388
+Annually;2018;-;General index;83.96816071428573
+Annually;2018;-;Commercial;85.19410714285713
+Annually;2018;-;Commercial: Building;101.46999999999998
+Annually;2018;-;Agricultural;98.08175
+Annually;2019;-;Residential: House;96.17535
+Annually;2019;-;Agricultural: Land;97.74940384615383
+Annually;2020;-;Residential: Villa;90.53571428571429
+Annually;2020;-;Residential: House;94.56845
+Annually;2020;-;Commercial;83.57167857142858
+Annually;2021;-;Residential: Building;98.58657142857143
+Annually;2021;-;Commercial: Building;96.47737499999998
+Annually;2022;-;Residential;85.95266666666666
+Annually;2022;-;Residential: Plot;85.11080357142853
+Annually;2022;-;Residential: Building;98.64132142857143
+Annually;2022;-;Residential: Villa;88.09062499999999
+Annually;2022;-;Residential: Floor;97.86500000000001
+Annually;2022;-;Commercial: Center;100.42979166666665
+Annually;2023;-;General index;92.31345535714284
+Annually;2023;-;Residential: Building;98.32457142857142
+Annually;2023;-;Commercial: Building;101.12237499999999
+Annually;2023;-;Commercial: Gallery/Shop;92.21325000000002
+Annually;2023;-;Commercial: Center;100.40825
+Annually;2023;-;Agricultural;96.39108928571429
+Annually;2023;-;Agricultural: Land;96.39108928571432
+Annually;2024;-;Residential: Plot;89.63844642857144
+Annually;2024;-;Residential: Building;98.50335714285715
+Annually;2024;-;Residential: Floor;97.51249999999999
+Annually;2024;-;Residential: House;94.532425
+Annually;2024;-;Commercial: Plot;84.25908928571427
+Quarterly;2014;Q1;Commercial: Center;100.43733333333334
+Quarterly;2014;Q1;Agricultural: Land;99.85569230769232
+Quarterly;2014;Q2;Commercial;100.41014285714287
+Quarterly;2014;Q2;Commercial: Center;99.75066666666667
+Quarterly;2014;Q3;Residential: Plot;100.43864285714287
+Quarterly;2014;Q3;Residential: Apartment;100.55069230769232
+Quarterly;2014;Q3;Agricultural: Land;99.45592307692309
+Quarterly;2014;Q4;Residential: House;100.1934
+Quarterly;2014;Q4;Commercial: Plot;99.84750000000001
+Quarterly;2014;Q4;Commercial: Gallery/Shop;100.24139999999998
+Quarterly;2014;Q4;Commercial: Center;100.94216666666667
+Quarterly;2015;Q1;Residential: Plot;99.16142857142859
+Quarterly;2015;Q1;Commercial: Plot;98.49864285714285
+Quarterly;2015;Q1;Commercial: Building;100.0
+Quarterly;2015;Q1;Commercial: Center;100.55666666666667
+Quarterly;2015;Q2;Commercial: Building;100.0
+Quarterly;2015;Q2;Commercial: Center;100.64283333333334
+Quarterly;2015;Q3;Residential;95.31599999999999
+Quarterly;2015;Q4;Residential;94.8327857142857
+Quarterly;2015;Q4;Commercial: Plot;94.60792857142856
+Quarterly;2016;Q1;Commercial: Gallery/Shop;102.21200000000002
+Quarterly;2016;Q2;General index;90.98807142857143
+Quarterly;2016;Q2;Commercial;91.66807142857144
+Quarterly;2016;Q2;Agricultural: Land;99.337
+Quarterly;2016;Q3;Residential: Apartment;92.89284615384616
+Quarterly;2016;Q3;Commercial: Building;101.47000000000001
+Quarterly;2016;Q3;Agricultural;99.03984615384616
+Quarterly;2016;Q3;Agricultural: Land;99.03984615384616
+Quarterly;2016;Q4;Commercial: Center;100.19833333333332
+Quarterly;2017;Q1;Residential: Building;99.88142857142859
+Quarterly;2017;Q1;Commercial: Plot;86.82428571428572
+Quarterly;2017;Q1;Commercial: Building;101.47000000000001
+Quarterly;2017;Q1;Agricultural: Land;98.55946153846153
+Quarterly;2017;Q2;Commercial: Gallery/Shop;93.1006
+Quarterly;2017;Q3;Residential: Villa;95.86714285714287
+Quarterly;2017;Q3;Commercial: Plot;86.1922857142857
+Quarterly;2017;Q3;Commercial: Building;101.47000000000001
+Quarterly;2017;Q4;Residential: House;96.8327
+Quarterly;2018;Q1;Residential: Villa;94.30442857142859
+Quarterly;2018;Q1;Residential: Apartment;86.77892307692306
+Quarterly;2018;Q1;Residential: House;96.44399999999999
+Quarterly;2018;Q2;Residential: Villa;93.51914285714285
+Quarterly;2018;Q3;Residential;83.11707142857142
+Quarterly;2018;Q3;Commercial: Plot;85.06528571428574
+Quarterly;2018;Q4;General index;83.08542857142858
+Quarterly;2018;Q4;Commercial;84.63550000000001
+Quarterly;2018;Q4;Agricultural;97.93853846153844
+Quarterly;2019;Q1;Residential;82.59678571428572
+Quarterly;2019;Q1;Residential: Building;98.92571428571429
+Quarterly;2019;Q1;Commercial: Building;101.47000000000001
+Quarterly;2019;Q2;Residential: Plot;83.11364285714285
+Quarterly;2019;Q3;General index;83.83542857142858
+Quarterly;2019;Q3;Residential: Plot;83.04107142857143
+Quarterly;2019;Q3;Residential: Villa;92.61342857142859
+Quarterly;2019;Q3;Commercial;84.64492857142857
+Quarterly;2019;Q3;Agricultural: Land;97.672
+Quarterly;2019;Q4;Residential: Plot;84.03457142857143
+Quarterly;2020;Q1;Residential: House;94.7097
+Quarterly;2020;Q1;Commercial: Gallery/Shop;91.98339999999999
+Quarterly;2020;Q2;General index;84.70857142857143
+Quarterly;2020;Q2;Residential;84.98507142857144
+Quarterly;2020;Q2;Commercial: Gallery/Shop;91.9916
+Quarterly;2020;Q4;Residential: Villa;90.06914285714286
+Quarterly;2021;Q1;Residential;85.10166666666667
+Quarterly;2021;Q1;Residential: Plot;85.23135714285715
+Quarterly;2021;Q1;Commercial;83.23613333333334
+Quarterly;2021;Q1;Agricultural;96.49249999999999
+Quarterly;2021;Q1;Agricultural: Land;96.49249999999999
+Quarterly;2021;Q2;Residential: Villa;88.03612499999998
+Quarterly;2021;Q2;Commercial: Building;95.98675
+Quarterly;2021;Q2;Commercial: Gallery/Shop;92.26736363636364
+Quarterly;2021;Q3;Residential Plot;87.86
+Quarterly;2021;Q3;Residential: Building;98.58657142857143
+Quarterly;2021;Q4;Residential: Villa;87.80737500000001
+Quarterly;2021;Q4;Commercial: Plot;82.86528571428572
+Quarterly;2021;Q4;Commercial: Building;97.00425000000001
+Quarterly;2022;Q1;General index;89.12525000000001
+Quarterly;2022;Q2;Commercial: Building;98.69675000000001
+Quarterly;2022;Q2;Agricultural: Land;96.65107142857141
+Quarterly;2022;Q3;Residential: Villa;88.060125
+Quarterly;2022;Q3;Residential: House;93.85390000000001
+Quarterly;2022;Q3;Commercial;83.74320000000002
+Quarterly;2022;Q3;Commercial: Building;99.73175
+Quarterly;2022;Q3;Commercial: Gallery/Shop;92.54954545454544
+Quarterly;2022;Q3;Agricultural;97.06792857142857
+Quarterly;2022;Q4;Residential: Floor;100.23
+Quarterly;2022;Q4;Agricultural;96.59814285714286
+Quarterly;2023;Q1;Commercial: Center;100.41950000000001
+Quarterly;2023;Q2;Residential Plot;100.28
+Quarterly;2023;Q2;Commercial;83.73333333333333
+Quarterly;2023;Q2;Agricultural;96.25892857142857
+Quarterly;2023;Q3;Residential Plot;99.79
+Quarterly;2023;Q3;Residential: Apartment;86.12864285714285
+Quarterly;2023;Q3;Residential: House;94.6908
+Quarterly;2023;Q3;Commercial: Building;100.92425
+Quarterly;2023;Q3;Commercial: Center;100.4045
+Quarterly;2023;Q4;Residential: Plot;85.60085714285712
+Quarterly;2023;Q4;Residential: Apartment;86.18792857142857
+Quarterly;2023;Q4;Residential: House;94.631
+Quarterly;2023;Q4;Commercial: Gallery/Shop;92.13645454545455
+Quarterly;2024;Q1;Residential: Plot;85.40642857142858
+Quarterly;2024;Q1;Residential: Villa;87.52749999999999
+Quarterly;2024;Q1;Commercial: Plot;82.31107142857142
+Quarterly;2024;Q1;Commercial: Building;102.06175
+Quarterly;2024;Q2;General index;92.36392857142856
+Quarterly;2024;Q2;Commercial: Plot;82.31307142857143
+Quarterly;2024;Q3;General index;93.58657142857143
+Quarterly;2024;Q3;Commercial;86.37633333333332
+Quarterly;2024;Q3;Commercial: Center;101.09583333333332
+Quarterly;2024;Q3;Agricultural;98.27314285714287
+Quarterly;2024;Q4;General index;94.94903571428573
+Quarterly;2024;Q4;Residential;94.15733333333333
+Quarterly;2024;Q4;Residential Plot;102.25
+Quarterly;2024;Q4;Residential: House;95.38999999999999
+Quarterly;2024;Q4;Commercial: Plot;87.51214285714283
+Annually;2014;-;Residential: Villa;100.00039285714287
+Annually;2014;-;Residential: Apartment;99.99903846153845
+Annually;2014;-;Commercial: Gallery/Shop;99.99975
+Annually;2014;-;Agricultural;100.0006923076923
+Annually;2015;-;Residential: Apartment;97.80178846153846
+Annually;2015;-;Agricultural;99.45038461538462
+Annually;2016;-;Residential;90.41664285714283
+Annually;2017;-;Residential: Plot;84.91692857142857
+Annually;2018;-;Residential;83.43208928571433
+Annually;2019;-;General index;83.85148214285714
+Annually;2019;-;Residential;83.3657142857143
+Annually;2019;-;Residential: Villa;92.60575000000001
+Annually;2019;-;Residential: Apartment;85.57578846153845
+Annually;2019;-;Commercial: Building;101.46999999999998
+Annually;2020;-;Residential: Plot;84.64258928571425
+Annually;2020;-;Commercial: Plot;83.51296428571425
+Annually;2020;-;Commercial: Building;101.49616666666667
+Annually;2021;-;Residential: Floor;91.38250000000001
+Annually;2021;-;Commercial: Center;100.39316666666666
+Annually;2021;-;Agricultural;96.68685714285716
+Annually;2022;-;Residential Plot;96.86999999999999
+Annually;2022;-;Commercial: Gallery/Shop;92.51018181818185
+Annually;2022;-;Agricultural: Land;96.73692857142858
+Annually;2023;-;Residential: House;94.70962499999999
+Annually;2023;-;Commercial: Plot;82.50644642857141
+Annually;2024;-;Residential;90.41805000000002
+Annually;2024;-;Residential Plot;101.24249999999999
+Annually;2024;-;Residential: Apartment;87.9648392857143
+Annually;2024;-;Commercial Plot;106.30000000000001
+Quarterly;2014;Q1;Residential: Building;97.85142857142856
+Quarterly;2014;Q1;Residential: Apartment;98.52407692307693
+Quarterly;2014;Q1;Commercial: Plot;98.78907142857143
+Quarterly;2014;Q1;Commercial: Gallery/Shop;99.96430000000001
+Quarterly;2014;Q2;Residential: Villa;97.77099999999999
+Quarterly;2014;Q2;Residential: Apartment;99.26638461538461
+Quarterly;2014;Q2;Agricultural;100.62699999999998
+Quarterly;2014;Q3;Commercial: Building;100.0
+Quarterly;2014;Q3;Commercial: Center;98.875
+Quarterly;2014;Q3;Agricultural;99.45592307692309
+Quarterly;2014;Q4;Commercial;99.86157142857144
+Quarterly;2015;Q2;General index;96.80628571428569
+Quarterly;2015;Q2;Residential: Plot;97.50692857142857
+Quarterly;2015;Q2;Residential: Building;103.00285714285714
+Quarterly;2015;Q2;Residential: Apartment;98.22423076923077
+Quarterly;2015;Q3;Residential: Building;103.00471428571429
+Quarterly;2015;Q3;Residential: House;99.01630000000002
+Quarterly;2015;Q3;Commercial: Plot;94.91542857142858
+Quarterly;2015;Q4;Commercial;94.64214285714286
+Quarterly;2016;Q1;Residential;93.09221428571428
+Quarterly;2016;Q1;Residential: Plot;93.11142857142856
+Quarterly;2016;Q1;Residential: Villa;99.59285714285714
+Quarterly;2016;Q1;Residential: House;98.18790000000001
+Quarterly;2016;Q2;Commercial: Plot;91.65885714285714
+Quarterly;2016;Q2;Commercial: Building;101.399
+Quarterly;2016;Q3;Residential: Building;100.92371428571428
+Quarterly;2016;Q4;General index;88.01521428571426
+Quarterly;2016;Q4;Residential;87.98164285714286
+Quarterly;2016;Q4;Residential: Apartment;90.8983076923077
+Quarterly;2016;Q4;Residential: House;97.575
+Quarterly;2016;Q4;Commercial: Gallery/Shop;95.55369999999999
+Quarterly;2017;Q1;Agricultural;98.55946153846155
+Quarterly;2017;Q2;Residential: Apartment;87.85353846153846
+Quarterly;2017;Q2;Commercial: Plot;86.57385714285715
+Quarterly;2017;Q3;Residential;84.86971428571428
+Quarterly;2017;Q3;Residential: Plot;84.73749999999998
+Quarterly;2017;Q3;Commercial: Gallery/Shop;93.0283
+Quarterly;2017;Q3;Agricultural;98.52369230769233
+Quarterly;2017;Q4;Residential: Villa;94.74199999999999
+Quarterly;2017;Q4;Commercial: Plot;86.02664285714286
+Quarterly;2017;Q4;Commercial: Building;101.47000000000001
+Quarterly;2017;Q4;Agricultural;98.41153846153847
+Quarterly;2018;Q1;Commercial: Gallery/Shop;93.21450000000002
+Quarterly;2018;Q1;Agricultural: Land;98.28053846153846
+Quarterly;2018;Q2;General index;84.275
+Quarterly;2018;Q2;Commercial: Center;98.67
+Quarterly;2018;Q2;Agricultural;98.08769230769234
+Quarterly;2018;Q3;General index;83.7697142857143
+Quarterly;2018;Q3;Residential: Apartment;85.61553846153843
+Quarterly;2018;Q3;Commercial: Gallery/Shop;93.95629999999998
+Quarterly;2018;Q3;Commercial: Center;98.67
+Quarterly;2018;Q4;Residential;82.32878571428573
+Quarterly;2018;Q4;Residential: House;96.98230000000001
+Quarterly;2018;Q4;Commercial: Building;101.47000000000001
+Quarterly;2018;Q4;Agricultural: Land;97.93853846153844
+Quarterly;2019;Q1;Commercial: Gallery/Shop;93.56970000000001
+Quarterly;2019;Q2;Residential: Building;98.809
+Quarterly;2019;Q2;Commercial: Building;101.47000000000001
+Quarterly;2019;Q2;Commercial: Center;100.39166666666667
+Quarterly;2019;Q2;Agricultural: Land;97.66615384615383
+Quarterly;2019;Q3;Residential: Building;98.84714285714287
+Quarterly;2019;Q3;Residential: Apartment;85.1623076923077
+Quarterly;2019;Q3;Commercial: Plot;84.59628571428573
+Quarterly;2019;Q3;Commercial: Building;101.47000000000001
+Quarterly;2019;Q4;General index;84.46849999999999
+Quarterly;2019;Q4;Residential;84.24671428571428
+Quarterly;2019;Q4;Commercial;84.66614285714286
+Quarterly;2019;Q4;Commercial: Building;101.47000000000001
+Quarterly;2020;Q1;Residential: Plot;84.73899999999999
+Quarterly;2020;Q1;Commercial;84.06221428571429
+Quarterly;2020;Q1;Commercial: Building;101.49666666666667
+Quarterly;2020;Q2;Residential: Villa;90.9722857142857
+Quarterly;2020;Q2;Commercial;83.85007142857144
+Quarterly;2020;Q2;Agricultural: Land;97.9266923076923
+Quarterly;2020;Q3;General index;84.31585714285714
+Quarterly;2020;Q3;Residential: Plot;84.42921428571428
+Quarterly;2020;Q3;Residential: Building;98.707
+Quarterly;2020;Q3;Residential: Villa;90.14242857142857
+Quarterly;2020;Q3;Commercial;83.35464285714285
+Quarterly;2020;Q3;Agricultural;97.97053846153848
+Quarterly;2020;Q4;Residential: Building;98.62671428571427
+Quarterly;2020;Q4;Residential: House;94.4877
+Quarterly;2020;Q4;Commercial: Gallery/Shop;92.33090000000001
+Quarterly;2020;Q4;Agricultural;97.5996923076923
+Quarterly;2021;Q1;General index;87.51035714285713
+Quarterly;2021;Q1;Residential Plot;80.6
+Quarterly;2021;Q1;Residential: House;94.27059999999999
+Quarterly;2021;Q1;Commercial: Building;96.14675
+Quarterly;2021;Q2;Residential: Plot;85.13235714285715
+Quarterly;2021;Q2;Commercial: Plot;82.95635714285713
+Quarterly;2021;Q3;General index;88.46253571428572
+Quarterly;2021;Q3;Residential;84.52686666666665
+Quarterly;2021;Q3;Residential: Villa;88.0755
+Quarterly;2021;Q3;Commercial: Plot;82.67657142857142
+Quarterly;2021;Q3;Commercial: Building;96.77175
+Quarterly;2021;Q3;Agricultural: Land;96.63657142857141
+Quarterly;2021;Q4;General index;89.09560714285713
+Quarterly;2021;Q4;Residential;84.67533333333334
+Quarterly;2021;Q4;Residential: Plot;84.229
+Quarterly;2021;Q4;Commercial: Gallery/Shop;93.33927272727273
+Quarterly;2022;Q1;Residential Plot;92.58
+Quarterly;2022;Q1;Residential: House;94.18019999999999
+Quarterly;2022;Q1;Commercial: Center;100.39316666666667
+Quarterly;2022;Q1;Agricultural: Land;96.63057142857143
+Quarterly;2022;Q2;Residential: Building;98.64128571428571
+Quarterly;2022;Q2;Commercial: Center;100.43166666666667
+Quarterly;2022;Q3;General index;91.12057142857142
+Quarterly;2022;Q3;Residential;86.36546666666666
+Quarterly;2022;Q4;Residential;86.14893333333335
+Quarterly;2022;Q4;Residential: Villa;88.29424999999999
+Quarterly;2022;Q4;Commercial Plot;94.74
+Quarterly;2022;Q4;Commercial: Building;99.50925000000001
+Quarterly;2023;Q1;Residential;86.437
+Quarterly;2023;Q1;Residential: Building;98.32457142857143
+Quarterly;2023;Q1;Residential: Villa;88.78812500000001
+Quarterly;2023;Q1;Agricultural: Land;96.33935714285712
+Quarterly;2023;Q2;Residential;86.90486666666668
+Quarterly;2023;Q2;Residential: Plot;85.77492857142856
+Quarterly;2023;Q2;Residential: Floor;100.3
+Quarterly;2023;Q2;Commercial: Gallery/Shop;92.23363636363636
+Quarterly;2023;Q2;Agricultural: Land;96.25892857142856
+Quarterly;2023;Q3;General index;92.11249999999998
+Quarterly;2023;Q3;Residential: Floor;100.22
+Quarterly;2023;Q3;Commercial Plot;100.31
+Quarterly;2023;Q4;Residential;86.6314
+Quarterly;2023;Q4;Residential: Floor;99.39
+Quarterly;2023;Q4;Commercial;83.81306666666667
+Quarterly;2023;Q4;Commercial: Center;100.40449999999998
+Quarterly;2023;Q4;Agricultural;96.23171428571428
+Quarterly;2023;Q4;Agricultural: Land;96.23171428571428
+Quarterly;2024;Q1;Residential: House;94.0164
+Quarterly;2024;Q1;Commercial;83.83086666666665
+Quarterly;2024;Q2;Residential: Plot;88.36878571428572
+Quarterly;2024;Q2;Residential Plot;101.13
+Quarterly;2024;Q2;Commercial;83.76426666666666
+Quarterly;2024;Q2;Commercial: Building;102.95400000000001
+Quarterly;2024;Q2;Agricultural;98.0607142857143
+Quarterly;2024;Q2;Agricultural: Land;98.06071428571427
+Quarterly;2024;Q3;Residential: Floor;98.41
+Quarterly;2024;Q3;Commercial Plot;106.75
+Quarterly;2024;Q4;Residential: Villa;89.07199999999999
+Quarterly;2024;Q4;Commercial: Building;103.625
+Quarterly;2024;Q4;Agricultural: Land;99.34085714285712
+Annually;2014;-;Commercial: Building;100.0
+Annually;2014;-;Agricultural: Land;100.00069230769229
+Annually;2015;-;Commercial: Building;100.31416666666667
+Annually;2016;-;Residential: Apartment;93.26588461538462
+Annually;2016;-;Commercial: Plot;90.69958928571432
+Annually;2016;-;Commercial: Center;100.23166666666668
+Annually;2017;-;Residential: Apartment;87.86755769230773
+Annually;2018;-;Residential: Plot;83.25939285714287
+Annually;2018;-;Residential: House;96.68972499999998
+Annually;2019;-;Residential: Plot;83.12885714285711
+Annually;2019;-;Commercial: Plot;84.43523214285715
+Annually;2019;-;Commercial: Center;99.97941666666668
+Annually;2019;-;Agricultural;97.74940384615387
+Annually;2020;-;General index;84.51641071428571
+Annually;2020;-;Residential;84.81546428571427
+Annually;2020;-;Residential: Apartment;83.67040384615386
+Annually;2020;-;Commercial: Center;100.39241666666668
+Annually;2021;-;Residential;84.85026666666666
+Annually;2021;-;Residential: Apartment;83.57230357142858
+Annually;2021;-;Commercial Plot;84.42
+Annually;2021;-;Commercial: Gallery/Shop;92.71202272727274
+Annually;2022;-;Residential: Apartment;84.79508928571428
+Annually;2022;-;Commercial Plot;94.1125
+Annually;2022;-;Agricultural;96.73692857142859
+Annually;2023;-;Residential;86.67096666666666
+Annually;2023;-;Residential: Plot;85.58057142857145
+Annually;2023;-;Residential Plot;100.00000000000001
+Annually;2023;-;Residential: Villa;88.55625
+Annually;2023;-;Residential: Floor;99.9975
+Annually;2023;-;Commercial;83.7107
+Annually;2023;-;Commercial Plot;100.05000000000001
+Annually;2024;-;General index;92.89360714285715
+Annually;2024;-;Residential: Villa;88.32028125000001
+Annually;2024;-;Commercial;85.74193333333334
+Annually;2024;-;Commercial: Building;103.0680625
+Annually;2024;-;Commercial: Gallery/Shop;91.9650909090909
+Quarterly;2014;Q1;General index;98.55085714285713
+Quarterly;2014;Q1;Residential;98.39328571428574
+Quarterly;2014;Q1;Residential: Villa;101.15114285714286
+Quarterly;2014;Q2;General index;100.489
+Quarterly;2014;Q2;Residential: House;99.4477
+Quarterly;2014;Q3;Residential: House;100.0663
+Quarterly;2014;Q3;Commercial;100.94028571428571
+Quarterly;2014;Q3;Commercial: Gallery/Shop;99.6613
+Quarterly;2014;Q4;Residential: Plot;100.86414285714285
+Quarterly;2014;Q4;Residential: Apartment;101.65499999999999
+Quarterly;2014;Q4;Agricultural;100.06415384615386
+Quarterly;2015;Q1;Agricultural: Land;100.15953846153846
+Quarterly;2015;Q2;Residential;97.47364285714283
+Quarterly;2015;Q3;Residential: Plot;95.32021428571429
+Quarterly;2015;Q3;Agricultural: Land;99.10792307692306
+Quarterly;2015;Q4;General index;94.653
+Quarterly;2015;Q4;Residential: Apartment;95.60584615384617
+Quarterly;2015;Q4;Residential: House;99.1721
+Quarterly;2015;Q4;Commercial: Building;101.25666666666666
+Quarterly;2016;Q1;Commercial;93.35092857142855
+Quarterly;2016;Q1;Commercial: Plot;93.30357142857143
+Quarterly;2016;Q1;Agricultural: Land;99.4933076923077
+Quarterly;2016;Q2;Residential;90.89464285714287
+Quarterly;2016;Q2;Residential: Building;101.75342857142857
+Quarterly;2016;Q2;Residential: Villa;98.62157142857144
+Quarterly;2016;Q3;General index;89.63764285714286
+Quarterly;2016;Q3;Residential: Plot;89.58142857142857
+Quarterly;2016;Q3;Commercial;89.74400000000001
+Quarterly;2016;Q3;Commercial: Plot;89.69714285714285
+Quarterly;2016;Q3;Commercial: Center;100.19833333333334
+Quarterly;2016;Q4;Residential: Building;100.25142857142858
+Quarterly;2017;Q1;General index;86.1377857142857
+Quarterly;2017;Q1;Residential: Apartment;88.80930769230767
+Quarterly;2017;Q1;Residential: House;97.24600000000001
+Quarterly;2017;Q1;Commercial;86.875
+Quarterly;2017;Q2;Residential: Villa;96.28614285714285
+Quarterly;2017;Q2;Residential: House;97.0144
+Quarterly;2017;Q2;Commercial: Building;101.47000000000001
+Quarterly;2017;Q2;Agricultural;98.61692307692307
+Quarterly;2017;Q2;Agricultural: Land;98.61692307692309
+Quarterly;2017;Q3;General index;85.19978571428574
+Quarterly;2017;Q3;Residential: Apartment;87.34869230769232
+Quarterly;2017;Q3;Agricultural: Land;98.52369230769233
+Quarterly;2018;Q1;Commercial: Center;98.67
+Quarterly;2018;Q2;Residential: House;96.5809
+Quarterly;2018;Q2;Commercial;85.32664285714284
+Quarterly;2018;Q2;Commercial: Plot;85.27099999999999
+Quarterly;2018;Q2;Commercial: Gallery/Shop;93.95700000000002
+Quarterly;2018;Q3;Residential: Plot;82.94914285714286
+Quarterly;2018;Q3;Commercial;85.1219285714286
+Quarterly;2018;Q3;Agricultural;98.02023076923078
+Quarterly;2018;Q4;Residential: Plot;82.09942857142858
+Quarterly;2019;Q1;Residential: Plot;82.32614285714286
+Quarterly;2019;Q1;Residential: Villa;93.37485714285715
+Quarterly;2019;Q1;Residential: House;96.8292
+Quarterly;2019;Q1;Commercial;84.27357142857144
+Quarterly;2019;Q1;Commercial: Plot;84.21892857142859
+Quarterly;2019;Q2;Residential: Villa;92.79185714285714
+Quarterly;2019;Q2;Residential: Apartment;85.9546153846154
+Quarterly;2019;Q2;Commercial: Plot;84.31042857142857
+Quarterly;2019;Q2;Commercial: Gallery/Shop;92.3819
+Quarterly;2019;Q2;Agricultural;97.66615384615383
+Quarterly;2019;Q3;Residential: House;96.11670000000001
+Quarterly;2019;Q4;Residential: Apartment;85.45023076923077
+Quarterly;2019;Q4;Commercial: Plot;84.61528571428572
+Quarterly;2020;Q1;Residential: Apartment;84.003
+Quarterly;2020;Q2;Commercial: Plot;83.79385714285715
+Quarterly;2020;Q2;Agricultural;97.9266923076923
+Quarterly;2020;Q3;Commercial: Building;101.49566666666668
+Quarterly;2020;Q3;Commercial: Gallery/Shop;92.3638
+Quarterly;2020;Q3;Agricultural: Land;97.97053846153845
+Quarterly;2020;Q4;Residential;84.73785714285714
+Quarterly;2021;Q1;Residential: Villa;88.906125
+Quarterly;2021;Q1;Residential: Floor;94.27
+Quarterly;2021;Q1;Commercial Plot;82.84
+Quarterly;2021;Q2;Residential Plot;83.61
+Quarterly;2021;Q2;Residential: Apartment;83.65692857142858
+Quarterly;2021;Q2;Residential: Floor;90.17
+Quarterly;2021;Q2;Residential: House;94.2245
+Quarterly;2021;Q2;Agricultural: Land;96.67092857142855
+Quarterly;2021;Q3;Agricultural;96.63657142857141
+Quarterly;2021;Q4;Residential Plot;91.02
+Quarterly;2021;Q4;Commercial;83.25886666666665
+Quarterly;2021;Q4;Commercial: Center;100.39316666666667
+Quarterly;2022;Q1;Residential;85.32606666666668
+Quarterly;2022;Q1;Residential: Plot;84.78585714285714
+Quarterly;2022;Q1;Commercial Plot;91.42
+Quarterly;2022;Q2;Residential: Apartment;84.787
+Quarterly;2022;Q2;Residential: House;94.01670000000001
+Quarterly;2022;Q2;Commercial Plot;95.98
+Quarterly;2022;Q2;Agricultural;96.65107142857143
+Quarterly;2022;Q3;Residential Plot;99.88
+Quarterly;2022;Q3;Commercial: Plot;82.93985714285714
+Quarterly;2022;Q3;Agricultural: Land;97.06792857142855
+Quarterly;2022;Q4;Residential: House;94.03139999999999
+Quarterly;2022;Q4;Commercial: Plot;82.64085714285714
+Quarterly;2023;Q1;Residential: Plot;85.29849999999999
+Quarterly;2023;Q1;Residential Plot;100.19
+Quarterly;2023;Q1;Residential: Floor;100.08
+Quarterly;2023;Q1;Residential: House;94.62750000000001
+Quarterly;2023;Q1;Commercial;83.60733333333334
+Quarterly;2023;Q1;Commercial: Plot;82.64385714285713
+Quarterly;2023;Q2;Commercial: Plot;82.59835714285715
+Quarterly;2023;Q2;Commercial: Center;100.4045
+Quarterly;2023;Q3;Residential: Villa;88.388625
+Quarterly;2023;Q3;Commercial: Gallery/Shop;92.21272727272728
+Quarterly;2023;Q4;General index;92.09614285714288
+Quarterly;2023;Q4;Residential Plot;99.74
+Quarterly;2024;Q1;Commercial: Gallery/Shop;91.639
+Quarterly;2024;Q2;Residential;89.29006666666668
+Quarterly;2024;Q2;Residential: House;94.0461
+Quarterly;2024;Q2;Commercial Plot;103.4
+Quarterly;2024;Q2;Commercial: Gallery/Shop;91.69463636363638
+Quarterly;2024;Q3;Residential: Apartment;88.37314285714285
+Quarterly;2024;Q3;Commercial: Plot;84.90007142857144
+Quarterly;2024;Q3;Commercial: Building;103.63149999999999
+Quarterly;2024;Q4;Residential: Plot;93.66864285714284
+Quarterly;2024;Q4;Residential: Building;98.89685714285714
+Quarterly;2024;Q4;Residential: Apartment;88.98635714285714
+Quarterly;2024;Q4;Commercial: Gallery/Shop;92.3861818181818
+Quarterly;2024;Q4;Agricultural;99.34085714285713
+Annually;2014;-;Residential: Building;100.0005357142857
+Annually;2015;-;Residential: Plot;96.7144464285714
+Annually;2015;-;Residential: House;99.413825
+Annually;2016;-;Residential: Plot;90.33205357142859
+Annually;2016;-;Commercial: Building;101.39891666666666
+Annually;2017;-;Residential;85.06119642857142
+Annually;2017;-;Commercial: Plot;86.40426785714284
+Annually;2017;-;Commercial: Building;101.46999999999998
+Annually;2017;-;Commercial: Center;100.07095833333335
+Annually;2018;-;Residential: Building;99.30678571428572
+Annually;2018;-;Residential: Villa;93.42007142857142
+Annually;2018;-;Commercial: Plot;85.13921428571429
+Annually;2018;-;Commercial: Center;98.63749999999999
+Annually;2018;-;Agricultural: Land;98.08174999999999
+Annually;2019;-;Residential: Building;98.91903571428568
+Annually;2019;-;Commercial;84.48726785714288
+Annually;2020;-;Commercial: Gallery/Shop;92.167425
+Annually;2020;-;Agricultural;97.86853846153846
+Annually;2021;-;General index;88.24269642857142
+Annually;2021;-;Residential: Villa;88.20628124999999
+Annually;2021;-;Commercial;83.08149999999999
+Annually;2022;-;Residential: House;94.02055000000001
+Annually;2022;-;Commercial: Building;98.90174999999999
+Annually;2024;-;Agricultural;97.91241071428576
+Annually;2024;-;Agricultural: Land;97.9124107142857
+Quarterly;2014;Q1;Residential: Plot;98.356
+Quarterly;2014;Q1;Commercial;98.79057142857144
+Quarterly;2014;Q1;Agricultural;99.8556923076923
+Quarterly;2014;Q2;Commercial: Building;100.0
+Quarterly;2014;Q3;Residential;100.40435714285717
+Quarterly;2014;Q3;Residential: Building;100.58771428571427
+Quarterly;2014;Q3;Residential: Villa;99.13471428571428
+Quarterly;2014;Q4;Residential: Building;103.62199999999999
+Quarterly;2014;Q4;Agricultural: Land;100.06415384615387
+Quarterly;2015;Q1;General index;98.68907142857142
+Quarterly;2015;Q1;Residential;99.15192857142858
+Quarterly;2015;Q1;Residential: Building;103.03342857142857
+Quarterly;2015;Q1;Residential: Apartment;100.06323076923078
+Quarterly;2015;Q1;Commercial;98.50928571428571
+Quarterly;2015;Q1;Commercial: Gallery/Shop;99.27509999999998
+Quarterly;2015;Q1;Agricultural;100.15953846153846
+Quarterly;2015;Q2;Commercial: Plot;96.20221428571428
+Quarterly;2015;Q2;Commercial: Gallery/Shop;99.39500000000001
+Quarterly;2015;Q2;Agricultural;99.22761538461539
+Quarterly;2015;Q3;Residential: Villa;101.62671428571427
+Quarterly;2015;Q3;Residential: Apartment;97.31384615384614
+Quarterly;2015;Q3;Commercial;94.94564285714286
+Quarterly;2015;Q3;Commercial: Building;100.0
+Quarterly;2015;Q3;Commercial: Gallery/Shop;98.8466
+Quarterly;2015;Q3;Agricultural;99.10792307692307
+Quarterly;2015;Q4;Residential: Villa;100.1542857142857
+Quarterly;2015;Q4;Agricultural;99.30646153846153
+Quarterly;2016;Q1;Residential: Apartment;95.08592307692308
+Quarterly;2016;Q1;Commercial: Center;100.27999999999999
+Quarterly;2016;Q2;Commercial: Center;100.25
+Quarterly;2016;Q2;Agricultural;99.33699999999999
+Quarterly;2016;Q4;Commercial;88.18807142857142
+Quarterly;2016;Q4;Agricultural;98.84438461538463
+Quarterly;2016;Q4;Agricultural: Land;98.84438461538463
+Quarterly;2017;Q1;Residential;85.84757142857144
+Quarterly;2017;Q1;Residential: Plot;85.70771428571429
+Quarterly;2017;Q1;Commercial: Gallery/Shop;94.122
+Quarterly;2017;Q2;Commercial;86.61807142857143
+Quarterly;2017;Q3;Residential: House;97.0174
+Quarterly;2017;Q3;Commercial;86.23664285714287
+Quarterly;2017;Q3;Commercial: Center;100.19833333333334
+Quarterly;2017;Q4;Residential;84.77685714285712
+Quarterly;2017;Q4;Commercial: Gallery/Shop;93.064
+Quarterly;2017;Q4;Commercial: Center;99.68883333333333
+Quarterly;2017;Q4;Agricultural: Land;98.41153846153846
+Quarterly;2018;Q1;Residential: Building;99.25285714285714
+Quarterly;2018;Q1;Commercial: Plot;85.6442857142857
+Quarterly;2018;Q1;Commercial: Building;101.47000000000001
+Quarterly;2018;Q2;Residential;83.86471428571429
+Quarterly;2018;Q2;Residential: Plot;83.70735714285715
+Quarterly;2018;Q2;Commercial: Building;101.47000000000001
+Quarterly;2018;Q3;Residential: Building;99.43000000000002
+Quarterly;2018;Q3;Residential: House;96.7517
+Quarterly;2018;Q3;Commercial: Building;101.47000000000001
+Quarterly;2018;Q4;Residential: Apartment;85.66523076923076
+Quarterly;2018;Q4;Commercial: Plot;84.57628571428572
+Quarterly;2019;Q1;Residential: Apartment;85.73600000000002
+Quarterly;2019;Q1;Commercial: Center;98.74266666666666
+Quarterly;2019;Q1;Agricultural: Land;97.8053076923077
+Quarterly;2019;Q2;General index;83.86907142857144
+Quarterly;2019;Q2;Residential: House;96.5813
+Quarterly;2019;Q3;Residential;83.2437142857143
+Quarterly;2019;Q4;Residential: Building;99.0942857142857
+Quarterly;2019;Q4;Residential: House;95.1742
+Quarterly;2019;Q4;Agricultural: Land;97.85415384615384
+Quarterly;2020;Q1;General index;84.73335714285713
+Quarterly;2020;Q1;Commercial: Plot;84.00735714285715
+Quarterly;2020;Q1;Commercial: Center;100.39166666666667
+Quarterly;2020;Q1;Agricultural: Land;97.97723076923077
+Quarterly;2020;Q2;Residential: Plot;84.83935714285712
+Quarterly;2020;Q2;Residential: Apartment;83.41153846153846
+Quarterly;2020;Q2;Residential: House;94.557
+Quarterly;2020;Q2;Commercial: Building;101.49666666666667
+Quarterly;2020;Q2;Commercial: Center;100.39166666666667
+Quarterly;2020;Q3;Residential;84.61485714285716
+Quarterly;2020;Q4;Residential: Plot;84.56278571428571
+Quarterly;2020;Q4;Residential: Apartment;83.63476923076922
+Quarterly;2021;Q1;Residential: Apartment;83.76092857142858
+Quarterly;2021;Q1;Commercial: Plot;83.2015
+Quarterly;2021;Q1;Commercial: Gallery/Shop;92.58836363636364
+Quarterly;2021;Q2;Residential: Building;98.58657142857142
+Quarterly;2021;Q2;Commercial;82.87513333333332
+Quarterly;2021;Q2;Commercial Plot;80.67
+Quarterly;2021;Q2;Commercial: Center;100.39316666666667
+Quarterly;2021;Q3;Residential: House;94.1871
+Quarterly;2021;Q3;Commercial;82.95586666666668
+Quarterly;2021;Q3;Commercial Plot;86.07
+Quarterly;2021;Q3;Commercial: Gallery/Shop;92.6530909090909
+Quarterly;2021;Q3;Commercial: Center;100.39316666666667
+Quarterly;2021;Q4;Residential: Building;98.58657142857143
+Quarterly;2021;Q4;Agricultural;96.94742857142856
+Quarterly;2022;Q1;Residential: Building;98.58657142857143
+Quarterly;2022;Q1;Residential: Villa;87.28587499999999
+Quarterly;2022;Q1;Residential: Apartment;84.00800000000001
+Quarterly;2022;Q1;Residential: Floor;94.07
+Quarterly;2022;Q1;Commercial;83.48240000000001
+Quarterly;2022;Q1;Commercial: Plot;82.87650000000001
+Quarterly;2022;Q1;Commercial: Gallery/Shop;93.28845454545454
+Quarterly;2022;Q1;Agricultural;96.63057142857144
+Quarterly;2022;Q2;Residential;85.9702
+Quarterly;2022;Q2;Residential: Plot;85.14942857142857
+Quarterly;2022;Q2;Residential: Villa;88.72225
+Quarterly;2022;Q2;Commercial: Plot;82.85114285714288
+Quarterly;2022;Q3;Residential: Plot;85.36085714285716
+Quarterly;2022;Q3;Residential: Apartment;85.01992857142857
+Quarterly;2022;Q3;Residential: Floor;100.21
+Quarterly;2022;Q3;Commercial Plot;94.31
+Quarterly;2022;Q3;Commercial: Center;100.46750000000002
+Quarterly;2022;Q4;General index;91.03824999999999
+Quarterly;2022;Q4;Residential: Plot;85.14707142857142
+Quarterly;2022;Q4;Residential Plot;98.6
+Quarterly;2022;Q4;Residential: Apartment;85.36542857142857
+Quarterly;2022;Q4;Agricultural: Land;96.59814285714285
+Quarterly;2023;Q1;Commercial Plot;96.28
+Quarterly;2023;Q1;Commercial: Gallery/Shop;92.27018181818183
+Quarterly;2023;Q1;Agricultural;96.33935714285715
+Quarterly;2023;Q2;Residential: Apartment;86.42042857142857
+Quarterly;2023;Q2;Commercial: Building;101.51175
+Quarterly;2023;Q3;Residential;86.71060000000001
+Quarterly;2023;Q3;Residential: Building;98.32457142857142
+Quarterly;2023;Q3;Agricultural;96.73435714285718
+Quarterly;2023;Q4;Residential: Villa;88.4395
+Quarterly;2023;Q4;Commercial: Building;101.15925
+Quarterly;2024;Q1;Residential;86.44846666666666
+Quarterly;2024;Q1;Commercial Plot;104.88
+Quarterly;2024;Q1;Commercial: Center;100.40449999999998
+Quarterly;2024;Q1;Agricultural;95.97492857142856
+Quarterly;2024;Q2;Residential: Villa;88.21325
+Quarterly;2024;Q2;Residential: Floor;96.63
+Quarterly;2024;Q2;Commercial: Center;100.4045
+Quarterly;2024;Q3;Residential: Villa;88.46837499999998
+Quarterly;2024;Q3;Commercial: Gallery/Shop;92.14054545454545
+Quarterly;2024;Q3;Agricultural: Land;98.27314285714286
+Quarterly;2024;Q4;Residential: Floor;98.73
+Quarterly;2024;Q4;Commercial: Center;101.871

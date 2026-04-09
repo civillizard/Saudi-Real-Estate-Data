@@ -1,0 +1,500 @@
+﻿year;quarter;item_engl;region_engl;obsvalue_obsv
+2022;Q3;General Index;All cities;102.67
+2021;Q1;General Index;All cities;89.15
+2021;Q2;Floor;The kingdom;90.17
+2023;Q1;Villa;The kingdom;99.27
+2022;Q1;General Index;All cities;96.27
+2021;Q2;General Index;All cities;92.74
+2025;Q4;General Index;All cities;78.93
+2025;Q4;Gallery/ Shop;The kingdom;100.95
+2022;Q3;Gallery/ Shop;The kingdom;97.3
+2021;Q3;General Index;All cities;93.79
+2022;Q4;General Index;The kingdom;97.22
+2023;Q4;General Index;All cities;101.09
+2025;Q2;Gallery/ Shop;The kingdom;101.37
+2025;Q3;General Index;All cities;100.71
+2021;Q1;Commercial Plot;The kingdom;82.84
+2023;Q2;General Index;All cities;105.86
+2024;Q2;Gallery/ Shop;The kingdom;97.42
+2023;Q1;General Index;All cities;97.63
+2025;Q3;General Index;All cities;91.61
+2022;Q3;General Index;All cities;97.66
+2023;Q4;General Index;All cities;98.28
+2021;Q3;General Index;All cities;91.33
+2025;Q2;General Index;All cities;89.04
+2022;Q3;General Index;All cities;98.09
+2021;Q3;General Index;All cities;98.28
+2022;Q1;General Index;All cities;91.82
+2023;Q3;Residential;The kingdom;99.77
+2024;Q2;General Index;All cities;102.07
+2021;Q3;General Index;All cities;92.99
+2022;Q1;General Index;All cities;87.52
+2021;Q3;General Index;The kingdom;86.2
+2023;Q4;General Index;All cities;102.84
+2023;Q3;Villa;The kingdom;100.67
+2023;Q2;General Index;All cities;97.73
+2023;Q4;Gallery/ Shop;The kingdom;101.5
+2021;Q4;General Index;All cities;91.84
+2021;Q1;General Index;All cities;86.67
+2022;Q4;Apartment;The kingdom;99.59
+2024;Q4;Agricultural;The kingdom;104.89
+2024;Q4;General Index;All cities;98.23
+2021;Q1;General Index;The kingdom;81.37
+2022;Q4;General Index;All cities;95.65
+2021;Q3;General Index;All cities;89.05
+2023;Q4;Floor;The kingdom;99.39
+2021;Q2;Residential;The kingdom;82.36
+2025;Q4;Residential;The kingdom;100.05
+2021;Q2;General Index;All cities;123.54
+2021;Q1;General Index;All cities;89.34
+2021;Q2;General Index;All cities;88.16
+2022;Q1;Commercial;The kingdom;91.13
+2023;Q2;Residential;The kingdom;100.71
+2023;Q2;General Index;The kingdom;100.22
+2022;Q4;General Index;All cities;101.78
+2025;Q3;General Index;All cities;93.69
+2025;Q4;General Index;All cities;100.65
+2021;Q1;General Index;All cities;91.89
+2022;Q4;General Index;All cities;98.35
+2021;Q1;Residential;The kingdom;80.78
+2024;Q3;Villa;The kingdom;102.22
+2023;Q4;General Index;All cities;97.23
+2022;Q2;Residential;The kingdom;95.65
+2023;Q3;Gallery/ Shop;The kingdom;100.89
+2023;Q3;General Index;All cities;99.66
+2022;Q4;Agricultural Land;The kingdom;95.04
+2023;Q3;General Index;All cities;99.92
+2024;Q2;Commercial;The kingdom;103.57
+2022;Q3;General Index;All cities;96.6
+2024;Q2;Floor;The kingdom;96.63
+2024;Q1;Building;The kingdom;103.76
+2023;Q1;General Index;All cities;101.71
+2025;Q1;General Index;All cities;96.98
+2021;Q1;Building;The kingdom;80.1
+2023;Q3;General Index;All cities;97.26
+2021;Q3;General Index;All cities;94.51
+2024;Q1;General Index;All cities;96.69
+2021;Q4;Residential;The kingdom;89.51
+2023;Q1;General Index;All cities;100.68
+2025;Q2;Commercial;The kingdom;115.69
+2025;Q2;General Index;All cities;102.07
+2024;Q4;Building;The kingdom;105.28
+2023;Q1;General Index;All cities;102.27
+2023;Q3;Commercial;The kingdom;100.23
+2023;Q1;Commercial Plot;The kingdom;96.28
+2022;Q1;Building;The kingdom;86.19
+2024;Q1;General Index;All cities;103.74
+2023;Q3;Apartment;The kingdom;99.05
+2024;Q1;General Index;All cities;82.11
+2024;Q1;General Index;The kingdom;100.59
+2024;Q3;Commercial;The kingdom;106.67
+2024;Q1;Gallery/ Shop;The kingdom;96.66
+2021;Q4;General Index;All cities;92.42
+2024;Q1;Residential Plot;The kingdom;100.21
+2023;Q3;Residential Plot;The kingdom;99.79
+2024;Q3;General Index;All cities;101.12
+2025;Q1;Apartment;The kingdom;101.58
+2024;Q2;General Index;All cities;99.24
+2025;Q1;Villa;The kingdom;103.21
+2022;Q3;Residential Plot;The kingdom;99.88
+2025;Q3;Apartment;The kingdom;99.25
+2023;Q2;General Index;All cities;98.39
+2025;Q3;General Index;All cities;97.62
+2023;Q4;General Index;All cities;102.27
+2022;Q2;General Index;All cities;99.01
+2025;Q3;Commercial;The kingdom;113.89
+2021;Q1;General Index;All cities;91.63
+2022;Q4;General Index;All cities;98.4
+2024;Q1;Agricultural Land;The kingdom;102.02
+2022;Q1;General Index;The kingdom;91.29
+2025;Q3;Agricultural;The kingdom;110.15
+2025;Q1;General Index;All cities;98.49
+2022;Q1;General Index;All cities;104.55
+2024;Q2;Commercial Plot;The kingdom;103.4
+2023;Q3;Agricultural;The kingdom;104.64
+2024;Q2;General Index;All cities;98.22
+2022;Q4;General Index;All cities;96.48
+2021;Q2;Residential Plot;The kingdom;83.61
+2021;Q1;Residential Plot;The kingdom;80.6
+2022;Q2;Residential Plot;The kingdom;96.42
+2021;Q2;Agricultural Land;The kingdom;87.19
+2022;Q2;General Index;All cities;87.16
+2022;Q2;General Index;All cities;97.69
+2022;Q3;Agricultural Land;The kingdom;98.89
+2023;Q2;General Index;All cities;99.64
+2023;Q2;Commercial Plot;The kingdom;98.86
+2021;Q2;General Index;All cities;74.86
+2025;Q4;Building;The kingdom;111.24
+2024;Q2;Agricultural Land;The kingdom;103.52
+2021;Q4;Villa;The kingdom;84.14
+2025;Q2;Agricultural;The kingdom;102.63
+2022;Q4;General Index;All cities;102.12
+2021;Q2;General Index;All cities;86.58
+2024;Q3;General Index;All cities;92.37
+2024;Q3;Building;The kingdom;107.78
+2021;Q1;Gallery/ Shop;The kingdom;94.83
+2021;Q3;Gallery/ Shop;The kingdom;94.76
+2024;Q4;General Index;All cities;113.33
+2022;Q3;Floor;The kingdom;100.21
+2022;Q1;General Index;All cities;94.93
+2025;Q1;General Index;All cities;114.89
+2021;Q3;Residential;The kingdom;86.25
+2023;Q2;General Index;All cities;100.65
+2025;Q1;General Index;All cities;107.05
+2022;Q1;Agricultural;The kingdom;91.43
+2025;Q3;General Index;All cities;101.39
+2021;Q4;General Index;All cities;84.29
+2025;Q1;General Index;All cities;103.65
+2021;Q1;General Index;All cities;90.56
+2021;Q4;General Index;The kingdom;89.15
+2021;Q2;General Index;All cities;90.41
+2022;Q1;General Index;All cities;95.7
+2021;Q4;Apartment;The kingdom;88.61
+2022;Q3;Apartment;The kingdom;98.76
+2021;Q4;General Index;All cities;90.1
+2022;Q1;Villa;The kingdom;85.62
+2023;Q1;General Index;All cities;100.62
+2024;Q4;General Index;All cities;99.31
+2025;Q4;General Index;All cities;100.38
+2022;Q4;General Index;All cities;90.99
+2023;Q4;Apartment;The kingdom;98.57
+2025;Q1;General Index;All cities;102.06
+2023;Q3;General Index;All cities;100.4
+2022;Q1;General Index;All cities;93.61
+2023;Q2;General Index;All cities;105.13
+2021;Q2;General Index;All cities;94.63
+2021;Q3;General Index;All cities;90.61
+2025;Q4;General Index;All cities;93.8
+2021;Q3;Agricultural;The kingdom;87.46
+2021;Q1;Villa;The kingdom;77.25
+2022;Q2;General Index;The kingdom;95.56
+2021;Q4;General Index;All cities;88.1
+2021;Q4;Building;The kingdom;83.53
+2023;Q4;Residential Plot;The kingdom;99.74
+2025;Q2;General Index;All cities;96.93
+2022;Q3;General Index;All cities;88.92
+2021;Q1;General Index;All cities;86.49
+2025;Q1;Residential Plot;The kingdom;105.56
+2025;Q3;General Index;All cities;86.53
+2024;Q2;General Index;All cities;99.79
+2023;Q4;General Index;The kingdom;100.59
+2024;Q4;General Index;All cities;102.22
+2024;Q4;General Index;All cities;83.09
+2024;Q1;General Index;All cities;91.52
+2024;Q2;Villa;The kingdom;101.82
+2023;Q2;General Index;All cities;100.16
+2021;Q1;General Index;All cities;88.47
+2021;Q3;Apartment;The kingdom;84.76
+2022;Q4;Gallery/ Shop;The kingdom;97.57
+2021;Q1;Commercial;The kingdom;82.86
+2023;Q2;Building;The kingdom;101.56
+2025;Q4;Villa;The kingdom;103.25
+2022;Q4;Commercial Plot;The kingdom;94.74
+2021;Q2;General Index;All cities;89.27
+2024;Q3;Residential;The kingdom;101.35
+2025;Q3;Agricultural Land;The kingdom;110.15
+2023;Q2;General Index;All cities;102.88
+2025;Q1;General Index;All cities;87.52
+2023;Q3;General Index;All cities;103.71
+2023;Q4;General Index;All cities;97.5
+2024;Q3;General Index;All cities;98.05
+2025;Q3;General Index;All cities;78.62
+2024;Q1;Commercial;The kingdom;104.6
+2022;Q4;General Index;All cities;100.54
+2021;Q2;General Index;All cities;91.39
+2025;Q3;General Index;All cities;93.94
+2022;Q4;Commercial;The kingdom;94.71
+2023;Q4;Commercial;The kingdom;104.3
+2022;Q1;Apartment;The kingdom;91.45
+2024;Q2;General Index;All cities;81.51
+2025;Q1;Agricultural;The kingdom;100.87
+2023;Q1;Commercial;The kingdom;96.51
+2021;Q1;Apartment;The kingdom;82.74
+2021;Q4;General Index;All cities;90.56
+2024;Q4;General Index;The kingdom;104.18
+2022;Q4;Floor;The kingdom;100.23
+2025;Q2;Residential;The kingdom;101.57
+2025;Q1;General Index;All cities;83.86
+2025;Q1;Commercial Plot;The kingdom;107.36
+2022;Q3;General Index;All cities;103.55
+2023;Q2;General Index;All cities;98.44
+2021;Q4;Gallery/ Shop;The kingdom;95.13
+2021;Q4;General Index;All cities;97.88
+2023;Q4;Commercial Plot;The kingdom;104.75
+2022;Q3;General Index;All cities;93.36
+2024;Q1;General Index;All cities;103.82
+2023;Q2;Apartment;The kingdom;101.31
+2023;Q3;General Index;All cities;101.79
+2021;Q3;General Index;All cities;95.54
+2024;Q4;Floor;The kingdom;98.73
+2025;Q3;Commercial Plot;The kingdom;114.45
+2022;Q3;General Index;The kingdom;97.5
+2023;Q1;Apartment;The kingdom;101.1
+2022;Q3;General Index;All cities;93.32
+2024;Q4;General Index;All cities;103.01
+2025;Q1;Floor;The kingdom;98.94
+2024;Q3;General Index;All cities;100.24
+2022;Q1;General Index;All cities;98.87
+2022;Q1;Residential;The kingdom;91.34
+2023;Q4;General Index;All cities;95.52
+2021;Q2;General Index;All cities;88.45
+2024;Q3;General Index;All cities;101.73
+2022;Q2;Commercial;The kingdom;95.55
+2023;Q1;General Index;All cities;101.77
+2025;Q1;Commercial;The kingdom;107.2
+2025;Q3;General Index;All cities;93.63
+2022;Q1;Residential Plot;The kingdom;92.58
+2025;Q3;Building;The kingdom;111.34
+2023;Q1;Agricultural Land;The kingdom;97.03
+2024;Q3;General Index;The kingdom;102.56
+2022;Q2;General Index;All cities;91.89
+2022;Q2;General Index;All cities;96.83
+2023;Q4;Agricultural Land;The kingdom;102.08
+2025;Q1;General Index;All cities;101.71
+2025;Q2;Villa;The kingdom;105.03
+2021;Q1;General Index;All cities;114.65
+2023;Q3;Floor;The kingdom;100.22
+2023;Q3;General Index;All cities;101.6
+2021;Q2;Gallery/ Shop;The kingdom;95.04
+2025;Q1;Residential;The kingdom;104.26
+2023;Q3;General Index;All cities;100.62
+2022;Q3;General Index;All cities;98.85
+2025;Q2;General Index;All cities;98.17
+2022;Q3;General Index;All cities;102.66
+2022;Q1;General Index;All cities;90.11
+2024;Q3;Agricultural;The kingdom;95.54
+2021;Q4;Agricultural Land;The kingdom;92.31
+2024;Q4;General Index;All cities;101.26
+2023;Q4;Villa;The kingdom;98.31
+2023;Q1;General Index;All cities;95.63
+2024;Q2;General Index;All cities;97.62
+2023;Q1;Gallery/ Shop;The kingdom;97.01
+2021;Q4;General Index;All cities;95.67
+2021;Q3;Commercial;The kingdom;85.97
+2025;Q1;Building;The kingdom;106.99
+2024;Q1;Floor;The kingdom;96.28
+2023;Q4;General Index;All cities;99.32
+2024;Q1;General Index;All cities;96.79
+2025;Q4;Apartment;The kingdom;98.9
+2024;Q3;Commercial Plot;The kingdom;106.75
+2021;Q1;General Index;All cities;74.4
+2025;Q2;General Index;All cities;104.4
+2023;Q3;General Index;The kingdom;99.98
+2022;Q4;General Index;All cities;100.77
+2022;Q1;General Index;All cities;85.64
+2025;Q3;General Index;The kingdom;103.88
+2022;Q2;General Index;All cities;90.27
+2022;Q3;Villa;The kingdom;92.63
+2024;Q4;General Index;All cities;88.55
+2023;Q2;Villa;The kingdom;101.79
+2024;Q1;Commercial Plot;The kingdom;104.88
+2021;Q3;General Index;All cities;79.61
+2021;Q4;Floor;The kingdom;91.74
+2025;Q2;General Index;All cities;111.35
+2024;Q4;Agricultural Land;The kingdom;104.89
+2022;Q4;General Index;All cities;95.36
+2023;Q2;Commercial;The kingdom;99.11
+2025;Q1;General Index;All cities;91.45
+2022;Q2;General Index;All cities;104.9
+2024;Q2;General Index;The kingdom;101.79
+2024;Q1;Agricultural;The kingdom;102.02
+2022;Q2;Agricultural Land;The kingdom;92.48
+2024;Q3;Gallery/ Shop;The kingdom;99.77
+2021;Q4;General Index;All cities;114.85
+2025;Q2;General Index;All cities;99.18
+2025;Q2;General Index;All cities;100.61
+2024;Q3;General Index;All cities;97.61
+2022;Q3;Agricultural;The kingdom;98.89
+2025;Q3;Floor;The kingdom;98.68
+2021;Q2;General Index;All cities;89.6
+2024;Q4;Villa;The kingdom;104.66
+2022;Q3;Building;The kingdom;94.44
+2022;Q3;Commercial;The kingdom;94.38
+2025;Q2;General Index;All cities;96.03
+2021;Q1;General Index;All cities;92.11
+2025;Q4;General Index;All cities;93.01
+2024;Q2;General Index;All cities;96.38
+2025;Q4;General Index;All cities;97.63
+2022;Q2;Commercial Plot;The kingdom;95.98
+2024;Q1;Apartment;The kingdom;100.34
+2022;Q4;General Index;All cities;92.16
+2022;Q3;Residential;The kingdom;98.58
+2024;Q1;General Index;All cities;99.92
+2021;Q1;Floor;The kingdom;94.27
+2022;Q2;General Index;All cities;99.18
+2024;Q3;Residential Plot;The kingdom;101.38
+2024;Q3;General Index;All cities;92.05
+2025;Q3;General Index;All cities;92.66
+2021;Q4;General Index;All cities;94.15
+2022;Q2;Apartment;The kingdom;95.73
+2024;Q3;Floor;The kingdom;98.41
+2024;Q4;General Index;All cities;102.78
+2022;Q2;General Index;All cities;96.94
+2023;Q2;General Index;All cities;99.93
+2024;Q3;Apartment;The kingdom;100.93
+2024;Q2;Agricultural;The kingdom;103.52
+2021;Q2;Apartment;The kingdom;82.92
+2021;Q3;General Index;All cities;89.2
+2024;Q4;General Index;All cities;98.02
+2024;Q3;General Index;All cities;99.6
+2022;Q3;General Index;All cities;104.0
+2025;Q2;General Index;All cities;102.65
+2025;Q2;General Index;All cities;80.16
+2022;Q4;Residential Plot;The kingdom;98.6
+2022;Q1;General Index;All cities;98.22
+2022;Q2;Villa;The kingdom;92.1
+2024;Q4;Commercial;The kingdom;109.54
+2022;Q2;Agricultural;The kingdom;92.48
+2024;Q2;General Index;All cities;94.18
+2023;Q3;General Index;All cities;96.35
+2024;Q1;General Index;All cities;96.8
+2022;Q4;General Index;All cities;97.67
+2023;Q2;General Index;All cities;104.8
+2021;Q1;Agricultural Land;The kingdom;84.39
+2023;Q4;General Index;All cities;100.95
+2023;Q4;Building;The kingdom;100.15
+2021;Q3;Agricultural Land;The kingdom;87.46
+2022;Q3;General Index;All cities;93.6
+2025;Q4;Residential Plot;The kingdom;99.76
+2025;Q4;Commercial;The kingdom;113.47
+2023;Q2;General Index;All cities;100.56
+2024;Q3;General Index;All cities;79.73
+2021;Q3;Building;The kingdom;82.6
+2025;Q1;General Index;The kingdom;104.93
+2021;Q4;Commercial Plot;The kingdom;88.1
+2024;Q1;Villa;The kingdom;93.61
+2024;Q3;General Index;All cities;97.78
+2024;Q3;General Index;All cities;100.14
+2022;Q2;Gallery/ Shop;The kingdom;97.16
+2021;Q2;General Index;All cities;98.03
+2023;Q2;Agricultural Land;The kingdom;96.48
+2025;Q4;General Index;All cities;93.83
+2023;Q1;General Index;The kingdom;99.22
+2023;Q2;General Index;All cities;99.74
+2022;Q3;Commercial Plot;The kingdom;94.31
+2024;Q2;Building;The kingdom;107.32
+2024;Q4;Commercial Plot;The kingdom;110.17
+2023;Q3;Building;The kingdom;99.21
+2025;Q1;General Index;All cities;96.86
+2022;Q2;General Index;All cities;95.11
+2021;Q2;General Index;The kingdom;82.06
+2023;Q1;General Index;All cities;99.21
+2021;Q3;Residential Plot;The kingdom;87.86
+2021;Q2;Commercial;The kingdom;80.87
+2025;Q2;Apartment;The kingdom;100.32
+2025;Q3;General Index;All cities;100.43
+2023;Q2;Floor;The kingdom;100.3
+2025;Q3;Gallery/ Shop;The kingdom;100.83
+2023;Q2;Gallery/ Shop;The kingdom;100.66
+2025;Q4;General Index;All cities;94.41
+2021;Q4;Residential Plot;The kingdom;91.02
+2024;Q4;Apartment;The kingdom;101.4
+2024;Q4;Gallery/ Shop;The kingdom;99.8
+2023;Q3;General Index;All cities;98.47
+2021;Q3;Commercial Plot;The kingdom;86.07
+2022;Q4;Building;The kingdom;93.55
+2024;Q1;General Index;All cities;99.55
+2023;Q1;General Index;All cities;101.09
+2022;Q2;General Index;All cities;96.61
+2025;Q2;Residential Plot;The kingdom;101.3
+2023;Q2;Residential Plot;The kingdom;100.28
+2025;Q4;Commercial Plot;The kingdom;113.99
+2021;Q4;Agricultural;The kingdom;92.31
+2024;Q1;General Index;All cities;89.64
+2024;Q4;Residential Plot;The kingdom;102.25
+2025;Q4;General Index;All cities;92.01
+2025;Q1;General Index;All cities;100.08
+2021;Q1;General Index;All cities;91.34
+2025;Q2;Floor;The kingdom;98.05
+2022;Q4;Residential;The kingdom;98.18
+2021;Q3;Floor;The kingdom;89.35
+2022;Q2;General Index;All cities;98.89
+2024;Q4;General Index;All cities;95.62
+2021;Q2;General Index;All cities;86.7
+2021;Q3;Villa;The kingdom;81.17
+2025;Q3;Residential Plot;The kingdom;100.44
+2024;Q2;General Index;All cities;92.62
+2025;Q1;Gallery/ Shop;The kingdom;101.58
+2024;Q4;Residential;The kingdom;102.35
+2025;Q2;General Index;All cities;99.29
+2021;Q4;General Index;All cities;97.27
+2025;Q4;General Index;The kingdom;103.48
+2023;Q4;General Index;All cities;98.76
+2021;Q4;Commercial;The kingdom;87.87
+2025;Q2;General Index;All cities;97.48
+2022;Q2;General Index;All cities;95.51
+2025;Q4;Agricultural;The kingdom;109.44
+2021;Q2;Commercial Plot;The kingdom;80.67
+2025;Q3;Villa;The kingdom;102.4
+2023;Q1;Residential Plot;The kingdom;100.19
+2025;Q1;General Index;All cities;100.48
+2022;Q2;Floor;The kingdom;96.95
+2024;Q1;General Index;All cities;98.48
+2025;Q4;General Index;All cities;86.31
+2021;Q3;General Index;All cities;98.43
+2024;Q2;Apartment;The kingdom;101.07
+2023;Q2;Agricultural;The kingdom;96.48
+2021;Q2;Building;The kingdom;79.46
+2025;Q3;General Index;All cities;103.53
+2025;Q2;Agricultural Land;The kingdom;102.63
+2022;Q4;General Index;All cities;101.67
+2023;Q1;General Index;All cities;101.84
+2023;Q1;General Index;All cities;99.04
+2025;Q3;General Index;All cities;110.91
+2023;Q1;Agricultural;The kingdom;97.03
+2021;Q4;General Index;All cities;98.85
+2024;Q2;General Index;All cities;100.2
+2025;Q4;Agricultural Land;The kingdom;109.44
+2023;Q1;Residential;The kingdom;100.24
+2025;Q2;Commercial Plot;The kingdom;116.56
+2025;Q4;General Index;All cities;109.88
+2023;Q1;General Index;All cities;99.76
+2024;Q2;General Index;All cities;100.61
+2021;Q1;General Index;All cities;95.42
+2025;Q2;Building;The kingdom;110.22
+2022;Q4;Villa;The kingdom;94.16
+2023;Q4;Agricultural;The kingdom;102.08
+2021;Q2;Villa;The kingdom;75.42
+2025;Q4;General Index;All cities;103.37
+2024;Q2;General Index;All cities;99.72
+2022;Q2;Building;The kingdom;90.3
+2024;Q4;General Index;All cities;93.89
+2023;Q1;Building;The kingdom;99.09
+2023;Q4;General Index;All cities;99.73
+2023;Q4;Residential;The kingdom;99.28
+2022;Q1;General Index;All cities;92.53
+2024;Q4;General Index;All cities;93.48
+2022;Q1;Commercial Plot;The kingdom;91.42
+2023;Q4;General Index;All cities;102.51
+2023;Q3;General Index;All cities;100.06
+2021;Q2;Agricultural;The kingdom;87.19
+2024;Q1;General Index;All cities;98.58
+2023;Q1;Floor;The kingdom;100.08
+2022;Q1;General Index;All cities;95.94
+2022;Q4;Agricultural;The kingdom;95.04
+2025;Q3;Residential;The kingdom;100.44
+2021;Q1;Agricultural;The kingdom;84.39
+2023;Q4;General Index;All cities;98.37
+2024;Q2;Residential;The kingdom;101.13
+2024;Q1;General Index;All cities;99.32
+2025;Q1;Agricultural Land;The kingdom;100.87
+2023;Q3;General Index;All cities;93.07
+2023;Q3;Agricultural Land;The kingdom;104.64
+2024;Q2;Residential Plot;The kingdom;101.13
+2025;Q4;General Index;All cities;100.55
+2024;Q3;Agricultural Land;The kingdom;95.54
+2022;Q1;Gallery/ Shop;The kingdom;97.79
+2024;Q3;General Index;All cities;109.85
+2023;Q3;General Index;All cities;100.77
+2022;Q1;Agricultural Land;The kingdom;91.43
+2024;Q1;Residential;The kingdom;99.18
+2021;Q3;General Index;All cities;111.57
+2025;Q2;General Index;The kingdom;105.0
+2022;Q1;Floor;The kingdom;94.07
+2024;Q3;General Index;All cities;98.55
+2021;Q3;General Index;All cities;91.38
+2023;Q3;Commercial Plot;The kingdom;100.31
+2023;Q1;General Index;All cities;98.29
+2022;Q3;General Index;All cities;97.39
+2024;Q2;General Index;All cities;107.53
+2025;Q4;Floor;The kingdom;98.52
