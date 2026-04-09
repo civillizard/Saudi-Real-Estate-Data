@@ -226,6 +226,28 @@ SEED_ENDPOINTS: list[dict] = [
         "url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/FinancialStabilityReport.aspx",
         "check_type": "json_hash",
     },
+    # ── RSS / News Feeds ─────────────────────────────────────────────
+    {
+        "endpoint_id": "baladiya-news",
+        "source": "BALADIYA",
+        "name": "Baladiya Municipal News (JSON API)",
+        "url": "https://balady.gov.sa/api/news?page=0",
+        "check_type": "json_count",
+    },
+    {
+        "endpoint_id": "saudigazette-business-rss",
+        "source": "MEDIA",
+        "name": "Saudi Gazette Business RSS",
+        "url": "https://saudigazette.com.sa/rss/business",
+        "check_type": "json_hash",
+    },
+    {
+        "endpoint_id": "momah-sitemap",
+        "source": "MOMAH",
+        "name": "MOMAH News Sitemap",
+        "url": "https://momah.gov.sa/sitemap.xml",
+        "check_type": "json_hash",
+    },
     # ── Etimad (Government Procurement — public API, no auth) ────────
     {
         "endpoint_id": "etimad-re-tenders",
