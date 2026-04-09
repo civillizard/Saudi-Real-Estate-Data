@@ -108,20 +108,48 @@ MONITORED_PAGES = [
 # Auth: NHC endpoints work with "Bearer null" header.
 
 SEED_ENDPOINTS: list[dict] = [
-    # ── NHC / Ejar Indicators ────────────────────────────────────────
+    # ── NHC / Ejar Indicators (Bearer null auth) ───────────────────
     {
-        "endpoint_id": "nhc-ejar-indicators",
+        "endpoint_id": "nhc-ejar-last-contract",
         "source": "NHC",
-        "name": "Ejar Rental Indicators",
-        "url": "https://bisolutions.nhc.sa/api/Ejar/GetAllIndicators",
+        "name": "Ejar Last Contract Date (freshness signal)",
+        "url": "https://bisolutions.nhc.sa/RealEstateIndicatorsAPIs/api/IndicatorEjar/GetLastContractDate",
         "check_type": "json_hash",
     },
     {
-        "endpoint_id": "nhc-ejar-refdata",
+        "endpoint_id": "nhc-ejar-saudi-stats",
         "source": "NHC",
-        "name": "Ejar Reference Data",
-        "url": "https://bisolutions.nhc.sa/api/Ejar/GetReferenceData",
+        "name": "Ejar Saudi National Statistics",
+        "url": "https://bisolutions.nhc.sa/RealEstateIndicatorsAPIs/api/IndicatorEjar/GetSaudiStatistics",
         "check_type": "json_hash",
+        "method": "POST",
+        "post_body": "{}",
+    },
+    {
+        "endpoint_id": "nhc-ejar-regions-stats",
+        "source": "NHC",
+        "name": "Ejar Regional Statistics (13 regions)",
+        "url": "https://bisolutions.nhc.sa/RealEstateIndicatorsAPIs/api/IndicatorEjar/GetRegionsStatistics",
+        "check_type": "json_hash",
+        "method": "POST",
+        "post_body": "{}",
+    },
+    {
+        "endpoint_id": "nhc-ejar-regions",
+        "source": "NHC",
+        "name": "Ejar Regions List",
+        "url": "https://bisolutions.nhc.sa/RealEstateIndicatorsAPIs/api/IndicatorEjar/GetAllRegions",
+        "check_type": "json_count",
+    },
+    # ── REGA Ejar Charts (Bearer null auth, REGA domain) ────────────
+    {
+        "endpoint_id": "rega-ejar-price-index",
+        "source": "REGA",
+        "name": "Ejar Price Index (quarterly timeseries)",
+        "url": "https://rentalrei.rega.gov.sa/RegaIndicatorsAPIs/api/IndicatorEjar/GetChartPublicIndicatorsDemo",
+        "check_type": "json_hash",
+        "method": "POST",
+        "post_body": "{}",
     },
     # ── KAPSARC (ODS v2.1 API — no auth needed) ────────────────────
     {
@@ -173,10 +201,21 @@ SEED_ENDPOINTS: list[dict] = [
         "url": 'https://data.kapsarc.org/api/explore/v2.1/catalog/datasets?where=search(title,"real estate") OR search(title,"housing") OR search(title,"construction") OR search(title,"mortgage")&order_by=modified DESC&limit=20',
         "check_type": "json_count",
     },
-    # ── SAMA ─────────────────────────────────────────────────────────
-    # Populated after probe results
-    # ── Ejar Platform ────────────────────────────────────────────────
-    # Populated after probe results
+    # ── SAMA (Monthly Statistical Bulletin — primary RE finance data) ─
+    {
+        "endpoint_id": "sama-monthly-bulletin-page",
+        "source": "SAMA",
+        "name": "SAMA Monthly Statistics Page",
+        "url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/MonthlyStatistics.aspx",
+        "check_type": "json_hash",
+    },
+    {
+        "endpoint_id": "sama-fin-stability",
+        "source": "SAMA",
+        "name": "SAMA Financial Stability Reports Page",
+        "url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/FinancialStabilityReport.aspx",
+        "check_type": "json_hash",
+    },
 ]
 
 # Request settings
@@ -245,6 +284,8 @@ def init_state_db():
             source TEXT NOT NULL,
             name TEXT,
             url TEXT NOT NULL,
+            method TEXT NOT NULL DEFAULT 'GET',
+            post_body TEXT,
             check_type TEXT NOT NULL DEFAULT 'json_hash',
             last_hash TEXT,
             last_record_count INTEGER,
@@ -279,13 +320,16 @@ def seed_api_endpoints(conn: sqlite3.Connection) -> None:
         ).fetchone()
         if existing is None:
             conn.execute(
-                """INSERT INTO api_endpoints (endpoint_id, source, name, url, check_type, enabled)
-                   VALUES (?, ?, ?, ?, ?, 1)""",
+                """INSERT INTO api_endpoints
+                   (endpoint_id, source, name, url, method, post_body, check_type, enabled)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, 1)""",
                 (
                     ep["endpoint_id"],
                     ep["source"],
                     ep["name"],
                     ep["url"],
+                    ep.get("method", "GET"),
+                    ep.get("post_body"),
                     ep["check_type"],
                 ),
             )
@@ -300,6 +344,7 @@ def fetch_url(
     url: str,
     timeout: int = REQUEST_TIMEOUT,
     extra_headers: dict | None = None,
+    post_data: bytes | None = None,
 ) -> bytes | None:
     """Fetch a URL with Safari user agent. Returns bytes or None on error."""
     headers = {
@@ -309,7 +354,7 @@ def fetch_url(
     }
     if extra_headers:
         headers.update(extra_headers)
-    req = urllib.request.Request(url, headers=headers)
+    req = urllib.request.Request(url, headers=headers, data=post_data)
     # Some Saudi gov sites have cert issues — use unverified context as fallback
     ctx = ssl.create_default_context()
     try:
@@ -672,13 +717,33 @@ def check_api_endpoints(conn: sqlite3.Connection) -> list[dict]:
     changes = []
 
     rows = conn.execute(
-        "SELECT endpoint_id, source, name, url, check_type, last_hash, last_record_count FROM api_endpoints WHERE enabled = 1"
+        "SELECT endpoint_id, source, name, url, method, post_body, check_type, last_hash, last_record_count "
+        "FROM api_endpoints WHERE enabled = 1"
     ).fetchall()
 
-    for eid, source, name, url, check_type, last_hash, last_count in rows:
-        # NHC endpoints need Bearer null auth
-        extra = {"Authorization": "Bearer null"} if source == "NHC" else None
-        data = fetch_url(url, extra_headers=extra)
+    for (
+        eid,
+        source,
+        name,
+        url,
+        method,
+        post_body,
+        check_type,
+        last_hash,
+        last_count,
+    ) in rows:
+        # NHC/REGA Ejar endpoints need Bearer null auth
+        extra = {}
+        if source in ("NHC", "REGA"):
+            extra["Authorization"] = "Bearer null"
+        if method == "POST":
+            extra["Content-Type"] = "application/json"
+
+        data = fetch_url(
+            url,
+            extra_headers=extra or None,
+            post_data=post_body.encode() if post_body else None,
+        )
         if data is None:
             log.debug(f"  Could not fetch API endpoint: {name}")
             continue
