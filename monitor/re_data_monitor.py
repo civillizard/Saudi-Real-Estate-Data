@@ -265,6 +265,24 @@ SEED_ENDPOINTS: list[dict] = [
         "url": "https://tenders.etimad.sa/Tender/AllSupplierTendersForVisitorAsync?PageSize=10&pageNumber=1&TenderActivityId=2&TenderCategory=2&IsSearch=true&Sort=SubmitionDate&SortDirection=DESC",
         "check_type": "json_count",
     },
+    # ── MOJ SharePoint REST API (cracked — no auth needed) ───────────
+    {
+        "endpoint_id": "moj-news-ar",
+        "source": "MOJ",
+        "name": "MOJ Arabic News (1,717 items via SharePoint API)",
+        "url": "https://www.moj.gov.sa/_api/web/lists(guid'0509935e-ac5b-4a88-8488-ea39b14f05eb')/items?$top=5&$select=Id,Title,Created&$orderby=Created%20desc",
+        "check_type": "json_hash",
+    },
+    # ── NHC Drupal API (cracked — POST to /api/news/) ────────────────
+    {
+        "endpoint_id": "nhc-news",
+        "source": "NHC",
+        "name": "NHC News (427 articles via Drupal proxy)",
+        "url": "https://nhc.sa/api/news/",
+        "check_type": "json_hash",
+        "method": "POST",
+        "post_body": '{"locale": "ar", "page": 1}',
+    },
 ]
 
 # Request settings
@@ -839,10 +857,15 @@ def check_api_endpoints(conn: sqlite3.Connection) -> list[dict]:
         last_hash,
         last_count,
     ) in rows:
-        # NHC/REGA Ejar endpoints need Bearer null auth
+        # Source-specific headers
         extra = {}
         if source in ("NHC", "REGA"):
             extra["Authorization"] = "Bearer null"
+        if source == "MOJ":
+            extra["Accept"] = "application/json;odata=nometadata"
+        if eid == "nhc-news":
+            extra["Referer"] = "https://nhc.sa/ar/media-center/news/"
+            extra["Origin"] = "https://nhc.sa"
         if method == "POST":
             extra["Content-Type"] = "application/json"
 
