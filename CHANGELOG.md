@@ -12,6 +12,26 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 
 ---
 
+## 2026-04-09 — Data Corrections + Update Checker
+
+### Data Corrections
+- **MOJ-Transfers-2025-Q2.csv:** 93 KB → 23.5 MB — was a stub file, now contains full quarterly transfer (إفراغ) data
+- **MOJ-Transfers-2025-Q3.csv:** 96 KB → 27.8 MB — same issue, now complete
+- **MOJ-Release-Seizure-2025-Q2.csv:** 15.1 MB → 25.0 MB — expanded with additional records
+- **MOJ-Sales-2025-Q2.csv:** 5.6 MB → 6.2 MB — minor correction (+586 KB)
+- **Total:** 303 CSVs, ~7.48M rows
+
+### Tools
+- `download_new_data.py --check-updates` — detects when the portal silently replaces files with corrected versions (compares local vs remote file size via Range GET)
+- `download_new_data.py --redownload-changed` — re-downloads files flagged as changed
+- `update_pipeline.sh` — fixed macOS compatibility (`grep -P` → `sed`)
+
+### Notes
+- The Saudi Open Data portal occasionally publishes metadata for files before uploading the actual data. 10 datasets (Doc Attorney 2023 monthly, Property Identity Q2 2025) have catalog entries but return 404 on the CDN. These will be downloaded automatically once uploaded.
+- The Transfer files were originally uploaded as ~95 KB stubs (containing only headers + a few rows) and were silently replaced with full data (~25 MB each) sometime between Apr 7–9.
+
+---
+
 ## 2026-04-07 — Major Data Update
 
 ### Data

@@ -1,0 +1,827 @@
+﻿periodicity;year;quarter;city;measure;value
+Quarterly;2021;Q2;Total;QoQ;0.8
+Quarterly;2022;Q2;Total;Index;95.56
+Quarterly;2022;Q2;Total;YoY;16.5
+Quarterly;2023;Q1;Total;Index;99.22
+Quarterly;2023;Q1;Total;QoQ;2.1
+Quarterly;2023;Q2;Total;YoY;4.9
+Quarterly;2024;Q2;Total;YoY;1.6
+Quarterly;2024;Q3;Total;Index;102.56
+Quarterly;2024;Q3;Total;QoQ;0.8
+Quarterly;2024;Q4;Total;QoQ;1.6
+Quarterly;2025;Q1;Total;YoY;4.3
+Annually;2022;Annual average;Total;YoY;12.7
+Annually;2023;Annual average;Total;YoY;4.9
+Quarterly;2021;Q2;Riyadh;QoQ;0.6
+Quarterly;2021;Q3;Riyadh;Index;79.61
+Quarterly;2021;Q4;Riyadh;QoQ;5.9
+Quarterly;2022;Q1;Riyadh;YoY;17.6
+Quarterly;2022;Q4;Riyadh;QoQ;2.5
+Quarterly;2023;Q1;Riyadh;QoQ;2.1
+Quarterly;2023;Q3;Riyadh;YoY;6.8
+Quarterly;2024;Q1;Riyadh;Index;103.82
+Quarterly;2024;Q1;Riyadh;QoQ;1.0
+Quarterly;2024;Q2;Riyadh;QoQ;3.6
+Quarterly;2024;Q4;Riyadh;QoQ;3.2
+Quarterly;2025;Q1;Riyadh;Index;114.89
+Quarterly;2025;Q1;Riyadh;YoY;10.7
+Quarterly;2025;Q3;Riyadh;YoY;1.0
+Annually;2022;Annual average;Riyadh;Index;92.05
+Annually;2023;Annual average;Riyadh;Index;100.0
+Annually;2024;Annual average;Riyadh;YoY;8.6
+Quarterly;2021;Q4;Makkah;Index;90.56
+Quarterly;2022;Q2;Makkah;Index;96.61
+Quarterly;2022;Q2;Makkah;QoQ;4.4
+Quarterly;2023;Q1;Makkah;YoY;8.8
+Quarterly;2023;Q3;Makkah;QoQ;-0.7
+Quarterly;2023;Q4;Makkah;Index;98.76
+Quarterly;2024;Q2;Makkah;YoY;-2.4
+Quarterly;2024;Q3;Makkah;Index;98.55
+Quarterly;2024;Q4;Makkah;QoQ;-0.3
+Quarterly;2025;Q1;Makkah;YoY;1.5
+Quarterly;2021;Q1;Madinah;Index;89.15
+Quarterly;2021;Q3;Madinah;QoQ;5.1
+Quarterly;2022;Q4;Madinah;Index;98.35
+Quarterly;2022;Q4;Madinah;QoQ;0.7
+Quarterly;2023;Q2;Madinah;Index;102.88
+Quarterly;2023;Q2;Madinah;YoY;4.0
+Quarterly;2024;Q1;Madinah;YoY;0.7
+Quarterly;2024;Q4;Madinah;Index;98.02
+Quarterly;2025;Q1;Madinah;Index;98.49
+Quarterly;2025;Q1;Madinah;QoQ;0.5
+Quarterly;2025;Q2;Madinah;QoQ;-2.5
+Quarterly;2025;Q3;Madinah;Index;91.61
+Quarterly;2025;Q3;Madinah;YoY;-8.0
+Annually;2024;Annual average;Madinah;Index;99.19
+Annually;2024;Annual average;Madinah;YoY;-0.8
+Quarterly;2021;Q4;Al Qaseem;QoQ;1.4
+Quarterly;2022;Q1;Al Qaseem;Index;95.7
+Quarterly;2022;Q1;Al Qaseem;QoQ;4.2
+Quarterly;2023;Q4;Al Qaseem;Index;99.32
+Quarterly;2024;Q1;Al Qaseem;QoQ;-2.5
+Quarterly;2024;Q2;Al Qaseem;Index;96.38
+Quarterly;2024;Q2;Al Qaseem;QoQ;-0.4
+Quarterly;2024;Q3;Al Qaseem;Index;97.61
+Quarterly;2024;Q4;Al Qaseem;YoY;-3.7
+Quarterly;2025;Q3;Al Qaseem;Index;92.66
+Annually;2023;Annual average;Al Qaseem;YoY;0.2
+Annually;2024;Annual average;Al Qaseem;Index;96.6
+Quarterly;2021;Q2;Eastern Province;QoQ;3.8
+Quarterly;2021;Q3;Eastern Province;Index;98.43
+Quarterly;2022;Q3;Eastern Province;YoY;4.3
+Quarterly;2022;Q4;Eastern Province;Index;96.48
+Quarterly;2023;Q2;Eastern Province;YoY;-4.5
+Quarterly;2023;Q3;Eastern Province;Index;100.4
+Quarterly;2023;Q3;Eastern Province;YoY;-2.2
+Quarterly;2024;Q2;Eastern Province;Index;94.18
+Annually;2022;Annual average;Eastern Province;Index;100.68
+Annually;2024;Annual average;Eastern Province;YoY;-5.8
+Quarterly;2021;Q3;Aseer;QoQ;5.1
+Quarterly;2022;Q2;Aseer;QoQ;0.6
+Quarterly;2023;Q2;Aseer;Index;100.56
+Quarterly;2023;Q2;Aseer;QoQ;-1.7
+Quarterly;2023;Q4;Aseer;Index;95.52
+Quarterly;2024;Q1;Aseer;QoQ;-4.2
+Quarterly;2024;Q3;Aseer;Index;92.37
+Quarterly;2024;Q4;Aseer;Index;88.55
+Annually;2022;Annual average;Aseer;Index;96.35
+Annually;2022;Annual average;Aseer;YoY;5.4
+Annually;2024;Annual average;Aseer;YoY;-8.8
+Quarterly;2021;Q4;Tabouk;Index;90.1
+Quarterly;2021;Q4;Tabouk;QoQ;-1.4
+Quarterly;2022;Q1;Tabouk;YoY;-1.3
+Quarterly;2022;Q3;Tabouk;QoQ;3.7
+Quarterly;2023;Q2;Tabouk;YoY;10.5
+Quarterly;2024;Q3;Tabouk;Index;100.14
+Quarterly;2025;Q1;Tabouk;YoY;1.2
+Quarterly;2025;Q2;Tabouk;Index;104.4
+Quarterly;2025;Q3;Tabouk;QoQ;-0.8
+Quarterly;2021;Q3;Hail;QoQ;4.5
+Quarterly;2021;Q4;Hail;Index;97.27
+Quarterly;2022;Q2;Hail;QoQ;3.0
+Quarterly;2022;Q3;Hail;Index;98.85
+Quarterly;2022;Q4;Hail;QoQ;3.0
+Quarterly;2023;Q1;Hail;Index;101.84
+Quarterly;2023;Q1;Hail;QoQ;0.1
+Quarterly;2023;Q3;Hail;Index;96.35
+Quarterly;2023;Q3;Hail;QoQ;-3.3
+Quarterly;2023;Q4;Hail;YoY;0.5
+Quarterly;2024;Q1;Hail;Index;99.55
+Quarterly;2024;Q1;Hail;YoY;-2.2
+Quarterly;2025;Q1;Hail;YoY;4.1
+Quarterly;2025;Q3;Hail;Index;93.69
+Quarterly;2022;Q3;Northern Borders;YoY;13.4
+Quarterly;2023;Q1;Northern Borders;Index;99.04
+Quarterly;2023;Q1;Northern Borders;YoY;0.8
+Quarterly;2023;Q4;Northern Borders;YoY;0.8
+Quarterly;2024;Q1;Northern Borders;QoQ;-3.9
+Quarterly;2024;Q1;Northern Borders;YoY;-0.6
+Quarterly;2024;Q2;Northern Borders;Index;100.61
+Quarterly;2025;Q1;Northern Borders;Index;107.05
+Annually;2024;Annual average;Northern Borders;Index;100.51
+Quarterly;2021;Q3;Jazan;Index;94.51
+Quarterly;2021;Q4;Jazan;Index;95.67
+Quarterly;2023;Q1;Jazan;YoY;6.6
+Quarterly;2023;Q2;Jazan;Index;97.73
+Quarterly;2023;Q2;Jazan;QoQ;-2.0
+Quarterly;2023;Q4;Jazan;Index;100.95
+Quarterly;2023;Q4;Jazan;YoY;3.4
+Quarterly;2024;Q1;Jazan;QoQ;2.8
+Quarterly;2024;Q3;Jazan;QoQ;-1.8
+Quarterly;2024;Q3;Jazan;YoY;-1.3
+Quarterly;2025;Q1;Jazan;Index;101.71
+Quarterly;2025;Q3;Jazan;Index;100.71
+Annually;2022;Annual average;Jazan;Index;96.36
+Annually;2022;Annual average;Jazan;YoY;0.5
+Quarterly;2021;Q3;Najran;Index;89.2
+Quarterly;2021;Q3;Najran;QoQ;3.0
+Quarterly;2022;Q3;Najran;QoQ;2.0
+Quarterly;2023;Q3;Najran;Index;98.47
+Quarterly;2023;Q4;Najran;Index;98.28
+Quarterly;2024;Q3;Najran;Index;97.78
+Quarterly;2025;Q1;Najran;Index;102.06
+Quarterly;2025;Q2;Najran;YoY;0.4
+Annually;2023;Annual average;Najran;YoY;13.4
+Quarterly;2021;Q1;Al Baha;Index;114.65
+Quarterly;2021;Q2;Al Baha;Index;123.54
+Quarterly;2021;Q2;Al Baha;QoQ;7.8
+Quarterly;2021;Q3;Al Baha;QoQ;-9.7
+Quarterly;2022;Q2;Al Baha;Index;97.69
+Quarterly;2022;Q3;Al Baha;Index;93.36
+Quarterly;2022;Q3;Al Baha;YoY;-16.3
+Quarterly;2022;Q4;Al Baha;QoQ;9.4
+Quarterly;2023;Q1;Al Baha;QoQ;-0.3
+Quarterly;2023;Q2;Al Baha;Index;105.86
+Quarterly;2023;Q4;Al Baha;Index;99.73
+Quarterly;2024;Q2;Al Baha;YoY;-23.0
+Quarterly;2024;Q3;Al Baha;QoQ;-2.2
+Quarterly;2024;Q4;Al Baha;Index;83.09
+Quarterly;2025;Q2;Al Baha;QoQ;-4.4
+Annually;2022;Annual average;Al Baha;YoY;-14.4
+Annually;2024;Annual average;Al Baha;Index;81.6
+Annually;2024;Annual average;Al Baha;YoY;-18.4
+Quarterly;2021;Q2;Al Jouf;QoQ;4.5
+Quarterly;2022;Q3;Al Jouf;YoY;-0.2
+Quarterly;2023;Q1;Al Jouf;Index;100.62
+Quarterly;2023;Q1;Al Jouf;YoY;9.6
+Quarterly;2023;Q2;Al Jouf;QoQ;4.2
+Quarterly;2023;Q4;Al Jouf;Index;97.5
+Quarterly;2024;Q1;Al Jouf;Index;89.64
+Quarterly;2024;Q3;Al Jouf;Index;98.05
+Quarterly;2024;Q3;Al Jouf;QoQ;0.4
+Quarterly;2024;Q4;Al Jouf;QoQ;-4.7
+Quarterly;2025;Q1;Al Jouf;QoQ;3.7
+Quarterly;2025;Q3;Al Jouf;QoQ;-3.4
+Quarterly;2021;Q2;Total;Index;82.06
+Quarterly;2022;Q4;Total;Index;97.22
+Quarterly;2022;Q4;Total;QoQ;-0.3
+Quarterly;2023;Q1;Total;YoY;8.7
+Quarterly;2023;Q4;Total;QoQ;0.6
+Quarterly;2024;Q2;Total;QoQ;1.2
+Quarterly;2024;Q3;Total;YoY;2.6
+Quarterly;2025;Q1;Total;QoQ;0.7
+Quarterly;2025;Q2;Total;Index;105.0
+Quarterly;2021;Q2;Riyadh;Index;74.86
+Quarterly;2021;Q4;Riyadh;Index;84.29
+Quarterly;2022;Q2;Riyadh;Index;91.89
+Quarterly;2022;Q4;Riyadh;Index;95.65
+Quarterly;2023;Q2;Riyadh;QoQ;2.4
+Quarterly;2023;Q2;Riyadh;YoY;8.7
+Quarterly;2023;Q3;Riyadh;QoQ;-0.3
+Quarterly;2023;Q4;Riyadh;YoY;7.5
+Quarterly;2024;Q2;Riyadh;YoY;7.6
+Quarterly;2024;Q3;Riyadh;YoY;10.2
+Quarterly;2024;Q4;Riyadh;Index;113.33
+Quarterly;2024;Q4;Riyadh;YoY;10.2
+Quarterly;2025;Q1;Riyadh;QoQ;1.4
+Quarterly;2025;Q2;Riyadh;Index;111.35
+Quarterly;2025;Q2;Riyadh;QoQ;-3.1
+Annually;2022;Annual average;Riyadh;YoY;17.7
+Quarterly;2021;Q2;Makkah;Index;86.7
+Quarterly;2021;Q3;Makkah;Index;89.05
+Quarterly;2021;Q3;Makkah;QoQ;2.7
+Quarterly;2021;Q4;Makkah;QoQ;1.7
+Quarterly;2022;Q3;Makkah;YoY;15.3
+Quarterly;2022;Q4;Makkah;QoQ;-2.1
+Quarterly;2022;Q4;Makkah;YoY;11.0
+Quarterly;2023;Q4;Makkah;QoQ;-1.2
+Quarterly;2024;Q1;Makkah;Index;98.58
+Quarterly;2024;Q3;Makkah;YoY;-1.4
+Quarterly;2025;Q2;Makkah;Index;102.07
+Annually;2022;Annual average;Makkah;YoY;11.1
+Quarterly;2022;Q1;Madinah;YoY;7.6
+Quarterly;2022;Q2;Madinah;Index;98.89
+Quarterly;2022;Q2;Madinah;QoQ;3.1
+Quarterly;2023;Q1;Madinah;Index;99.21
+Quarterly;2023;Q2;Madinah;QoQ;3.7
+Quarterly;2023;Q3;Madinah;YoY;3.2
+Quarterly;2023;Q4;Madinah;QoQ;-3.5
+Quarterly;2024;Q3;Madinah;QoQ;0.4
+Quarterly;2024;Q3;Madinah;YoY;-1.2
+Quarterly;2025;Q2;Madinah;YoY;-3.2
+Annually;2023;Annual average;Madinah;Index;100.0
+Quarterly;2021;Q2;Al Qaseem;Index;88.16
+Quarterly;2022;Q4;Al Qaseem;Index;100.77
+Quarterly;2022;Q4;Al Qaseem;YoY;9.7
+Quarterly;2023;Q1;Al Qaseem;YoY;6.3
+Quarterly;2023;Q3;Al Qaseem;QoQ;2.3
+Quarterly;2025;Q2;Al Qaseem;Index;97.48
+Quarterly;2025;Q3;Al Qaseem;YoY;-5.1
+Annually;2021;Annual average;Al Qaseem;Index;90.67
+Annually;2022;Annual average;Al Qaseem;YoY;10.1
+Quarterly;2022;Q2;Eastern Province;QoQ;6.1
+Quarterly;2022;Q4;Eastern Province;QoQ;-6.0
+Quarterly;2023;Q1;Eastern Province;YoY;2.2
+Quarterly;2023;Q3;Eastern Province;QoQ;0.2
+Quarterly;2024;Q1;Eastern Province;YoY;-4.3
+Quarterly;2024;Q3;Eastern Province;QoQ;-2.3
+Quarterly;2024;Q4;Eastern Province;Index;93.89
+Quarterly;2024;Q4;Eastern Province;YoY;-4.6
+Quarterly;2025;Q2;Eastern Province;YoY;4.2
+Quarterly;2025;Q3;Eastern Province;Index;97.62
+Annually;2023;Annual average;Eastern Province;YoY;-0.7
+Quarterly;2021;Q2;Aseer;QoQ;0.9
+Quarterly;2022;Q3;Aseer;QoQ;1.1
+Quarterly;2023;Q4;Aseer;YoY;-2.9
+Quarterly;2024;Q2;Aseer;Index;92.62
+Quarterly;2024;Q2;Aseer;QoQ;1.2
+Quarterly;2024;Q2;Aseer;YoY;-7.9
+Quarterly;2024;Q4;Aseer;QoQ;-4.1
+Quarterly;2025;Q2;Aseer;Index;89.04
+Quarterly;2025;Q2;Aseer;YoY;-3.9
+Annually;2023;Annual average;Aseer;YoY;3.8
+Quarterly;2022;Q2;Tabouk;QoQ;0.2
+Quarterly;2022;Q4;Tabouk;QoQ;-1.5
+Quarterly;2023;Q2;Tabouk;Index;99.74
+Quarterly;2023;Q4;Tabouk;YoY;9.7
+Quarterly;2024;Q1;Tabouk;YoY;3.9
+Quarterly;2024;Q3;Tabouk;YoY;-3.4
+Quarterly;2024;Q4;Tabouk;Index;102.22
+Quarterly;2025;Q2;Tabouk;QoQ;3.9
+Quarterly;2025;Q2;Tabouk;YoY;4.7
+Quarterly;2025;Q3;Tabouk;Index;103.53
+Annually;2022;Annual average;Tabouk;Index;91.52
+Annually;2023;Annual average;Tabouk;Index;100.0
+Quarterly;2021;Q4;Hail;QoQ;1.8
+Quarterly;2022;Q1;Hail;Index;96.27
+Quarterly;2022;Q2;Hail;Index;99.18
+Quarterly;2022;Q2;Hail;YoY;8.5
+Quarterly;2022;Q4;Hail;Index;101.78
+Quarterly;2023;Q1;Hail;YoY;5.8
+Quarterly;2023;Q2;Hail;QoQ;-2.2
+Quarterly;2023;Q2;Hail;YoY;0.5
+Quarterly;2023;Q4;Hail;QoQ;6.1
+Quarterly;2024;Q2;Hail;QoQ;0.2
+Quarterly;2024;Q2;Hail;YoY;0.2
+Quarterly;2025;Q3;Hail;QoQ;-8.7
+Annually;2023;Annual average;Hail;Index;100.0
+Annually;2024;Annual average;Hail;Index;100.86
+Quarterly;2021;Q1;Northern Borders;Index;91.89
+Quarterly;2022;Q1;Northern Borders;QoQ;6.3
+Quarterly;2022;Q1;Northern Borders;YoY;6.9
+Quarterly;2022;Q3;Northern Borders;QoQ;6.8
+Quarterly;2022;Q4;Northern Borders;YoY;10.0
+Quarterly;2023;Q3;Northern Borders;QoQ;1.6
+Quarterly;2023;Q3;Northern Borders;YoY;-3.4
+Quarterly;2023;Q4;Northern Borders;Index;102.51
+Quarterly;2024;Q4;Northern Borders;YoY;-1.2
+Quarterly;2025;Q1;Northern Borders;QoQ;5.7
+Quarterly;2025;Q3;Northern Borders;Index;93.94
+Quarterly;2025;Q3;Northern Borders;QoQ;-5.4
+Annually;2021;Annual average;Northern Borders;Index;91.51
+Quarterly;2022;Q1;Jazan;QoQ;-2.2
+Quarterly;2022;Q2;Jazan;QoQ;3.4
+Quarterly;2022;Q3;Jazan;YoY;3.0
+Quarterly;2023;Q1;Jazan;QoQ;2.1
+Quarterly;2023;Q2;Jazan;YoY;0.9
+Quarterly;2023;Q3;Jazan;Index;101.6
+Quarterly;2023;Q3;Jazan;QoQ;4.0
+Quarterly;2023;Q3;Jazan;YoY;4.3
+Quarterly;2024;Q3;Jazan;Index;100.24
+Quarterly;2025;Q2;Jazan;QoQ;-2.5
+Quarterly;2025;Q2;Jazan;YoY;-2.8
+Quarterly;2025;Q3;Jazan;YoY;0.5
+Quarterly;2022;Q1;Najran;Index;85.64
+Quarterly;2022;Q1;Najran;YoY;-1.0
+Quarterly;2022;Q3;Najran;YoY;-0.3
+Quarterly;2023;Q2;Najran;Index;105.13
+Quarterly;2023;Q2;Najran;YoY;20.6
+Quarterly;2023;Q3;Najran;QoQ;-6.3
+Quarterly;2024;Q1;Najran;YoY;-1.6
+Quarterly;2025;Q1;Najran;QoQ;-0.7
+Annually;2023;Annual average;Najran;Index;100.0
+Annually;2024;Annual average;Najran;Index;99.33
+Quarterly;2022;Q4;Al Baha;YoY;-11.1
+Quarterly;2023;Q3;Al Baha;QoQ;-12.1
+Quarterly;2023;Q3;Al Baha;YoY;-0.3
+Quarterly;2024;Q3;Al Baha;YoY;-14.3
+Quarterly;2025;Q2;Al Baha;Index;80.16
+Quarterly;2025;Q2;Al Baha;YoY;-1.7
+Annually;2023;Annual average;Al Baha;Index;100.0
+Quarterly;2022;Q1;Al Jouf;QoQ;-6.2
+Quarterly;2022;Q3;Al Jouf;QoQ;3.1
+Quarterly;2022;Q4;Al Jouf;Index;95.36
+Quarterly;2022;Q4;Al Jouf;QoQ;-2.8
+Quarterly;2023;Q1;Al Jouf;QoQ;5.5
+Quarterly;2023;Q4;Al Jouf;YoY;2.2
+Quarterly;2024;Q1;Al Jouf;QoQ;-8.1
+Quarterly;2024;Q2;Al Jouf;Index;97.62
+Quarterly;2025;Q2;Al Jouf;Index;96.93
+Quarterly;2025;Q2;Al Jouf;YoY;-0.7
+Annually;2023;Annual average;Al Jouf;YoY;5.2
+Quarterly;2022;Q1;Total;Index;91.29
+Quarterly;2022;Q1;Total;QoQ;2.4
+Quarterly;2022;Q1;Total;YoY;12.2
+Quarterly;2022;Q3;Total;QoQ;2.0
+Quarterly;2023;Q4;Total;YoY;3.5
+Quarterly;2024;Q2;Total;Index;101.79
+Annually;2022;Annual average;Total;Index;95.36
+Quarterly;2022;Q3;Riyadh;Index;93.32
+Quarterly;2022;Q3;Riyadh;QoQ;1.6
+Quarterly;2023;Q4;Riyadh;Index;102.84
+Quarterly;2023;Q4;Riyadh;QoQ;3.2
+Quarterly;2025;Q3;Riyadh;QoQ;-0.4
+Annually;2024;Annual average;Riyadh;Index;108.58
+Quarterly;2023;Q3;Makkah;Index;99.92
+Quarterly;2024;Q2;Makkah;QoQ;-0.4
+Quarterly;2024;Q4;Makkah;Index;98.23
+Quarterly;2025;Q1;Makkah;QoQ;1.9
+Annually;2022;Annual average;Makkah;Index;98.01
+Annually;2024;Annual average;Makkah;YoY;-1.6
+Quarterly;2021;Q2;Madinah;Index;88.45
+Quarterly;2021;Q2;Madinah;QoQ;-0.8
+Quarterly;2021;Q4;Madinah;Index;95.67
+Quarterly;2022;Q3;Madinah;Index;97.66
+Quarterly;2022;Q3;Madinah;QoQ;-1.2
+Quarterly;2023;Q4;Madinah;YoY;-1.1
+Quarterly;2024;Q1;Madinah;Index;99.92
+Quarterly;2024;Q1;Madinah;QoQ;2.8
+Quarterly;2025;Q1;Madinah;YoY;-1.4
+Quarterly;2025;Q2;Madinah;Index;96.03
+Annually;2022;Annual average;Madinah;Index;97.7
+Annually;2022;Annual average;Madinah;YoY;6.8
+Annually;2023;Annual average;Madinah;YoY;2.4
+Quarterly;2021;Q1;Al Qaseem;Index;92.11
+Quarterly;2022;Q1;Al Qaseem;YoY;3.9
+Quarterly;2022;Q2;Al Qaseem;YoY;12.3
+Quarterly;2022;Q3;Al Qaseem;YoY;14.8
+Quarterly;2023;Q2;Al Qaseem;QoQ;-3.3
+Quarterly;2023;Q3;Al Qaseem;Index;100.62
+Quarterly;2023;Q3;Al Qaseem;YoY;-3.3
+Quarterly;2023;Q4;Al Qaseem;QoQ;-1.3
+Quarterly;2024;Q1;Al Qaseem;Index;96.8
+Quarterly;2024;Q3;Al Qaseem;QoQ;1.3
+Quarterly;2025;Q1;Al Qaseem;YoY;0.1
+Annually;2023;Annual average;Al Qaseem;Index;100.0
+Quarterly;2021;Q3;Eastern Province;QoQ;6.1
+Quarterly;2021;Q4;Eastern Province;QoQ;0.4
+Quarterly;2022;Q1;Eastern Province;QoQ;0.0
+Quarterly;2022;Q3;Eastern Province;Index;102.67
+Quarterly;2022;Q3;Eastern Province;QoQ;-2.1
+Quarterly;2023;Q1;Eastern Province;Index;101.09
+Quarterly;2023;Q2;Eastern Province;Index;100.16
+Quarterly;2023;Q2;Eastern Province;QoQ;-0.9
+Quarterly;2023;Q4;Eastern Province;QoQ;-2.0
+Quarterly;2024;Q1;Eastern Province;QoQ;-1.6
+Quarterly;2024;Q2;Eastern Province;YoY;-6.0
+Quarterly;2025;Q2;Eastern Province;QoQ;7.3
+Quarterly;2025;Q3;Eastern Province;QoQ;-0.6
+Annually;2021;Annual average;Eastern Province;Index;94.76
+Quarterly;2021;Q2;Aseer;Index;89.27
+Quarterly;2021;Q3;Aseer;Index;93.79
+Quarterly;2022;Q1;Aseer;Index;94.93
+Quarterly;2022;Q2;Aseer;Index;95.51
+Quarterly;2023;Q3;Aseer;Index;101.79
+Quarterly;2023;Q3;Aseer;QoQ;1.2
+Quarterly;2024;Q3;Aseer;YoY;-9.3
+Quarterly;2024;Q4;Aseer;YoY;-7.3
+Quarterly;2025;Q1;Aseer;QoQ;-1.2
+Quarterly;2025;Q2;Aseer;QoQ;1.7
+Quarterly;2025;Q3;Aseer;Index;86.53
+Quarterly;2025;Q3;Aseer;YoY;-6.3
+Quarterly;2021;Q2;Tabouk;Index;89.6
+Quarterly;2021;Q3;Tabouk;Index;91.38
+Quarterly;2021;Q3;Tabouk;QoQ;2.0
+Quarterly;2022;Q3;Tabouk;Index;93.6
+Quarterly;2023;Q2;Tabouk;QoQ;4.3
+Quarterly;2023;Q3;Tabouk;YoY;10.8
+Quarterly;2023;Q4;Tabouk;QoQ;-2.5
+Quarterly;2024;Q1;Tabouk;QoQ;-1.8
+Quarterly;2024;Q2;Tabouk;QoQ;0.4
+Quarterly;2024;Q3;Tabouk;QoQ;0.4
+Quarterly;2024;Q4;Tabouk;YoY;1.1
+Annually;2021;Annual average;Tabouk;Index;90.6
+Annually;2024;Annual average;Tabouk;YoY;0.3
+Quarterly;2021;Q2;Hail;Index;91.39
+Quarterly;2021;Q2;Hail;QoQ;-0.3
+Quarterly;2022;Q1;Hail;QoQ;-1.0
+Quarterly;2022;Q1;Hail;YoY;5.1
+Quarterly;2022;Q3;Hail;QoQ;-0.3
+Quarterly;2022;Q3;Hail;YoY;3.5
+Quarterly;2024;Q1;Hail;QoQ;-2.7
+Quarterly;2024;Q2;Hail;Index;99.79
+Quarterly;2024;Q4;Hail;Index;103.01
+Annually;2021;Annual average;Hail;Index;93.92
+Annually;2022;Annual average;Hail;Index;99.0
+Annually;2024;Annual average;Hail;YoY;0.9
+Quarterly;2021;Q2;Northern Borders;QoQ;-1.6
+Quarterly;2021;Q4;Northern Borders;Index;92.42
+Quarterly;2021;Q4;Northern Borders;QoQ;1.2
+Quarterly;2022;Q1;Northern Borders;Index;98.22
+Quarterly;2022;Q4;Northern Borders;Index;101.67
+Quarterly;2022;Q4;Northern Borders;QoQ;-1.8
+Quarterly;2023;Q2;Northern Borders;YoY;1.5
+Quarterly;2023;Q3;Northern Borders;Index;100.06
+Quarterly;2024;Q1;Northern Borders;Index;98.48
+Quarterly;2024;Q2;Northern Borders;QoQ;2.2
+Quarterly;2024;Q2;Northern Borders;YoY;2.2
+Quarterly;2024;Q3;Northern Borders;Index;101.73
+Quarterly;2024;Q4;Northern Borders;Index;101.26
+Quarterly;2024;Q4;Northern Borders;QoQ;-0.5
+Quarterly;2025;Q1;Northern Borders;YoY;8.7
+Quarterly;2025;Q3;Northern Borders;YoY;-7.7
+Annually;2022;Annual average;Northern Borders;YoY;9.3
+Quarterly;2021;Q2;Jazan;Index;98.03
+Quarterly;2021;Q2;Jazan;QoQ;2.7
+Quarterly;2022;Q1;Jazan;Index;93.61
+Quarterly;2022;Q2;Jazan;Index;96.83
+Quarterly;2022;Q4;Jazan;YoY;2.1
+Quarterly;2024;Q1;Jazan;YoY;4.0
+Quarterly;2024;Q2;Jazan;QoQ;-1.6
+Quarterly;2024;Q4;Jazan;Index;99.31
+Quarterly;2025;Q1;Jazan;QoQ;2.4
+Quarterly;2025;Q1;Jazan;YoY;-2.0
+Quarterly;2025;Q3;Jazan;QoQ;1.5
+Quarterly;2021;Q1;Najran;Index;86.49
+Quarterly;2021;Q2;Najran;QoQ;0.1
+Quarterly;2022;Q1;Najran;QoQ;-2.8
+Quarterly;2022;Q2;Najran;Index;87.16
+Quarterly;2022;Q2;Najran;YoY;0.7
+Quarterly;2022;Q4;Najran;QoQ;2.3
+Quarterly;2023;Q2;Najran;QoQ;7.0
+Quarterly;2023;Q3;Najran;YoY;10.7
+Quarterly;2023;Q4;Najran;QoQ;-0.2
+Quarterly;2024;Q2;Najran;YoY;-4.7
+Quarterly;2024;Q4;Najran;QoQ;5.1
+Quarterly;2024;Q4;Najran;YoY;4.6
+Quarterly;2025;Q3;Najran;YoY;3.7
+Annually;2021;Annual average;Najran;Index;87.59
+Quarterly;2021;Q3;Al Baha;Index;111.57
+Quarterly;2022;Q1;Al Baha;Index;104.55
+Quarterly;2022;Q1;Al Baha;YoY;-8.8
+Quarterly;2022;Q4;Al Baha;Index;102.12
+Quarterly;2023;Q1;Al Baha;YoY;-2.7
+Quarterly;2023;Q2;Al Baha;QoQ;4.0
+Quarterly;2023;Q4;Al Baha;QoQ;7.2
+Quarterly;2024;Q1;Al Baha;Index;82.11
+Quarterly;2024;Q1;Al Baha;QoQ;-17.7
+Quarterly;2021;Q3;Al Jouf;QoQ;3.9
+Quarterly;2022;Q1;Al Jouf;YoY;1.4
+Quarterly;2022;Q3;Al Jouf;Index;98.09
+Quarterly;2023;Q2;Al Jouf;Index;104.8
+Quarterly;2023;Q3;Al Jouf;QoQ;-7.2
+Quarterly;2023;Q4;Al Jouf;QoQ;0.2
+Quarterly;2024;Q1;Al Jouf;YoY;-10.9
+Quarterly;2024;Q2;Al Jouf;QoQ;8.9
+Quarterly;2025;Q1;Al Jouf;Index;96.98
+Quarterly;2025;Q1;Al Jouf;YoY;8.2
+Quarterly;2025;Q3;Al Jouf;Index;93.63
+Annually;2021;Annual average;Al Jouf;Index;95.29
+Annually;2022;Annual average;Al Jouf;YoY;-0.2
+Annually;2023;Annual average;Al Jouf;Index;100.0
+Annually;2024;Annual average;Al Jouf;Index;94.63
+Annually;2024;Annual average;Al Jouf;YoY;-5.4
+Quarterly;2021;Q1;Total;Index;81.37
+Quarterly;2021;Q4;Total;Index;89.15
+Quarterly;2022;Q2;Total;QoQ;4.7
+Quarterly;2023;Q3;Total;Index;99.98
+Quarterly;2023;Q3;Total;QoQ;-0.2
+Quarterly;2023;Q3;Total;YoY;2.5
+Quarterly;2024;Q1;Total;Index;100.59
+Quarterly;2025;Q1;Total;Index;104.93
+Quarterly;2025;Q2;Total;YoY;3.2
+Quarterly;2025;Q3;Total;Index;103.88
+Annually;2021;Annual average;Total;Index;84.64
+Annually;2024;Annual average;Total;Index;102.27
+Quarterly;2021;Q1;Riyadh;Index;74.4
+Quarterly;2021;Q3;Riyadh;QoQ;6.3
+Quarterly;2022;Q1;Riyadh;QoQ;3.8
+Quarterly;2022;Q2;Riyadh;YoY;22.7
+Quarterly;2023;Q1;Riyadh;Index;97.63
+Quarterly;2023;Q2;Riyadh;Index;99.93
+Quarterly;2024;Q2;Riyadh;Index;107.53
+Quarterly;2025;Q2;Riyadh;YoY;3.6
+Quarterly;2025;Q3;Riyadh;Index;110.91
+Annually;2021;Annual average;Riyadh;Index;78.19
+Quarterly;2022;Q1;Makkah;Index;92.53
+Quarterly;2022;Q1;Makkah;QoQ;2.2
+Quarterly;2022;Q1;Makkah;YoY;6.8
+Quarterly;2022;Q2;Makkah;YoY;11.4
+Quarterly;2023;Q1;Makkah;QoQ;0.1
+Quarterly;2023;Q2;Makkah;Index;100.65
+Quarterly;2023;Q4;Makkah;YoY;-1.8
+Quarterly;2024;Q1;Makkah;QoQ;-0.2
+Quarterly;2024;Q4;Makkah;YoY;-0.5
+Quarterly;2025;Q2;Makkah;QoQ;2.0
+Quarterly;2025;Q3;Makkah;Index;100.43
+Quarterly;2025;Q3;Makkah;YoY;1.9
+Quarterly;2021;Q4;Madinah;QoQ;2.9
+Quarterly;2022;Q1;Madinah;QoQ;0.3
+Quarterly;2023;Q1;Madinah;QoQ;0.9
+Quarterly;2023;Q4;Madinah;Index;97.23
+Quarterly;2024;Q2;Madinah;Index;99.24
+Quarterly;2024;Q2;Madinah;QoQ;-0.7
+Quarterly;2024;Q2;Madinah;YoY;-3.5
+Quarterly;2024;Q4;Madinah;YoY;0.8
+Annually;2021;Annual average;Madinah;Index;91.52
+Quarterly;2021;Q3;Al Qaseem;Index;90.61
+Quarterly;2021;Q4;Al Qaseem;Index;91.84
+Quarterly;2022;Q2;Al Qaseem;Index;99.01
+Quarterly;2022;Q4;Al Qaseem;QoQ;-3.1
+Quarterly;2023;Q1;Al Qaseem;Index;101.71
+Quarterly;2023;Q2;Al Qaseem;Index;98.39
+Quarterly;2023;Q2;Al Qaseem;YoY;-0.6
+Quarterly;2024;Q1;Al Qaseem;YoY;-4.8
+Quarterly;2024;Q4;Al Qaseem;Index;95.62
+Quarterly;2024;Q4;Al Qaseem;QoQ;-2.0
+Quarterly;2025;Q1;Al Qaseem;QoQ;1.3
+Quarterly;2025;Q2;Al Qaseem;QoQ;0.6
+Quarterly;2025;Q2;Al Qaseem;YoY;1.1
+Annually;2024;Annual average;Al Qaseem;YoY;-3.4
+Quarterly;2021;Q1;Eastern Province;Index;89.34
+Quarterly;2021;Q2;Eastern Province;Index;92.74
+Quarterly;2023;Q4;Eastern Province;Index;98.37
+Quarterly;2023;Q4;Eastern Province;YoY;2.0
+Quarterly;2024;Q1;Eastern Province;Index;96.79
+Quarterly;2025;Q2;Eastern Province;Index;98.17
+Annually;2023;Annual average;Eastern Province;Index;100.0
+Quarterly;2021;Q1;Aseer;Index;88.47
+Quarterly;2021;Q4;Aseer;QoQ;0.4
+Quarterly;2022;Q1;Aseer;QoQ;0.8
+Quarterly;2022;Q2;Aseer;YoY;7.0
+Quarterly;2022;Q4;Aseer;YoY;4.5
+Quarterly;2023;Q1;Aseer;Index;102.27
+Quarterly;2023;Q1;Aseer;QoQ;3.9
+Quarterly;2023;Q2;Aseer;YoY;5.3
+Quarterly;2023;Q4;Aseer;QoQ;-6.2
+Quarterly;2024;Q1;Aseer;YoY;-10.5
+Quarterly;2025;Q1;Aseer;Index;87.52
+Quarterly;2025;Q1;Aseer;YoY;-4.4
+Quarterly;2025;Q3;Aseer;QoQ;-2.8
+Annually;2021;Annual average;Aseer;Index;91.38
+Annually;2023;Annual average;Aseer;Index;100.0
+Quarterly;2021;Q1;Tabouk;Index;91.34
+Quarterly;2022;Q2;Tabouk;Index;90.27
+Quarterly;2022;Q2;Tabouk;YoY;0.7
+Quarterly;2022;Q4;Tabouk;YoY;2.3
+Quarterly;2023;Q1;Tabouk;Index;95.63
+Quarterly;2023;Q1;Tabouk;YoY;6.1
+Quarterly;2023;Q3;Tabouk;QoQ;4.0
+Quarterly;2024;Q1;Tabouk;Index;99.32
+Quarterly;2024;Q2;Tabouk;YoY;0.0
+Quarterly;2024;Q4;Tabouk;QoQ;2.1
+Quarterly;2025;Q1;Tabouk;QoQ;-1.7
+Annually;2022;Annual average;Tabouk;YoY;1.0
+Annually;2024;Annual average;Tabouk;Index;100.34
+Quarterly;2021;Q1;Hail;Index;91.63
+Quarterly;2021;Q3;Hail;Index;95.54
+Quarterly;2023;Q2;Hail;Index;99.64
+Quarterly;2025;Q1;Hail;QoQ;0.6
+Quarterly;2025;Q2;Hail;Index;102.65
+Quarterly;2025;Q2;Hail;QoQ;-1.0
+Quarterly;2025;Q2;Hail;YoY;2.9
+Quarterly;2021;Q2;Northern Borders;Index;90.41
+Quarterly;2021;Q3;Northern Borders;Index;91.33
+Quarterly;2022;Q2;Northern Borders;QoQ;-1.3
+Quarterly;2022;Q2;Northern Borders;YoY;7.2
+Quarterly;2022;Q3;Northern Borders;Index;103.55
+Quarterly;2023;Q1;Northern Borders;QoQ;-2.6
+Quarterly;2023;Q4;Northern Borders;QoQ;2.4
+Quarterly;2024;Q3;Northern Borders;QoQ;1.1
+Quarterly;2025;Q2;Northern Borders;QoQ;-7.2
+Annually;2022;Annual average;Northern Borders;Index;100.06
+Annually;2023;Annual average;Northern Borders;Index;100.0
+Annually;2023;Annual average;Northern Borders;YoY;-0.1
+Quarterly;2021;Q1;Jazan;Index;95.42
+Quarterly;2022;Q3;Jazan;Index;97.39
+Quarterly;2022;Q4;Jazan;Index;97.67
+Quarterly;2022;Q4;Jazan;QoQ;0.3
+Quarterly;2023;Q1;Jazan;Index;99.76
+Quarterly;2023;Q4;Jazan;QoQ;-0.6
+Quarterly;2024;Q2;Jazan;Index;102.07
+Quarterly;2024;Q4;Jazan;YoY;-1.6
+Annually;2021;Annual average;Jazan;Index;95.9
+Annually;2023;Annual average;Jazan;YoY;3.8
+Annually;2024;Annual average;Jazan;YoY;1.3
+Quarterly;2021;Q4;Najran;Index;88.1
+Quarterly;2022;Q2;Najran;QoQ;1.8
+Quarterly;2022;Q3;Najran;Index;88.92
+Quarterly;2022;Q4;Najran;Index;90.99
+Quarterly;2022;Q4;Najran;YoY;3.3
+Quarterly;2023;Q1;Najran;QoQ;8.0
+Quarterly;2024;Q1;Najran;Index;96.69
+Quarterly;2024;Q2;Najran;Index;100.2
+Quarterly;2025;Q2;Najran;QoQ;-1.4
+Quarterly;2025;Q3;Najran;Index;101.39
+Quarterly;2021;Q4;Al Baha;Index;114.85
+Quarterly;2023;Q2;Al Baha;YoY;8.4
+Quarterly;2023;Q3;Al Baha;Index;93.07
+Quarterly;2023;Q4;Al Baha;YoY;-2.3
+Quarterly;2024;Q1;Al Baha;YoY;-19.3
+Quarterly;2024;Q2;Al Baha;QoQ;-0.7
+Quarterly;2025;Q1;Al Baha;Index;83.86
+Quarterly;2025;Q1;Al Baha;YoY;2.1
+Annually;2022;Annual average;Al Baha;Index;99.34
+Quarterly;2021;Q1;Al Jouf;Index;90.56
+Quarterly;2021;Q2;Al Jouf;Index;94.63
+Quarterly;2021;Q3;Al Jouf;Index;98.28
+Quarterly;2022;Q1;Al Jouf;Index;91.82
+Quarterly;2023;Q2;Al Jouf;YoY;10.2
+Quarterly;2023;Q3;Al Jouf;YoY;-0.8
+Quarterly;2024;Q2;Al Jouf;YoY;-6.9
+Quarterly;2024;Q3;Al Jouf;YoY;0.8
+Quarterly;2024;Q4;Al Jouf;Index;93.48
+Quarterly;2024;Q4;Al Jouf;YoY;-4.1
+Quarterly;2025;Q2;Al Jouf;QoQ;-0.1
+Quarterly;2021;Q3;Total;Index;86.2
+Quarterly;2021;Q3;Total;QoQ;5.0
+Quarterly;2021;Q4;Total;QoQ;3.4
+Quarterly;2022;Q3;Total;Index;97.5
+Quarterly;2022;Q3;Total;YoY;13.1
+Quarterly;2022;Q4;Total;YoY;9.1
+Quarterly;2023;Q2;Total;Index;100.22
+Quarterly;2023;Q2;Total;QoQ;1.0
+Quarterly;2023;Q4;Total;Index;100.59
+Quarterly;2024;Q1;Total;QoQ;0.0
+Quarterly;2024;Q1;Total;YoY;1.4
+Quarterly;2024;Q4;Total;Index;104.18
+Quarterly;2024;Q4;Total;YoY;3.6
+Quarterly;2025;Q2;Total;QoQ;0.1
+Quarterly;2025;Q3;Total;QoQ;-1.1
+Quarterly;2025;Q3;Total;YoY;1.3
+Annually;2023;Annual average;Total;Index;100.0
+Annually;2024;Annual average;Total;YoY;2.3
+Quarterly;2022;Q1;Riyadh;Index;87.52
+Quarterly;2022;Q2;Riyadh;QoQ;5.0
+Quarterly;2022;Q3;Riyadh;YoY;17.2
+Quarterly;2022;Q4;Riyadh;YoY;13.5
+Quarterly;2023;Q1;Riyadh;YoY;11.6
+Quarterly;2023;Q3;Riyadh;Index;99.66
+Quarterly;2024;Q1;Riyadh;YoY;6.3
+Quarterly;2024;Q3;Riyadh;Index;109.85
+Quarterly;2024;Q3;Riyadh;QoQ;2.2
+Annually;2023;Annual average;Riyadh;YoY;8.6
+Quarterly;2021;Q1;Makkah;Index;86.67
+Quarterly;2021;Q2;Makkah;QoQ;0.0
+Quarterly;2022;Q3;Makkah;Index;102.66
+Quarterly;2022;Q3;Makkah;QoQ;6.3
+Quarterly;2022;Q4;Makkah;Index;100.54
+Quarterly;2023;Q1;Makkah;Index;100.68
+Quarterly;2023;Q2;Makkah;QoQ;0.0
+Quarterly;2023;Q2;Makkah;YoY;4.2
+Quarterly;2023;Q3;Makkah;YoY;-2.7
+Quarterly;2024;Q1;Makkah;YoY;-2.1
+Quarterly;2024;Q2;Makkah;Index;98.22
+Quarterly;2024;Q3;Makkah;QoQ;0.3
+Quarterly;2025;Q1;Makkah;Index;100.08
+Quarterly;2025;Q2;Makkah;YoY;3.9
+Quarterly;2025;Q3;Makkah;QoQ;-1.6
+Annually;2021;Annual average;Makkah;Index;88.23
+Annually;2023;Annual average;Makkah;Index;100.0
+Annually;2023;Annual average;Makkah;YoY;2.0
+Annually;2024;Annual average;Makkah;Index;98.39
+Quarterly;2021;Q3;Madinah;Index;92.99
+Quarterly;2022;Q1;Madinah;Index;95.94
+Quarterly;2022;Q2;Madinah;YoY;11.8
+Quarterly;2022;Q3;Madinah;YoY;5.0
+Quarterly;2022;Q4;Madinah;YoY;2.8
+Quarterly;2023;Q1;Madinah;YoY;3.4
+Quarterly;2023;Q3;Madinah;Index;100.77
+Quarterly;2023;Q3;Madinah;QoQ;-2.1
+Quarterly;2024;Q3;Madinah;Index;99.6
+Quarterly;2024;Q4;Madinah;QoQ;-1.6
+Quarterly;2025;Q3;Madinah;QoQ;-4.6
+Quarterly;2021;Q2;Al Qaseem;QoQ;-4.3
+Quarterly;2021;Q3;Al Qaseem;QoQ;2.8
+Quarterly;2022;Q2;Al Qaseem;QoQ;3.5
+Quarterly;2022;Q3;Al Qaseem;Index;104.0
+Quarterly;2022;Q3;Al Qaseem;QoQ;5.0
+Quarterly;2023;Q1;Al Qaseem;QoQ;0.9
+Quarterly;2023;Q4;Al Qaseem;YoY;-1.4
+Quarterly;2024;Q2;Al Qaseem;YoY;-2.0
+Quarterly;2024;Q3;Al Qaseem;YoY;-3.0
+Quarterly;2025;Q1;Al Qaseem;Index;96.86
+Quarterly;2025;Q3;Al Qaseem;QoQ;-4.9
+Annually;2022;Annual average;Al Qaseem;Index;99.82
+Quarterly;2021;Q4;Eastern Province;Index;98.85
+Quarterly;2022;Q1;Eastern Province;Index;98.87
+Quarterly;2022;Q1;Eastern Province;YoY;10.7
+Quarterly;2022;Q2;Eastern Province;Index;104.9
+Quarterly;2022;Q2;Eastern Province;YoY;13.1
+Quarterly;2022;Q4;Eastern Province;YoY;-2.4
+Quarterly;2023;Q1;Eastern Province;QoQ;4.8
+Quarterly;2024;Q2;Eastern Province;QoQ;-2.7
+Quarterly;2024;Q3;Eastern Province;Index;92.05
+Quarterly;2024;Q3;Eastern Province;YoY;-8.3
+Quarterly;2024;Q4;Eastern Province;QoQ;2.0
+Quarterly;2025;Q1;Eastern Province;Index;91.45
+Quarterly;2025;Q1;Eastern Province;QoQ;-2.6
+Quarterly;2025;Q1;Eastern Province;YoY;-5.5
+Quarterly;2025;Q3;Eastern Province;YoY;6.1
+Annually;2022;Annual average;Eastern Province;YoY;6.2
+Annually;2024;Annual average;Eastern Province;Index;94.21
+Quarterly;2021;Q4;Aseer;Index;94.15
+Quarterly;2022;Q1;Aseer;YoY;7.3
+Quarterly;2022;Q3;Aseer;Index;96.6
+Quarterly;2022;Q3;Aseer;YoY;3.0
+Quarterly;2022;Q4;Aseer;Index;98.4
+Quarterly;2022;Q4;Aseer;QoQ;1.9
+Quarterly;2023;Q1;Aseer;YoY;7.7
+Quarterly;2023;Q3;Aseer;YoY;5.4
+Quarterly;2024;Q1;Aseer;Index;91.52
+Quarterly;2024;Q3;Aseer;QoQ;-0.3
+Annually;2024;Annual average;Aseer;Index;91.25
+Quarterly;2021;Q2;Tabouk;QoQ;-1.9
+Quarterly;2022;Q1;Tabouk;Index;90.11
+Quarterly;2022;Q1;Tabouk;QoQ;0.0
+Quarterly;2022;Q3;Tabouk;YoY;2.4
+Quarterly;2022;Q4;Tabouk;Index;92.16
+Quarterly;2023;Q1;Tabouk;QoQ;3.8
+Quarterly;2023;Q3;Tabouk;Index;103.71
+Quarterly;2023;Q4;Tabouk;Index;101.09
+Quarterly;2024;Q2;Tabouk;Index;99.72
+Quarterly;2025;Q1;Tabouk;Index;100.48
+Quarterly;2025;Q3;Tabouk;YoY;3.4
+Annually;2023;Annual average;Tabouk;YoY;9.3
+Quarterly;2022;Q4;Hail;YoY;4.6
+Quarterly;2023;Q3;Hail;YoY;-2.5
+Quarterly;2023;Q4;Hail;Index;102.27
+Quarterly;2024;Q3;Hail;Index;101.12
+Quarterly;2024;Q3;Hail;QoQ;1.3
+Quarterly;2024;Q3;Hail;YoY;5.0
+Quarterly;2024;Q4;Hail;QoQ;1.9
+Quarterly;2024;Q4;Hail;YoY;0.7
+Quarterly;2025;Q1;Hail;Index;103.65
+Quarterly;2025;Q3;Hail;YoY;-7.3
+Annually;2022;Annual average;Hail;YoY;5.4
+Annually;2023;Annual average;Hail;YoY;1.0
+Quarterly;2021;Q3;Northern Borders;QoQ;1.0
+Quarterly;2022;Q2;Northern Borders;Index;96.94
+Quarterly;2023;Q2;Northern Borders;Index;98.44
+Quarterly;2023;Q2;Northern Borders;QoQ;-0.6
+Quarterly;2024;Q3;Northern Borders;YoY;1.7
+Quarterly;2025;Q2;Northern Borders;Index;99.29
+Quarterly;2025;Q2;Northern Borders;YoY;-1.3
+Annually;2024;Annual average;Northern Borders;YoY;0.5
+Quarterly;2021;Q3;Jazan;QoQ;-3.6
+Quarterly;2021;Q4;Jazan;QoQ;1.2
+Quarterly;2022;Q1;Jazan;YoY;-1.9
+Quarterly;2022;Q2;Jazan;YoY;-1.2
+Quarterly;2022;Q3;Jazan;QoQ;0.6
+Quarterly;2024;Q1;Jazan;Index;103.74
+Quarterly;2024;Q2;Jazan;YoY;4.4
+Quarterly;2024;Q4;Jazan;QoQ;-0.9
+Quarterly;2025;Q2;Jazan;Index;99.18
+Annually;2023;Annual average;Jazan;Index;100.0
+Annually;2024;Annual average;Jazan;Index;101.33
+Quarterly;2021;Q2;Najran;Index;86.58
+Quarterly;2021;Q4;Najran;QoQ;-1.2
+Quarterly;2023;Q1;Najran;Index;98.29
+Quarterly;2023;Q1;Najran;YoY;14.8
+Quarterly;2023;Q4;Najran;YoY;8.0
+Quarterly;2024;Q1;Najran;QoQ;-1.6
+Quarterly;2024;Q2;Najran;QoQ;3.6
+Quarterly;2024;Q3;Najran;QoQ;-2.4
+Quarterly;2024;Q3;Najran;YoY;-0.7
+Quarterly;2024;Q4;Najran;Index;102.78
+Quarterly;2025;Q1;Najran;YoY;5.6
+Quarterly;2025;Q2;Najran;Index;100.61
+Quarterly;2025;Q3;Najran;QoQ;0.8
+Annually;2022;Annual average;Najran;Index;88.15
+Annually;2022;Annual average;Najran;YoY;0.6
+Annually;2024;Annual average;Najran;YoY;-0.7
+Quarterly;2021;Q4;Al Baha;QoQ;2.9
+Quarterly;2022;Q1;Al Baha;QoQ;-9.0
+Quarterly;2022;Q2;Al Baha;QoQ;-6.6
+Quarterly;2022;Q2;Al Baha;YoY;-20.9
+Quarterly;2022;Q3;Al Baha;QoQ;-4.4
+Quarterly;2023;Q1;Al Baha;Index;101.77
+Quarterly;2024;Q2;Al Baha;Index;81.51
+Quarterly;2024;Q3;Al Baha;Index;79.73
+Quarterly;2024;Q4;Al Baha;QoQ;4.2
+Quarterly;2024;Q4;Al Baha;YoY;-16.7
+Quarterly;2025;Q1;Al Baha;QoQ;0.9
+Quarterly;2025;Q3;Al Baha;Index;78.62
+Quarterly;2025;Q3;Al Baha;QoQ;-1.9
+Quarterly;2025;Q3;Al Baha;YoY;-1.4
+Annually;2021;Annual average;Al Baha;Index;116.07
+Annually;2023;Annual average;Al Baha;YoY;0.7
+Quarterly;2021;Q4;Al Jouf;Index;97.88
+Quarterly;2021;Q4;Al Jouf;QoQ;-0.4
+Quarterly;2022;Q2;Al Jouf;Index;95.11
+Quarterly;2022;Q2;Al Jouf;QoQ;3.6
+Quarterly;2022;Q2;Al Jouf;YoY;0.5
+Quarterly;2022;Q4;Al Jouf;YoY;-2.6
+Quarterly;2023;Q3;Al Jouf;Index;97.26
+Quarterly;2025;Q3;Al Jouf;YoY;-4.5
+Annually;2022;Annual average;Al Jouf;Index;95.07

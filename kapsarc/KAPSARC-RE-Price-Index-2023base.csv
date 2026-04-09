@@ -1,0 +1,709 @@
+﻿periodicity;year;quarter;measure;sector;value
+Quarterly;2021;Q1;Index;Index number;81.37
+Quarterly;2021;Q1;Index;Residential: Floor;94.27
+Quarterly;2021;Q1;Index;Commercial: Total;82.86
+Quarterly;2021;Q2;Index;Index number;82.06
+Quarterly;2021;Q2;Index;Residential: Total;82.36
+Quarterly;2021;Q2;Index;Residential: Residential Plot;83.61
+Quarterly;2021;Q2;Index;Agricultural: Total;87.19
+Quarterly;2021;Q4;Index;Residential: Residential Plot;91.02
+Quarterly;2021;Q4;Index;Residential: Floor;91.74
+Quarterly;2022;Q1;Index;Residential: Residential Plot;92.58
+Quarterly;2022;Q1;Index;Commercial: Total;91.13
+Quarterly;2022;Q2;Index;Residential: Villa;92.1
+Quarterly;2022;Q2;Index;Residential: Apartment;95.73
+Quarterly;2022;Q3;Index;Residential: Floor;100.21
+Quarterly;2022;Q3;Index;Agricultural: Total;98.89
+Quarterly;2023;Q1;Index;Residential: Apartment;101.1
+Quarterly;2023;Q1;Index;Residential: Floor;100.08
+Quarterly;2023;Q1;Index;Commercial: Commercial Plot;96.28
+Quarterly;2023;Q2;Index;Residential: Total;100.71
+Quarterly;2023;Q2;Index;Residential: Floor;100.3
+Quarterly;2023;Q2;Index;Commercial: Commercial Plot;98.86
+Quarterly;2023;Q2;Index;Agricultural: Total;96.48
+Quarterly;2023;Q3;Index;Residential: Apartment;99.05
+Quarterly;2023;Q3;Index;Residential: Floor;100.22
+Quarterly;2023;Q4;Index;Residential: Residential Plot;99.74
+Quarterly;2023;Q4;Index;Commercial: Commercial Plot;104.75
+Quarterly;2024;Q1;Index;Commercial: Commercial Plot;104.88
+Quarterly;2024;Q1;Index;Agricultural: Agricultural Land;102.02
+Quarterly;2024;Q2;Index;Residential: Apartment;101.07
+Quarterly;2024;Q2;Index;Commercial: Commercial Plot;103.4
+Quarterly;2024;Q2;Index;Agricultural: Total;103.52
+Quarterly;2024;Q3;Index;Residential: Total;101.35
+Quarterly;2024;Q4;Index;Index number;104.18
+Quarterly;2024;Q4;Index;Residential: Total;102.35
+Quarterly;2024;Q4;Index;Residential: Apartment;101.4
+Quarterly;2024;Q4;Index;Commercial: Total;109.54
+Quarterly;2024;Q4;Index;Commercial: Gallery/ Shop;99.8
+Quarterly;2024;Q4;Index;Agricultural: Total;104.89
+Quarterly;2025;Q1;Index;Index number;104.93
+Quarterly;2025;Q1;Index;Residential: Villa;103.21
+Quarterly;2025;Q1;Index;Commercial: Gallery/ Shop;101.58
+Quarterly;2025;Q2;Index;Index number;105
+Quarterly;2025;Q2;Index;Residential: Apartment;100.32
+Quarterly;2025;Q2;Index;Commercial: Total;115.69
+Quarterly;2025;Q3;Index;Commercial: Gallery/ Shop;100.83
+Quarterly;2025;Q3;Index;Agricultural: Agricultural Land;110.15
+Quarterly;2021;Q3;QoQ;Commercial: Total;6.3
+Quarterly;2021;Q3;QoQ;Commercial: Commercial Plot;6.7
+Quarterly;2021;Q3;QoQ;Commercial: Gallery/ Shop;-0.3
+Quarterly;2021;Q3;QoQ;Agricultural: Total;0.3
+Quarterly;2021;Q3;QoQ;Agricultural: Agricultural Land;0.3
+Quarterly;2021;Q4;QoQ;Index number;3.4
+Quarterly;2022;Q1;QoQ;Residential: Total;2
+Quarterly;2022;Q1;QoQ;Agricultural: Total;-1
+Quarterly;2022;Q2;QoQ;Index number;4.7
+Quarterly;2022;Q2;QoQ;Commercial: Gallery/ Shop;-0.6
+Quarterly;2022;Q3;QoQ;Residential: Total;3.1
+Quarterly;2022;Q4;QoQ;Residential: Apartment;0.8
+Quarterly;2022;Q4;QoQ;Commercial: Commercial Plot;0.5
+Quarterly;2022;Q4;QoQ;Commercial: Gallery/ Shop;0.3
+Quarterly;2022;Q4;QoQ;Agricultural: Total;-3.9
+Quarterly;2023;Q1;QoQ;Commercial: Commercial Plot;1.6
+Quarterly;2023;Q1;QoQ;Agricultural: Total;2.1
+Quarterly;2023;Q2;QoQ;Commercial: Gallery/ Shop;3.8
+Quarterly;2023;Q2;QoQ;Agricultural: Agricultural Land;-0.6
+Quarterly;2023;Q3;QoQ;Residential: Residential Plot;-0.5
+Quarterly;2023;Q3;QoQ;Commercial: Total;1.1
+Quarterly;2023;Q3;QoQ;Commercial: Commercial Plot;1.5
+Quarterly;2023;Q4;QoQ;Residential: Total;-0.5
+Quarterly;2023;Q4;QoQ;Residential: Floor;-0.8
+Quarterly;2023;Q4;QoQ;Commercial: Commercial Plot;4.4
+Quarterly;2024;Q1;QoQ;Residential: Villa;-4.8
+Quarterly;2024;Q1;QoQ;Commercial: Building;3.6
+Quarterly;2024;Q1;QoQ;Commercial: Gallery/ Shop;-4.8
+Quarterly;2024;Q1;QoQ;Agricultural: Agricultural Land;-0.1
+Quarterly;2024;Q2;QoQ;Index number;1.2
+Quarterly;2024;Q2;QoQ;Residential: Residential Plot;0.9
+Quarterly;2024;Q2;QoQ;Residential: Floor;0.4
+Quarterly;2024;Q2;QoQ;Agricultural: Total;1.5
+Quarterly;2024;Q3;QoQ;Commercial: Gallery/ Shop;2.4
+Quarterly;2024;Q4;QoQ;Index number;1.6
+Quarterly;2024;Q4;QoQ;Residential: Apartment;0.5
+Quarterly;2024;Q4;QoQ;Agricultural: Total;9.8
+Quarterly;2025;Q1;QoQ;Residential: Apartment;0.2
+Quarterly;2025;Q1;QoQ;Residential: Floor;0.2
+Quarterly;2025;Q2;QoQ;Residential: Residential Plot;-4
+Quarterly;2025;Q2;QoQ;Residential: Apartment;-1.2
+Quarterly;2025;Q2;QoQ;Commercial: Gallery/ Shop;-0.2
+Quarterly;2025;Q3;QoQ;Residential: Total;-1.1
+Quarterly;2025;Q3;QoQ;Residential: Villa;-2.5
+Quarterly;2025;Q3;QoQ;Commercial: Total;-1.6
+Quarterly;2022;Q1;YoY;Agricultural: Total;8.3
+Quarterly;2022;Q2;YoY;Residential: Apartment;15.4
+Quarterly;2022;Q2;YoY;Residential: Floor;7.5
+Quarterly;2022;Q2;YoY;Commercial: Building;13.6
+Quarterly;2022;Q3;YoY;Commercial: Gallery/ Shop;2.7
+Quarterly;2022;Q4;YoY;Residential: Villa;11.9
+Quarterly;2022;Q4;YoY;Residential: Floor;9.3
+Quarterly;2022;Q4;YoY;Commercial: Gallery/ Shop;2.6
+Quarterly;2023;Q1;YoY;Residential: Total;9.7
+Quarterly;2023;Q1;YoY;Residential: Villa;15.9
+Quarterly;2023;Q1;YoY;Commercial: Commercial Plot;5.3
+Quarterly;2023;Q2;YoY;Index number;4.9
+Quarterly;2023;Q2;YoY;Commercial: Total;3.7
+Quarterly;2023;Q3;YoY;Index number;2.5
+Quarterly;2023;Q3;YoY;Commercial: Total;6.2
+Quarterly;2023;Q4;YoY;Commercial: Total;10.1
+Quarterly;2024;Q1;YoY;Residential: Residential Plot;0
+Quarterly;2024;Q1;YoY;Commercial: Gallery/ Shop;-0.4
+Quarterly;2024;Q1;YoY;Agricultural: Total;5.1
+Quarterly;2024;Q1;YoY;Agricultural: Agricultural Land;5.1
+Quarterly;2024;Q2;YoY;Residential: Floor;-3.7
+Quarterly;2024;Q2;YoY;Commercial: Gallery/ Shop;-3.2
+Quarterly;2024;Q3;YoY;Residential: Villa;1.5
+Quarterly;2024;Q3;YoY;Agricultural: Total;-8.7
+Quarterly;2024;Q4;YoY;Index number;3.6
+Quarterly;2024;Q4;YoY;Commercial: Commercial Plot;5.2
+Quarterly;2025;Q1;YoY;Commercial: Gallery/ Shop;5.1
+Quarterly;2025;Q2;YoY;Residential: Total;0.4
+Quarterly;2025;Q2;YoY;Residential: Residential Plot;0.2
+Quarterly;2025;Q3;YoY;Agricultural: Agricultural Land;15.3
+Annually;2021;Annual average;Index;Commercial: Total;84.35
+Annually;2021;Annual average;Index;Commercial: Building;81.4
+Annually;2022;Annual average;Index;Residential: Residential Plot;96.83
+Annually;2022;Annual average;Index;Residential: Floor;97.83
+Annually;2023;Annual average;Index;Residential: Total;100
+Annually;2023;Annual average;Index;Commercial: Commercial Plot;100
+Annually;2023;Annual average;Index;Commercial: Building;100
+Annually;2024;Annual average;Index;Residential: Residential Plot;101.24
+Annually;2024;Annual average;Index;Commercial: Total;106.07
+Annually;2022;Annual average;YoY;Residential: Residential Plot;13
+Annually;2022;Annual average;YoY;Commercial: Total;11.4
+Annually;2023;Annual average;YoY;Residential: Floor;2.2
+Annually;2024;Annual average;YoY;Residential: Floor;-2.5
+Annually;2024;Annual average;YoY;Commercial: Commercial Plot;6.3
+Annually;2024;Annual average;YoY;Agricultural: Agricultural Land;1.4
+Quarterly;2021;Q1;Index;Residential: Residential Plot;80.6
+Quarterly;2021;Q1;Index;Residential: Villa;77.25
+Quarterly;2021;Q1;Index;Agricultural: Total;84.39
+Quarterly;2021;Q2;Index;Residential: Apartment;82.92
+Quarterly;2021;Q2;Index;Commercial: Total;80.87
+Quarterly;2021;Q3;Index;Residential: Total;86.25
+Quarterly;2021;Q3;Index;Commercial: Total;85.97
+Quarterly;2021;Q3;Index;Commercial: Building;82.6
+Quarterly;2021;Q3;Index;Commercial: Gallery/ Shop;94.76
+Quarterly;2021;Q3;Index;Agricultural: Agricultural Land;87.46
+Quarterly;2022;Q1;Index;Residential: Villa;85.62
+Quarterly;2022;Q1;Index;Commercial: Gallery/ Shop;97.79
+Quarterly;2022;Q2;Index;Agricultural: Total;92.48
+Quarterly;2022;Q3;Index;Residential: Villa;92.63
+Quarterly;2022;Q3;Index;Commercial: Total;94.38
+Quarterly;2022;Q3;Index;Commercial: Building;94.44
+Quarterly;2023;Q1;Index;Residential: Total;100.24
+Quarterly;2023;Q2;Index;Residential: Villa;101.79
+Quarterly;2023;Q2;Index;Commercial: Building;101.56
+Quarterly;2023;Q3;Index;Commercial: Commercial Plot;100.31
+Quarterly;2023;Q3;Index;Commercial: Building;99.21
+Quarterly;2023;Q4;Index;Index number;100.59
+Quarterly;2023;Q4;Index;Residential: Villa;98.31
+Quarterly;2023;Q4;Index;Residential: Apartment;98.57
+Quarterly;2023;Q4;Index;Residential: Floor;99.39
+Quarterly;2024;Q1;Index;Commercial: Total;104.6
+Quarterly;2024;Q1;Index;Commercial: Building;103.76
+Quarterly;2024;Q1;Index;Agricultural: Total;102.02
+Quarterly;2024;Q2;Index;Residential: Total;101.13
+Quarterly;2024;Q2;Index;Commercial: Building;107.32
+Quarterly;2024;Q3;Index;Index number;102.56
+Quarterly;2024;Q3;Index;Residential: Floor;98.41
+Quarterly;2024;Q3;Index;Commercial: Gallery/ Shop;99.77
+Quarterly;2024;Q4;Index;Residential: Villa;104.66
+Quarterly;2024;Q4;Index;Commercial: Commercial Plot;110.17
+Quarterly;2024;Q4;Index;Commercial: Building;105.28
+Quarterly;2025;Q1;Index;Residential: Apartment;101.58
+Quarterly;2025;Q1;Index;Residential: Floor;98.94
+Quarterly;2025;Q2;Index;Residential: Residential Plot;101.3
+Quarterly;2025;Q3;Index;Residential: Total;100.44
+Quarterly;2025;Q3;Index;Residential: Floor;98.68
+Quarterly;2025;Q3;Index;Commercial: Commercial Plot;114.45
+Quarterly;2021;Q2;QoQ;Commercial: Total;-2.4
+Quarterly;2021;Q2;QoQ;Commercial: Commercial Plot;-2.6
+Quarterly;2021;Q2;QoQ;Commercial: Building;-0.8
+Quarterly;2021;Q2;QoQ;Commercial: Gallery/ Shop;0.2
+Quarterly;2021;Q2;QoQ;Agricultural: Total;3.3
+Quarterly;2021;Q3;QoQ;Index number;5
+Quarterly;2021;Q4;QoQ;Residential: Villa;3.7
+Quarterly;2022;Q1;QoQ;Residential: Villa;1.8
+Quarterly;2022;Q1;QoQ;Residential: Apartment;3.2
+Quarterly;2022;Q1;QoQ;Commercial: Commercial Plot;3.8
+Quarterly;2022;Q1;QoQ;Commercial: Building;3.2
+Quarterly;2022;Q2;QoQ;Residential: Total;4.7
+Quarterly;2022;Q2;QoQ;Residential: Residential Plot;4.1
+Quarterly;2022;Q2;QoQ;Commercial: Building;4.8
+Quarterly;2022;Q3;QoQ;Residential: Villa;0.6
+Quarterly;2022;Q3;QoQ;Commercial: Building;4.6
+Quarterly;2022;Q4;QoQ;Index number;-0.3
+Quarterly;2022;Q4;QoQ;Residential: Villa;1.7
+Quarterly;2023;Q1;QoQ;Index number;2.1
+Quarterly;2023;Q1;QoQ;Residential: Residential Plot;1.6
+Quarterly;2023;Q1;QoQ;Residential: Apartment;1.5
+Quarterly;2023;Q1;QoQ;Commercial: Total;1.9
+Quarterly;2023;Q1;QoQ;Commercial: Building;5.9
+Quarterly;2023;Q2;QoQ;Residential: Residential Plot;0.1
+Quarterly;2023;Q2;QoQ;Residential: Floor;0.2
+Quarterly;2023;Q2;QoQ;Commercial: Total;2.7
+Quarterly;2023;Q2;QoQ;Commercial: Commercial Plot;2.7
+Quarterly;2023;Q3;QoQ;Index number;-0.2
+Quarterly;2023;Q3;QoQ;Residential: Total;-0.9
+Quarterly;2023;Q3;QoQ;Residential: Apartment;-2.2
+Quarterly;2023;Q3;QoQ;Commercial: Gallery/ Shop;0.2
+Quarterly;2023;Q3;QoQ;Agricultural: Agricultural Land;8.5
+Quarterly;2023;Q4;QoQ;Index number;0.6
+Quarterly;2023;Q4;QoQ;Commercial: Building;0.9
+Quarterly;2023;Q4;QoQ;Agricultural: Agricultural Land;-2.4
+Quarterly;2024;Q1;QoQ;Residential: Total;-0.1
+Quarterly;2024;Q1;QoQ;Residential: Residential Plot;0.5
+Quarterly;2024;Q1;QoQ;Commercial: Commercial Plot;0.1
+Quarterly;2024;Q2;QoQ;Residential: Apartment;0.7
+Quarterly;2024;Q2;QoQ;Commercial: Commercial Plot;-1.4
+Quarterly;2024;Q2;QoQ;Agricultural: Agricultural Land;1.5
+Quarterly;2024;Q3;QoQ;Index number;0.8
+Quarterly;2024;Q4;QoQ;Residential: Residential Plot;0.9
+Quarterly;2024;Q4;QoQ;Commercial: Total;2.7
+Quarterly;2025;Q1;QoQ;Residential: Total;1.9
+Quarterly;2025;Q1;QoQ;Residential: Villa;-1.4
+Quarterly;2025;Q1;QoQ;Commercial: Gallery/ Shop;1.8
+Quarterly;2025;Q1;QoQ;Agricultural: Total;-3.8
+Quarterly;2025;Q1;QoQ;Agricultural: Agricultural Land;-3.8
+Quarterly;2025;Q2;QoQ;Agricultural: Total;1.7
+Quarterly;2025;Q3;QoQ;Residential: Residential Plot;-0.8
+Quarterly;2022;Q1;YoY;Residential: Apartment;10.5
+Quarterly;2022;Q1;YoY;Commercial: Building;7.6
+Quarterly;2022;Q2;YoY;Residential: Residential Plot;15.3
+Quarterly;2022;Q3;YoY;Residential: Apartment;16.5
+Quarterly;2022;Q3;YoY;Residential: Floor;12.2
+Quarterly;2022;Q4;YoY;Commercial: Total;7.8
+Quarterly;2023;Q1;YoY;Residential: Floor;6.4
+Quarterly;2023;Q1;YoY;Commercial: Gallery/ Shop;-0.8
+Quarterly;2023;Q2;YoY;Commercial: Building;12.5
+Quarterly;2023;Q3;YoY;Commercial: Commercial Plot;6.4
+Quarterly;2023;Q3;YoY;Commercial: Building;5.1
+Quarterly;2023;Q4;YoY;Residential: Total;1.1
+Quarterly;2023;Q4;YoY;Residential: Apartment;-1
+Quarterly;2023;Q4;YoY;Agricultural: Agricultural Land;7.4
+Quarterly;2024;Q1;YoY;Residential: Total;-1.1
+Quarterly;2024;Q1;YoY;Residential: Villa;-5.7
+Quarterly;2024;Q1;YoY;Commercial: Commercial Plot;8.9
+Quarterly;2024;Q2;YoY;Index number;1.6
+Quarterly;2024;Q2;YoY;Residential: Total;0.4
+Quarterly;2024;Q2;YoY;Commercial: Building;5.7
+Quarterly;2024;Q3;YoY;Index number;2.6
+Quarterly;2024;Q3;YoY;Residential: Residential Plot;1.6
+Quarterly;2024;Q3;YoY;Residential: Apartment;1.9
+Quarterly;2024;Q3;YoY;Commercial: Gallery/ Shop;-1.1
+Quarterly;2025;Q1;YoY;Residential: Total;5.1
+Quarterly;2025;Q1;YoY;Commercial: Total;2.5
+Quarterly;2025;Q1;YoY;Commercial: Building;3.1
+Quarterly;2025;Q1;YoY;Agricultural: Total;-1.1
+Quarterly;2025;Q2;YoY;Commercial: Total;11.7
+Quarterly;2025;Q2;YoY;Agricultural: Total;-0.9
+Quarterly;2025;Q2;YoY;Agricultural: Agricultural Land;-0.9
+Quarterly;2025;Q3;YoY;Index number;1.3
+Quarterly;2025;Q3;YoY;Residential: Residential Plot;-0.9
+Quarterly;2025;Q3;YoY;Residential: Villa;0.2
+Quarterly;2025;Q3;YoY;Commercial: Commercial Plot;7.2
+Annually;2021;Annual average;Index;Residential: Villa;79.42
+Annually;2021;Annual average;Index;Residential: Floor;91.36
+Annually;2021;Annual average;Index;Agricultural: Total;87.79
+Annually;2021;Annual average;Index;Agricultural: Agricultural Land;87.79
+Annually;2022;Annual average;Index;Residential: Villa;91.07
+Annually;2022;Annual average;Index;Commercial: Total;93.93
+Annually;2023;Annual average;Index;Residential: Villa;100
+Annually;2024;Annual average;Index;Agricultural: Agricultural Land;101.43
+Annually;2022;Annual average;YoY;Residential: Villa;14.7
+Annually;2023;Annual average;YoY;Index number;4.9
+Annually;2023;Annual average;YoY;Residential: Residential Plot;3.3
+Annually;2024;Annual average;YoY;Residential: Total;1
+Annually;2024;Annual average;YoY;Residential: Residential Plot;1.2
+Annually;2024;Annual average;YoY;Commercial: Building;6
+Annually;2024;Annual average;YoY;Commercial: Gallery/ Shop;-1.6
+Annually;2024;Annual average;YoY;Agricultural: Total;1.4
+Quarterly;2021;Q1;Index;Commercial: Gallery/ Shop;94.83
+Quarterly;2021;Q1;Index;Agricultural: Agricultural Land;84.39
+Quarterly;2021;Q2;Index;Commercial: Building;79.46
+Quarterly;2021;Q2;Index;Commercial: Gallery/ Shop;95.04
+Quarterly;2021;Q2;Index;Agricultural: Agricultural Land;87.19
+Quarterly;2021;Q3;Index;Residential: Villa;81.17
+Quarterly;2021;Q3;Index;Residential: Apartment;84.76
+Quarterly;2021;Q4;Index;Residential: Total;89.51
+Quarterly;2021;Q4;Index;Residential: Apartment;88.61
+Quarterly;2021;Q4;Index;Commercial: Commercial Plot;88.1
+Quarterly;2021;Q4;Index;Commercial: Gallery/ Shop;95.13
+Quarterly;2022;Q1;Index;Residential: Floor;94.07
+Quarterly;2022;Q1;Index;Commercial: Building;86.19
+Quarterly;2022;Q1;Index;Agricultural: Total;91.43
+Quarterly;2022;Q2;Index;Index number;95.56
+Quarterly;2022;Q2;Index;Residential: Total;95.65
+Quarterly;2022;Q2;Index;Commercial: Building;90.3
+Quarterly;2022;Q4;Index;Residential: Apartment;99.59
+Quarterly;2022;Q4;Index;Commercial: Commercial Plot;94.74
+Quarterly;2023;Q1;Index;Index number;99.22
+Quarterly;2023;Q1;Index;Residential: Residential Plot;100.19
+Quarterly;2023;Q1;Index;Residential: Villa;99.27
+Quarterly;2023;Q1;Index;Commercial: Gallery/ Shop;97.01
+Quarterly;2023;Q2;Index;Residential: Apartment;101.31
+Quarterly;2023;Q3;Index;Index number;99.98
+Quarterly;2023;Q3;Index;Residential: Residential Plot;99.79
+Quarterly;2023;Q4;Index;Residential: Total;99.28
+Quarterly;2023;Q4;Index;Commercial: Building;100.15
+Quarterly;2023;Q4;Index;Agricultural: Total;102.08
+Quarterly;2024;Q1;Index;Commercial: Gallery/ Shop;96.66
+Quarterly;2024;Q2;Index;Residential: Residential Plot;101.13
+Quarterly;2024;Q2;Index;Residential: Floor;96.63
+Quarterly;2024;Q2;Index;Commercial: Total;103.57
+Quarterly;2024;Q2;Index;Commercial: Gallery/ Shop;97.42
+Quarterly;2024;Q2;Index;Agricultural: Agricultural Land;103.52
+Quarterly;2024;Q3;Index;Residential: Apartment;100.93
+Quarterly;2024;Q3;Index;Commercial: Total;106.67
+Quarterly;2024;Q3;Index;Commercial: Commercial Plot;106.75
+Quarterly;2024;Q3;Index;Agricultural: Total;95.54
+Quarterly;2024;Q4;Index;Agricultural: Agricultural Land;104.89
+Quarterly;2025;Q2;Index;Residential: Villa;105.03
+Quarterly;2025;Q2;Index;Residential: Floor;98.05
+Quarterly;2025;Q2;Index;Commercial: Commercial Plot;116.56
+Quarterly;2025;Q2;Index;Agricultural: Total;102.63
+Quarterly;2025;Q3;Index;Residential: Residential Plot;100.44
+Quarterly;2025;Q3;Index;Residential: Apartment;99.25
+Quarterly;2025;Q3;Index;Commercial: Building;111.34
+Quarterly;2025;Q3;Index;Agricultural: Total;110.15
+Quarterly;2021;Q2;QoQ;Residential: Residential Plot;3.7
+Quarterly;2021;Q2;QoQ;Residential: Apartment;0.2
+Quarterly;2021;Q2;QoQ;Residential: Floor;-4.3
+Quarterly;2021;Q4;QoQ;Residential: Floor;2.7
+Quarterly;2021;Q4;QoQ;Commercial: Total;2.2
+Quarterly;2022;Q1;QoQ;Residential: Floor;2.5
+Quarterly;2022;Q1;QoQ;Commercial: Total;3.7
+Quarterly;2022;Q1;QoQ;Commercial: Gallery/ Shop;2.8
+Quarterly;2022;Q2;QoQ;Residential: Floor;3.1
+Quarterly;2022;Q3;QoQ;Index number;2
+Quarterly;2022;Q3;QoQ;Residential: Floor;3.4
+Quarterly;2022;Q3;QoQ;Commercial: Total;-1.2
+Quarterly;2022;Q3;QoQ;Commercial: Gallery/ Shop;0.1
+Quarterly;2022;Q4;QoQ;Agricultural: Agricultural Land;-3.9
+Quarterly;2023;Q1;QoQ;Commercial: Gallery/ Shop;-0.6
+Quarterly;2023;Q2;QoQ;Residential: Villa;2.5
+Quarterly;2023;Q2;QoQ;Residential: Apartment;0.2
+Quarterly;2023;Q2;QoQ;Commercial: Building;2.5
+Quarterly;2023;Q3;QoQ;Agricultural: Total;8.5
+Quarterly;2024;Q1;QoQ;Index number;0
+Quarterly;2024;Q1;QoQ;Residential: Apartment;1.8
+Quarterly;2024;Q2;QoQ;Residential: Villa;8.8
+Quarterly;2024;Q2;QoQ;Commercial: Building;3.4
+Quarterly;2024;Q3;QoQ;Residential: Total;0.2
+Quarterly;2024;Q3;QoQ;Residential: Residential Plot;0.2
+Quarterly;2024;Q3;QoQ;Residential: Floor;1.8
+Quarterly;2024;Q3;QoQ;Commercial: Total;3
+Quarterly;2024;Q3;QoQ;Agricultural: Total;-7.7
+Quarterly;2024;Q4;QoQ;Residential: Floor;0.3
+Quarterly;2025;Q1;QoQ;Index number;0.7
+Quarterly;2025;Q1;QoQ;Commercial: Commercial Plot;-2.6
+Quarterly;2025;Q2;QoQ;Index number;0.1
+Quarterly;2025;Q2;QoQ;Residential: Villa;1.8
+Quarterly;2025;Q2;QoQ;Residential: Floor;-0.9
+Quarterly;2025;Q2;QoQ;Commercial: Building;3
+Quarterly;2025;Q2;QoQ;Agricultural: Agricultural Land;1.7
+Quarterly;2025;Q3;QoQ;Residential: Apartment;-1.1
+Quarterly;2025;Q3;QoQ;Commercial: Gallery/ Shop;-0.5
+Quarterly;2025;Q3;QoQ;Agricultural: Total;7.3
+Quarterly;2022;Q1;YoY;Index number;12.2
+Quarterly;2022;Q1;YoY;Residential: Residential Plot;14.9
+Quarterly;2022;Q1;YoY;Commercial: Total;10
+Quarterly;2022;Q2;YoY;Commercial: Total;18.2
+Quarterly;2022;Q2;YoY;Agricultural: Total;6.1
+Quarterly;2022;Q3;YoY;Index number;13.1
+Quarterly;2022;Q3;YoY;Commercial: Commercial Plot;9.6
+Quarterly;2022;Q4;YoY;Index number;9.1
+Quarterly;2022;Q4;YoY;Residential: Total;9.7
+Quarterly;2022;Q4;YoY;Residential: Residential Plot;8.3
+Quarterly;2022;Q4;YoY;Residential: Apartment;12.4
+Quarterly;2022;Q4;YoY;Commercial: Building;12
+Quarterly;2023;Q1;YoY;Index number;8.7
+Quarterly;2023;Q1;YoY;Commercial: Total;5.9
+Quarterly;2023;Q1;YoY;Agricultural: Total;6.1
+Quarterly;2023;Q1;YoY;Agricultural: Agricultural Land;6.1
+Quarterly;2023;Q2;YoY;Residential: Residential Plot;4
+Quarterly;2023;Q2;YoY;Commercial: Gallery/ Shop;3.6
+Quarterly;2023;Q2;YoY;Agricultural: Total;4.3
+Quarterly;2023;Q3;YoY;Residential: Villa;8.7
+Quarterly;2023;Q3;YoY;Commercial: Gallery/ Shop;3.7
+Quarterly;2023;Q4;YoY;Residential: Residential Plot;1.2
+Quarterly;2023;Q4;YoY;Residential: Villa;4.4
+Quarterly;2023;Q4;YoY;Commercial: Building;7.1
+Quarterly;2023;Q4;YoY;Agricultural: Total;7.4
+Quarterly;2024;Q1;YoY;Commercial: Total;8.4
+Quarterly;2024;Q2;YoY;Residential: Apartment;-0.2
+Quarterly;2024;Q2;YoY;Agricultural: Total;7.3
+Quarterly;2024;Q3;YoY;Residential: Total;1.6
+Quarterly;2024;Q3;YoY;Commercial: Commercial Plot;6.4
+Quarterly;2024;Q4;YoY;Residential: Apartment;2.9
+Quarterly;2024;Q4;YoY;Residential: Floor;-0.7
+Quarterly;2025;Q1;YoY;Index number;4.3
+Quarterly;2025;Q1;YoY;Residential: Residential Plot;5.3
+Quarterly;2025;Q2;YoY;Index number;3.2
+Quarterly;2025;Q2;YoY;Residential: Villa;3.2
+Quarterly;2025;Q2;YoY;Residential: Floor;1.5
+Quarterly;2025;Q3;YoY;Residential: Floor;0.3
+Annually;2021;Annual average;Index;Index number;84.64
+Annually;2022;Annual average;Index;Residential: Total;95.89
+Annually;2023;Annual average;Index;Index number;100
+Annually;2023;Annual average;Index;Residential: Residential Plot;100
+Annually;2023;Annual average;Index;Commercial: Total;100
+Annually;2023;Annual average;Index;Commercial: Gallery/ Shop;100
+Annually;2023;Annual average;Index;Agricultural: Total;100
+Annually;2024;Annual average;Index;Residential: Total;101
+Annually;2022;Annual average;YoY;Residential: Apartment;13.7
+Annually;2022;Annual average;YoY;Commercial: Gallery/ Shop;2.6
+Annually;2022;Annual average;YoY;Agricultural: Total;7.6
+Annually;2022;Annual average;YoY;Agricultural: Agricultural Land;7.6
+Annually;2023;Annual average;YoY;Residential: Apartment;3.8
+Annually;2023;Annual average;YoY;Commercial: Commercial Plot;6.3
+Annually;2023;Annual average;YoY;Agricultural: Agricultural Land;5.9
+Annually;2024;Annual average;YoY;Index number;2.3
+Annually;2024;Annual average;YoY;Commercial: Total;6.1
+Quarterly;2021;Q1;Index;Residential: Total;80.78
+Quarterly;2021;Q1;Index;Commercial: Commercial Plot;82.84
+Quarterly;2021;Q2;Index;Commercial: Commercial Plot;80.67
+Quarterly;2021;Q3;Index;Residential: Residential Plot;87.86
+Quarterly;2021;Q3;Index;Commercial: Commercial Plot;86.07
+Quarterly;2021;Q3;Index;Agricultural: Total;87.46
+Quarterly;2021;Q4;Index;Index number;89.15
+Quarterly;2021;Q4;Index;Agricultural: Total;92.31
+Quarterly;2021;Q4;Index;Agricultural: Agricultural Land;92.31
+Quarterly;2022;Q1;Index;Index number;91.29
+Quarterly;2022;Q1;Index;Residential: Apartment;91.45
+Quarterly;2022;Q1;Index;Agricultural: Agricultural Land;91.43
+Quarterly;2022;Q2;Index;Residential: Floor;96.95
+Quarterly;2022;Q2;Index;Commercial: Total;95.55
+Quarterly;2022;Q2;Index;Commercial: Gallery/ Shop;97.16
+Quarterly;2022;Q2;Index;Agricultural: Agricultural Land;92.48
+Quarterly;2022;Q3;Index;Residential: Total;98.58
+Quarterly;2022;Q3;Index;Commercial: Commercial Plot;94.31
+Quarterly;2022;Q3;Index;Commercial: Gallery/ Shop;97.3
+Quarterly;2022;Q4;Index;Index number;97.22
+Quarterly;2022;Q4;Index;Residential: Villa;94.16
+Quarterly;2022;Q4;Index;Residential: Floor;100.23
+Quarterly;2022;Q4;Index;Commercial: Building;93.55
+Quarterly;2022;Q4;Index;Agricultural: Agricultural Land;95.04
+Quarterly;2023;Q1;Index;Agricultural: Total;97.03
+Quarterly;2023;Q3;Index;Residential: Total;99.77
+Quarterly;2023;Q3;Index;Residential: Villa;100.67
+Quarterly;2023;Q3;Index;Commercial: Total;100.23
+Quarterly;2023;Q4;Index;Agricultural: Agricultural Land;102.08
+Quarterly;2024;Q1;Index;Residential: Residential Plot;100.21
+Quarterly;2024;Q1;Index;Residential: Apartment;100.34
+Quarterly;2024;Q1;Index;Residential: Floor;96.28
+Quarterly;2024;Q2;Index;Index number;101.79
+Quarterly;2024;Q2;Index;Residential: Villa;101.82
+Quarterly;2024;Q3;Index;Residential: Residential Plot;101.38
+Quarterly;2024;Q3;Index;Residential: Villa;102.22
+Quarterly;2024;Q3;Index;Commercial: Building;107.78
+Quarterly;2024;Q3;Index;Agricultural: Agricultural Land;95.54
+Quarterly;2025;Q1;Index;Residential: Total;104.26
+Quarterly;2025;Q2;Index;Residential: Total;101.57
+Quarterly;2025;Q2;Index;Agricultural: Agricultural Land;102.63
+Quarterly;2025;Q3;Index;Index number;103.88
+Quarterly;2021;Q2;QoQ;Residential: Total;2
+Quarterly;2021;Q2;QoQ;Agricultural: Agricultural Land;3.3
+Quarterly;2021;Q3;QoQ;Residential: Residential Plot;5.1
+Quarterly;2021;Q3;QoQ;Residential: Villa;7.6
+Quarterly;2021;Q3;QoQ;Commercial: Building;4
+Quarterly;2021;Q4;QoQ;Residential: Residential Plot;3.6
+Quarterly;2021;Q4;QoQ;Residential: Apartment;4.5
+Quarterly;2021;Q4;QoQ;Commercial: Commercial Plot;2.4
+Quarterly;2021;Q4;QoQ;Agricultural: Total;5.5
+Quarterly;2022;Q1;QoQ;Residential: Residential Plot;1.7
+Quarterly;2022;Q1;QoQ;Agricultural: Agricultural Land;-1
+Quarterly;2022;Q2;QoQ;Residential: Apartment;4.7
+Quarterly;2022;Q2;QoQ;Commercial: Commercial Plot;5
+Quarterly;2022;Q2;QoQ;Agricultural: Total;1.1
+Quarterly;2022;Q2;QoQ;Agricultural: Agricultural Land;1.1
+Quarterly;2022;Q3;QoQ;Commercial: Commercial Plot;-1.7
+Quarterly;2022;Q4;QoQ;Residential: Total;-0.4
+Quarterly;2022;Q4;QoQ;Commercial: Total;0.3
+Quarterly;2022;Q4;QoQ;Commercial: Building;-0.9
+Quarterly;2023;Q1;QoQ;Residential: Villa;5.4
+Quarterly;2023;Q1;QoQ;Agricultural: Agricultural Land;2.1
+Quarterly;2023;Q2;QoQ;Agricultural: Total;-0.6
+Quarterly;2023;Q3;QoQ;Residential: Villa;-1.1
+Quarterly;2023;Q3;QoQ;Residential: Floor;-0.1
+Quarterly;2023;Q4;QoQ;Agricultural: Total;-2.4
+Quarterly;2024;Q1;QoQ;Residential: Floor;-3.1
+Quarterly;2024;Q1;QoQ;Commercial: Total;0.3
+Quarterly;2024;Q2;QoQ;Residential: Total;2
+Quarterly;2024;Q2;QoQ;Commercial: Total;-1
+Quarterly;2024;Q3;QoQ;Residential: Villa;0.4
+Quarterly;2024;Q4;QoQ;Residential: Villa;2.4
+Quarterly;2024;Q4;QoQ;Commercial: Commercial Plot;3.2
+Quarterly;2024;Q4;QoQ;Commercial: Gallery/ Shop;0
+Quarterly;2024;Q4;QoQ;Agricultural: Agricultural Land;9.8
+Quarterly;2025;Q2;QoQ;Commercial: Total;7.9
+Quarterly;2025;Q2;QoQ;Commercial: Commercial Plot;8.6
+Quarterly;2025;Q3;QoQ;Index number;-1.1
+Quarterly;2025;Q3;QoQ;Residential: Floor;0.6
+Quarterly;2025;Q3;QoQ;Commercial: Building;1
+Quarterly;2022;Q1;YoY;Residential: Total;13.1
+Quarterly;2022;Q2;YoY;Residential: Total;16.1
+Quarterly;2022;Q2;YoY;Commercial: Gallery/ Shop;2.2
+Quarterly;2022;Q2;YoY;Agricultural: Agricultural Land;6.1
+Quarterly;2022;Q3;YoY;Residential: Villa;14.1
+Quarterly;2022;Q3;YoY;Commercial: Total;9.8
+Quarterly;2022;Q3;YoY;Agricultural: Total;13.1
+Quarterly;2022;Q4;YoY;Commercial: Commercial Plot;7.5
+Quarterly;2022;Q4;YoY;Agricultural: Total;3
+Quarterly;2023;Q1;YoY;Residential: Residential Plot;8.2
+Quarterly;2023;Q1;YoY;Residential: Apartment;10.6
+Quarterly;2023;Q1;YoY;Commercial: Building;15
+Quarterly;2023;Q2;YoY;Residential: Villa;10.5
+Quarterly;2023;Q2;YoY;Residential: Apartment;5.8
+Quarterly;2023;Q2;YoY;Commercial: Commercial Plot;3
+Quarterly;2023;Q3;YoY;Residential: Total;1.2
+Quarterly;2023;Q3;YoY;Residential: Residential Plot;-0.1
+Quarterly;2023;Q3;YoY;Residential: Floor;0
+Quarterly;2023;Q4;YoY;Index number;3.5
+Quarterly;2023;Q4;YoY;Residential: Floor;-0.8
+Quarterly;2024;Q1;YoY;Residential: Apartment;-0.8
+Quarterly;2024;Q1;YoY;Residential: Floor;-3.8
+Quarterly;2024;Q1;YoY;Commercial: Building;4.7
+Quarterly;2024;Q2;YoY;Residential: Residential Plot;0.8
+Quarterly;2024;Q2;YoY;Commercial: Total;4.5
+Quarterly;2024;Q3;YoY;Residential: Floor;-1.8
+Quarterly;2024;Q3;YoY;Commercial: Total;6.4
+Quarterly;2024;Q3;YoY;Commercial: Building;8.6
+Quarterly;2024;Q4;YoY;Residential: Total;3.1
+Quarterly;2024;Q4;YoY;Residential: Residential Plot;2.5
+Quarterly;2024;Q4;YoY;Residential: Villa;6.5
+Quarterly;2024;Q4;YoY;Commercial: Building;5.1
+Quarterly;2024;Q4;YoY;Commercial: Gallery/ Shop;-1.7
+Quarterly;2024;Q4;YoY;Agricultural: Total;2.8
+Quarterly;2024;Q4;YoY;Agricultural: Agricultural Land;2.8
+Quarterly;2025;Q1;YoY;Residential: Apartment;1.2
+Quarterly;2025;Q1;YoY;Commercial: Commercial Plot;2.4
+Quarterly;2025;Q1;YoY;Agricultural: Agricultural Land;-1.1
+Quarterly;2025;Q2;YoY;Residential: Apartment;-0.7
+Quarterly;2025;Q2;YoY;Commercial: Gallery/ Shop;4.1
+Quarterly;2025;Q3;YoY;Commercial: Total;6.8
+Quarterly;2025;Q3;YoY;Commercial: Gallery/ Shop;1.1
+Quarterly;2025;Q3;YoY;Agricultural: Total;15.3
+Annually;2021;Annual average;Index;Residential: Residential Plot;85.68
+Annually;2021;Annual average;Index;Residential: Apartment;84.73
+Annually;2022;Annual average;Index;Index number;95.36
+Annually;2022;Annual average;Index;Commercial: Commercial Plot;94.1
+Annually;2022;Annual average;Index;Commercial: Building;91.06
+Annually;2022;Annual average;Index;Agricultural: Total;94.42
+Annually;2024;Annual average;Index;Index number;102.27
+Annually;2024;Annual average;Index;Residential: Villa;100.49
+Annually;2024;Annual average;Index;Residential: Apartment;100.93
+Annually;2024;Annual average;Index;Residential: Floor;97.51
+Annually;2024;Annual average;Index;Commercial: Building;106.02
+Annually;2024;Annual average;Index;Commercial: Gallery/ Shop;98.4
+Annually;2024;Annual average;Index;Agricultural: Total;101.43
+Annually;2022;Annual average;YoY;Index number;12.7
+Annually;2022;Annual average;YoY;Commercial: Building;11.9
+Annually;2023;Annual average;YoY;Residential: Villa;9.8
+Annually;2023;Annual average;YoY;Commercial: Total;6.5
+Annually;2023;Annual average;YoY;Commercial: Gallery/ Shop;2.6
+Annually;2023;Annual average;YoY;Agricultural: Total;5.9
+Annually;2024;Annual average;YoY;Residential: Villa;0.5
+Quarterly;2021;Q1;Index;Residential: Apartment;82.74
+Quarterly;2021;Q1;Index;Commercial: Building;80.1
+Quarterly;2021;Q2;Index;Residential: Villa;75.42
+Quarterly;2021;Q2;Index;Residential: Floor;90.17
+Quarterly;2021;Q3;Index;Index number;86.2
+Quarterly;2021;Q3;Index;Residential: Floor;89.35
+Quarterly;2021;Q4;Index;Residential: Villa;84.14
+Quarterly;2021;Q4;Index;Commercial: Total;87.87
+Quarterly;2021;Q4;Index;Commercial: Building;83.53
+Quarterly;2022;Q1;Index;Residential: Total;91.34
+Quarterly;2022;Q1;Index;Commercial: Commercial Plot;91.42
+Quarterly;2022;Q2;Index;Residential: Residential Plot;96.42
+Quarterly;2022;Q2;Index;Commercial: Commercial Plot;95.98
+Quarterly;2022;Q3;Index;Index number;97.5
+Quarterly;2022;Q3;Index;Residential: Residential Plot;99.88
+Quarterly;2022;Q3;Index;Residential: Apartment;98.76
+Quarterly;2022;Q3;Index;Agricultural: Agricultural Land;98.89
+Quarterly;2022;Q4;Index;Residential: Total;98.18
+Quarterly;2022;Q4;Index;Residential: Residential Plot;98.6
+Quarterly;2022;Q4;Index;Commercial: Total;94.71
+Quarterly;2022;Q4;Index;Commercial: Gallery/ Shop;97.57
+Quarterly;2022;Q4;Index;Agricultural: Total;95.04
+Quarterly;2023;Q1;Index;Commercial: Total;96.51
+Quarterly;2023;Q1;Index;Commercial: Building;99.09
+Quarterly;2023;Q1;Index;Agricultural: Agricultural Land;97.03
+Quarterly;2023;Q2;Index;Index number;100.22
+Quarterly;2023;Q2;Index;Residential: Residential Plot;100.28
+Quarterly;2023;Q2;Index;Commercial: Total;99.11
+Quarterly;2023;Q2;Index;Commercial: Gallery/ Shop;100.66
+Quarterly;2023;Q2;Index;Agricultural: Agricultural Land;96.48
+Quarterly;2023;Q3;Index;Commercial: Gallery/ Shop;100.89
+Quarterly;2023;Q3;Index;Agricultural: Total;104.64
+Quarterly;2023;Q3;Index;Agricultural: Agricultural Land;104.64
+Quarterly;2023;Q4;Index;Commercial: Total;104.3
+Quarterly;2023;Q4;Index;Commercial: Gallery/ Shop;101.5
+Quarterly;2024;Q1;Index;Index number;100.59
+Quarterly;2024;Q1;Index;Residential: Total;99.18
+Quarterly;2024;Q1;Index;Residential: Villa;93.61
+Quarterly;2024;Q4;Index;Residential: Residential Plot;102.25
+Quarterly;2024;Q4;Index;Residential: Floor;98.73
+Quarterly;2025;Q1;Index;Residential: Residential Plot;105.56
+Quarterly;2025;Q1;Index;Commercial: Total;107.2
+Quarterly;2025;Q1;Index;Commercial: Commercial Plot;107.36
+Quarterly;2025;Q1;Index;Commercial: Building;106.99
+Quarterly;2025;Q1;Index;Agricultural: Total;100.87
+Quarterly;2025;Q1;Index;Agricultural: Agricultural Land;100.87
+Quarterly;2025;Q2;Index;Commercial: Building;110.22
+Quarterly;2025;Q2;Index;Commercial: Gallery/ Shop;101.37
+Quarterly;2025;Q3;Index;Residential: Villa;102.4
+Quarterly;2025;Q3;Index;Commercial: Total;113.89
+Quarterly;2021;Q2;QoQ;Index number;0.8
+Quarterly;2021;Q2;QoQ;Residential: Villa;-2.4
+Quarterly;2021;Q3;QoQ;Residential: Total;4.7
+Quarterly;2021;Q3;QoQ;Residential: Apartment;2.2
+Quarterly;2021;Q3;QoQ;Residential: Floor;-0.9
+Quarterly;2021;Q4;QoQ;Residential: Total;3.8
+Quarterly;2021;Q4;QoQ;Commercial: Building;1.1
+Quarterly;2021;Q4;QoQ;Commercial: Gallery/ Shop;0.4
+Quarterly;2021;Q4;QoQ;Agricultural: Agricultural Land;5.5
+Quarterly;2022;Q1;QoQ;Index number;2.4
+Quarterly;2022;Q2;QoQ;Residential: Villa;7.6
+Quarterly;2022;Q2;QoQ;Commercial: Total;4.9
+Quarterly;2022;Q3;QoQ;Residential: Residential Plot;3.6
+Quarterly;2022;Q3;QoQ;Residential: Apartment;3.2
+Quarterly;2022;Q3;QoQ;Agricultural: Total;6.9
+Quarterly;2022;Q3;QoQ;Agricultural: Agricultural Land;6.9
+Quarterly;2022;Q4;QoQ;Residential: Residential Plot;-1.3
+Quarterly;2022;Q4;QoQ;Residential: Floor;0
+Quarterly;2023;Q1;QoQ;Residential: Total;2.1
+Quarterly;2023;Q1;QoQ;Residential: Floor;-0.1
+Quarterly;2023;Q2;QoQ;Index number;1
+Quarterly;2023;Q2;QoQ;Residential: Total;0.5
+Quarterly;2023;Q3;QoQ;Commercial: Building;-2.3
+Quarterly;2023;Q4;QoQ;Residential: Residential Plot;-0.1
+Quarterly;2023;Q4;QoQ;Residential: Villa;-2.3
+Quarterly;2023;Q4;QoQ;Residential: Apartment;-0.5
+Quarterly;2023;Q4;QoQ;Commercial: Total;4.1
+Quarterly;2023;Q4;QoQ;Commercial: Gallery/ Shop;0.6
+Quarterly;2024;Q1;QoQ;Agricultural: Total;-0.1
+Quarterly;2024;Q2;QoQ;Commercial: Gallery/ Shop;0.8
+Quarterly;2024;Q3;QoQ;Residential: Apartment;-0.1
+Quarterly;2024;Q3;QoQ;Commercial: Commercial Plot;3.2
+Quarterly;2024;Q3;QoQ;Commercial: Building;0.4
+Quarterly;2024;Q3;QoQ;Agricultural: Agricultural Land;-7.7
+Quarterly;2024;Q4;QoQ;Residential: Total;1
+Quarterly;2024;Q4;QoQ;Commercial: Building;-2.3
+Quarterly;2025;Q1;QoQ;Residential: Residential Plot;3.2
+Quarterly;2025;Q1;QoQ;Commercial: Total;-2.1
+Quarterly;2025;Q1;QoQ;Commercial: Building;1.6
+Quarterly;2025;Q2;QoQ;Residential: Total;-2.6
+Quarterly;2025;Q3;QoQ;Commercial: Commercial Plot;-1.8
+Quarterly;2025;Q3;QoQ;Agricultural: Agricultural Land;7.3
+Quarterly;2022;Q1;YoY;Residential: Villa;10.8
+Quarterly;2022;Q1;YoY;Residential: Floor;-0.2
+Quarterly;2022;Q1;YoY;Commercial: Commercial Plot;10.4
+Quarterly;2022;Q1;YoY;Commercial: Gallery/ Shop;3.1
+Quarterly;2022;Q1;YoY;Agricultural: Agricultural Land;8.3
+Quarterly;2022;Q2;YoY;Index number;16.5
+Quarterly;2022;Q2;YoY;Residential: Villa;22.1
+Quarterly;2022;Q2;YoY;Commercial: Commercial Plot;19
+Quarterly;2022;Q3;YoY;Residential: Total;14.3
+Quarterly;2022;Q3;YoY;Residential: Residential Plot;13.7
+Quarterly;2022;Q3;YoY;Commercial: Building;14.3
+Quarterly;2022;Q3;YoY;Agricultural: Agricultural Land;13.1
+Quarterly;2022;Q4;YoY;Agricultural: Agricultural Land;3
+Quarterly;2023;Q2;YoY;Residential: Total;5.3
+Quarterly;2023;Q2;YoY;Residential: Floor;3.5
+Quarterly;2023;Q2;YoY;Agricultural: Agricultural Land;4.3
+Quarterly;2023;Q3;YoY;Residential: Apartment;0.3
+Quarterly;2023;Q3;YoY;Agricultural: Total;5.8
+Quarterly;2023;Q3;YoY;Agricultural: Agricultural Land;5.8
+Quarterly;2023;Q4;YoY;Commercial: Commercial Plot;10.6
+Quarterly;2023;Q4;YoY;Commercial: Gallery/ Shop;4
+Quarterly;2024;Q1;YoY;Index number;1.4
+Quarterly;2024;Q2;YoY;Residential: Villa;0
+Quarterly;2024;Q2;YoY;Commercial: Commercial Plot;4.6
+Quarterly;2024;Q2;YoY;Agricultural: Agricultural Land;7.3
+Quarterly;2024;Q3;YoY;Agricultural: Agricultural Land;-8.7
+Quarterly;2024;Q4;YoY;Commercial: Total;5
+Quarterly;2025;Q1;YoY;Residential: Villa;10.3
+Quarterly;2025;Q1;YoY;Residential: Floor;2.8
+Quarterly;2025;Q2;YoY;Commercial: Commercial Plot;12.7
+Quarterly;2025;Q2;YoY;Commercial: Building;2.7
+Quarterly;2025;Q3;YoY;Residential: Total;-0.9
+Quarterly;2025;Q3;YoY;Residential: Apartment;-1.7
+Quarterly;2025;Q3;YoY;Commercial: Building;3.3
+Annually;2021;Annual average;Index;Residential: Total;84.66
+Annually;2021;Annual average;Index;Commercial: Commercial Plot;84.37
+Annually;2021;Annual average;Index;Commercial: Gallery/ Shop;94.94
+Annually;2022;Annual average;Index;Residential: Apartment;96.33
+Annually;2022;Annual average;Index;Commercial: Gallery/ Shop;97.45
+Annually;2022;Annual average;Index;Agricultural: Agricultural Land;94.42
+Annually;2023;Annual average;Index;Residential: Apartment;100
+Annually;2023;Annual average;Index;Residential: Floor;100
+Annually;2023;Annual average;Index;Agricultural: Agricultural Land;100
+Annually;2024;Annual average;Index;Commercial: Commercial Plot;106.27
+Annually;2022;Annual average;YoY;Residential: Total;13.3
+Annually;2022;Annual average;YoY;Residential: Floor;7.1
+Annually;2022;Annual average;YoY;Commercial: Commercial Plot;11.5
+Annually;2023;Annual average;YoY;Residential: Total;4.3
+Annually;2023;Annual average;YoY;Commercial: Building;9.8
+Annually;2024;Annual average;YoY;Residential: Apartment;0.9
