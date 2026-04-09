@@ -9,11 +9,11 @@
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: KSA Open Data License](https://img.shields.io/badge/data-KSA%20Open%20Data%20License-green.svg)](LICENSE-DATA.md)
-[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--07-orange.svg)](CHANGELOG.md)
+[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--09-orange.svg)](CHANGELOG.md)
 
 🌐 [النسخة العربية](README-AR.md)
 
-Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)** and **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, covering **7.4 million** real estate transaction records across **288 CSV files** from 2018 to 2026.
+Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)**, **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, **KAPSARC**, and **SAMA (Saudi Central Bank)**, covering **7.5 million** real estate records across **312 CSV files** from 2014 to 2026.
 
 Saudi real estate data is scattered across multiple government portals, published in inconsistent formats with Arabic-only headers and undocumented schema changes. This project consolidates it into one place with clean documentation, a self-describing metadata registry, quality audits, and initial analysis — making it usable for researchers, analysts, investors, and developers.
 
@@ -52,7 +52,10 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 | **REGA** | Rental indicators | 13 | 20,000 | 2019–2024 | Rental market by city for all 13 administrative regions |
 | **REGA** | Other | 2 | 32,700 | 2024–2025 | Gender registration stats, consolidated quarterly report |
 | **REGA** | Charts | 8 | — | 2024–2025 | Infographic visualizations |
-| | **Total** | **288 CSVs** | **~7,440,000** | **2018–2026** | **853 MB** |
+| **KAPSARC** | RE price indices | 4 | 2,867 | 2014–2024 | National + regional RE price index (2014=100 and 2023=100 base years) |
+| **KAPSARC** | Construction | 1 | 449 | 2014–2024 | Construction cost index by sector and section |
+| **SAMA** | Finance & mortgage | 9 | 1,091 | 2009–2025 | Bank RE loans, new mortgages by type, finance company exposure, REDF lending, CPI housing |
+| | **Total** | **~312 CSVs** | **~7,480,000** | **2014–2026** | |
 
 ### Key Numbers
 
@@ -73,9 +76,13 @@ Saudi Arabia has two main entities publishing real estate data:
 
 **REGA** regulates the market and publishes **aggregate indicators** — average prices per m², transaction counts, and rental metrics by region and quarter. Less granular than MOJ, but includes rental data and property-type breakdowns that MOJ doesn't have.
 
-**Ministry of Municipal, Rural Affairs and Housing (MOMAH; وزارة الشؤون البلدية والقروية والإسكان)** administers zoning, the White Land Tax (رسوم الأراضي البيضاء), and housing policy. Not a data source in this repo, but relevant context for regulatory overlay analysis.
+**KAPSARC** (King Abdullah Petroleum Studies and Research Center) publishes **real estate price indices** from GASTAT data — national and regional, quarterly, going back to 2014. Also construction cost indices and building permits. Free API, no auth needed.
 
-All data is published through the [Saudi National Open Data Portal](https://open.data.gov.sa), governed by the KSA Open Data License. See the [Glossary](GLOSSARY.md) for definitions of all Arabic terms.
+**SAMA** (Saudi Central Bank) publishes the **Monthly Statistical Bulletin** — a 200+ sheet XLSX with bank mortgage data, new residential mortgages by type (houses/apartments/land), finance company RE exposure, REDF lending, and the CPI housing component. Quarterly data going back to 2009.
+
+**Ministry of Municipal, Rural Affairs and Housing (MOMAH; وزارة الشؤون البلدية والقروية والإسكان)** administers zoning, the White Land Tax (رسوم الأراضي البيضاء), and housing policy. Not a direct data source in this repo, but relevant context for regulatory overlay analysis. **Etimad** (the government procurement portal) publishes construction and RE tenders — tracked by the monitor for market supply signals.
+
+MOJ and REGA data is published through the [Saudi National Open Data Portal](https://open.data.gov.sa). KAPSARC data via [data.kapsarc.org](https://data.kapsarc.org). SAMA data via [sama.gov.sa](https://www.sama.gov.sa). See the [Glossary](GLOSSARY.md) for definitions of all Arabic terms.
 
 ### MOJ vs REGA — What Each Provides
 
@@ -139,6 +146,15 @@ See [notebooks/](notebooks/) for the full code and analysis.
 │   ├── Open-Data-Toolkit-EN.pdf      # REGA open data methodology guide
 │   ├── User-Manual-AR.pdf            # REGA portal user manual (Arabic)
 │   └── User-Manual-EN.pdf            # REGA portal user manual (English)
+├── kapsarc/                          # KAPSARC open data (data.kapsarc.org)
+│   ├── KAPSARC-RE-Price-Index-*.csv  # National RE price index (2014=100 and 2023=100)
+│   ├── KAPSARC-RE-Index-Regions-*.csv # Regional RE price index
+│   └── KAPSARC-Construction-Cost-Index.csv # Construction cost index by sector
+├── sama/                             # Saudi Central Bank (SAMA)
+│   ├── SAMA-Monthly-Bulletin-*.xlsx  # Full monthly statistical bulletin (source XLSX)
+│   └── SAMA-Table-*.csv             # Parsed RE sheets: mortgage loans (12e/12f),
+│                                     #   finance company RE exposure (2-1/2-3/2-4/2-7),
+│                                     #   REDF lending (4-2/4-3), CPI housing (8-1)
 ├── data/
 │   ├── region_mapping.csv            # 33 region spelling variants → 13 canonical names
 │   ├── schema.json                   # Compact schema per category (for AI tools)
@@ -162,7 +178,7 @@ See [notebooks/](notebooks/) for the full code and analysis.
 └── DISCLAIMER.md                     # Not official, not investment advice
 ```
 
-> **Clone size:** ~850 MB (data-heavy repo). For faster clone: `git clone --depth 1 https://github.com/civillizard/Saudi-Real-Estate-Data.git`
+> **Clone size:** ~910 MB (data-heavy repo). For faster clone: `git clone --depth 1 https://github.com/civillizard/Saudi-Real-Estate-Data.git`
 
 ---
 
@@ -202,7 +218,8 @@ This repo includes extensive research and audit documentation. Here's what each 
 | Tool | Purpose |
 |------|---------|
 | [**scripts/build_registry.py**](scripts/build_registry.py) | Scans all CSVs and builds `registry.db` — a SQLite catalog with schema, field types, enum values, and sample rows for every file. Maps Arabic headers to 41 canonical English field names. Exported as CSV in [`data/registry_*.csv`](docs/DATA_DICTIONARY.md#csv-exports) |
-| [**monitor/re_data_monitor.py**](monitor/re_data_monitor.py) | Daily automated check of the Open Data Portal + REGA + White Land Tax portal for new datasets. Sends email alerts when new data appears |
+| [**scripts/download_new_data.py**](scripts/download_new_data.py) | Automated downloader for new MOJ datasets. `--check-updates` detects when the portal silently replaces files with corrected versions. `--redownload-changed` fetches corrected files |
+| [**monitor/re_data_monitor.py**](monitor/re_data_monitor.py) | Daily automated monitor: 21 API endpoints (NHC, REGA, KAPSARC, SAMA, Etimad, Baladiya, MOJ, NHC news), 7 page-change detectors, weekly CDN file-size checks, and opportunistic data capture when new CSV/XLSX files appear |
 
 ---
 
@@ -226,7 +243,7 @@ We've audited the data thoroughly and documented what it **can't** do — so you
 
 8. **2023 data anomaly** — transaction volume dropped to 140K from 282K in 2021. Also, 2023 Q1 has a different schema (13 columns vs standard 10, includes `نوع العقار`). Reason for the dip is unclear — could be a real market slowdown or a data collection change.
 
-9. **MOJ Transfers Q2/Q3 row count anomaly** — `MOJ-Transfers-2025-Q1.csv` has 219,591 rows, while Q2 and Q3 have ~800 rows each (a 270x drop). The Q2/Q3 files likely represent truncated or differently-scoped portal exports. Verify against the source portal before using transfer data for trend analysis.
+9. **~~MOJ Transfers Q2/Q3 row count anomaly~~** — *Resolved Apr 9, 2026.* The portal originally uploaded Q2/Q3 as ~93 KB stubs (~800 rows). They were silently replaced with full data (23–28 MB, matching Q1's scale). The corrected files are now in this repo.
 
 10. **Enforcement Sale schema change** — Q1 has 6 columns (includes Hijri date `تاريخ القرارهجري`), while Q2–Q4 have 5 columns (Hijri date dropped). Account for this when merging across quarters.
 
@@ -313,8 +330,13 @@ sqlite3 registry.db "SELECT DISTINCT canonical_name FROM fields
 | MOJ Sales & Operations | [open.data.gov.sa](https://open.data.gov.sa) | Quarterly (~2–4 weeks after quarter end) | Automated daily monitor |
 | REGA Sales Indicators | [open.data.gov.sa](https://open.data.gov.sa) | Quarterly, per region | Automated daily monitor |
 | REGA Rental Indicators | [rentalrei.rega.gov.sa](https://rentalrei.rega.gov.sa) | Irregular (typically annual) | Automated daily monitor |
+| KAPSARC RE Indices | [data.kapsarc.org](https://data.kapsarc.org) | Quarterly (GASTAT source) | API metadata hash check |
+| SAMA Mortgage & Finance | [sama.gov.sa](https://www.sama.gov.sa/en-US/EconomicReports/) | Monthly bulletin (~2 month lag) | Page change detection |
+| Etimad Construction Tenders | [tenders.etimad.sa](https://tenders.etimad.sa) | Continuous (new tenders daily) | Record count tracking |
+| MOJ News (SharePoint API) | [moj.gov.sa](https://www.moj.gov.sa) | As published | Hash change detection |
+| NHC News (Drupal API) | [nhc.sa](https://nhc.sa) | As published | Hash change detection |
 
-The `monitor/` directory contains an automated scanner that checks the Open Data Portal and REGA daily, tracking dataset counts and page content hashes, and sending email alerts when new files appear.
+The `monitor/` directory contains an automated scanner running daily on a headless Mac. It checks 21 API endpoints, 7 pages, and 3 org dataset feeds. When new CSV/XLSX files are detected, they're automatically downloaded to a staging directory. Email alerts sent via relay.
 
 All data was obtained from public, unauthenticated government APIs and portal downloads. No API keys, credentials, or special access were required. The download URL pattern is predictable (`/odp-public/{ORG_ID}/{DATASET_ID}/v{N}/{RESOURCE_NAME}.csv`), so when the resources API returned empty responses for some datasets, we reconstructed the URLs from working sibling datasets in the same category. This recovered 4 of 5 broken files — the technique and results are documented in [docs/MOJ-DATA.md](docs/MOJ-DATA.md#recovery-of-missing-files).
 
