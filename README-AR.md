@@ -10,7 +10,7 @@
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: KSA Open Data License](https://img.shields.io/badge/data-KSA%20Open%20Data%20License-green.svg)](LICENSE-DATA-AR.md)
-[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--07-orange.svg)](CHANGELOG.md)
+[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--09-orange.svg)](CHANGELOG.md)
 
 🌐 [English version](README.md)
 
