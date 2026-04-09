@@ -15,6 +15,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import ssl  # noqa: F401 — used in fetch_url for cert fallback
 import sqlite3
 import subprocess
@@ -31,6 +32,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent.resolve()
 STATE_DB = SCRIPT_DIR / "monitor_state.db"
 LOG_FILE = SCRIPT_DIR / "monitor.log"
+CAPTURE_DIR = SCRIPT_DIR / "captured"  # auto-downloaded new files
 
 NOTIFY_EMAIL = os.environ.get("NOTIFY_EMAIL", "")
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "")
@@ -475,6 +477,57 @@ def fetch_dataset_resources(dataset_id: str) -> list[dict]:
     return []
 
 
+CAPTURABLE_FORMATS = {"CSV", "XLSX", "XLS", "JSON"}
+DOWNLOAD_ODP_BASE = "https://open.data.gov.sa/odp-public"
+
+
+def _try_capture_resource(
+    source: str, dataset_id: str, res_name: str, res_format: str
+) -> str | None:
+    """Attempt to download a new resource file to captured/ staging directory.
+
+    Returns the local file path on success, None on failure.
+    Gov portals may publish files temporarily — grab them while available.
+    """
+    if res_format.upper() not in CAPTURABLE_FORMATS:
+        return None
+
+    CAPTURE_DIR.mkdir(exist_ok=True)
+    ext = res_format.lower()
+    today = datetime.now().strftime("%Y%m%d")
+    safe_name = re.sub(r"[^\w\-.]", "_", res_name)[:80]
+    local_path = CAPTURE_DIR / f"{source}_{today}_{safe_name}.{ext}"
+
+    if local_path.exists():
+        return str(local_path)
+
+    # Try the dataset detail API to get the download URL
+    detail_url = f"https://open.data.gov.sa/api/datasets/{dataset_id}"
+    detail = fetch_json(detail_url)
+    if detail and isinstance(detail, dict):
+        for res in detail.get("resources", []):
+            if res.get("format", "").upper() == res_format.upper():
+                url_path = res.get("url", "")
+                if url_path:
+                    parts = url_path.split("/")
+                    if len(parts) >= 4:
+                        encoded = urllib.parse.quote(parts[-1])
+                        dl_url = f"{DOWNLOAD_ODP_BASE}/{'/'.join(parts[:-1])}/{encoded}"
+                    else:
+                        dl_url = f"{DOWNLOAD_ODP_BASE}/{urllib.parse.quote(url_path)}"
+
+                    data = fetch_url(dl_url)
+                    if data and len(data) > 100 and b"Request Rejected" not in data:
+                        local_path.write_bytes(data)
+                        log.info(
+                            f"    CAPTURED: {local_path.name} ({len(data):,} bytes)"
+                        )
+                        return str(local_path)
+
+    log.debug(f"    Could not capture {res_name}.{ext}")
+    return None
+
+
 def check_datasets(conn: sqlite3.Connection) -> tuple[list[dict], list[dict]]:
     """
     Check all monitored organizations for new datasets and resources.
@@ -570,6 +623,13 @@ def check_datasets(conn: sqlite3.Connection) -> tuple[list[dict], list[dict]]:
                         (res_id, ds_id, res_name, res_format, now),
                     )
                     log.info(f"    NEW resource: {res_name} ({res_format})")
+
+                    # Opportunistic capture — grab CSV/XLSX while available
+                    captured = _try_capture_resource(
+                        source, ds_id, res_name, res_format
+                    )
+                    if captured:
+                        new_resources[-1]["captured_path"] = captured
 
             # Update resource count
             res_count = conn.execute(
@@ -965,6 +1025,8 @@ def build_alert_email(
             lines.append(f"  File:    {res['filename']}")
             lines.append(f"  Format:  {res['format']}")
             lines.append(f"  Source:  {res['source']}")
+            if res.get("captured_path"):
+                lines.append(f"  >>> CAPTURED: {res['captured_path']}")
         lines.append("")
 
     if size_changes:
