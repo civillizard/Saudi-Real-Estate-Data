@@ -1,9 +1,9 @@
 # Changelog
 
 <p align="center">
-  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
+  <a href="https://www.6ra3.com/track/r/rega-site-changelog?dest=https://rega.gov.sa"><img src="https://www.6ra3.com/track/rega/changelog" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
+  <a href="https://www.6ra3.com/track/r/moj-site-changelog?dest=https://moj.gov.sa"><img src="https://www.6ra3.com/track/moj/changelog" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
 </p>
 
 All notable updates to this dataset are documented here.
