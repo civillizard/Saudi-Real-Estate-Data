@@ -21,5 +21,8 @@ __pycache__/
 monitor/monitor_state.db
 monitor/captured/
 
+# Oversized data files (GeoJSON-bloated exports)
+kapsarc/KAPSARC-Building-Permits.csv
+
 # Social media drafts (not for public repo)
 social/
