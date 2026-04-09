@@ -456,6 +456,43 @@ def fetch_csv_url_from_detail_api(dataset_id: str) -> str | None:
 # ── Download ──────────────────────────────────────────────────────────
 
 
+def _get_remote_size(url: str) -> int | None:
+    """Get remote file size via Range GET (HEAD Content-Length is unreliable on this CDN)."""
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Range": "bytes=0-0",
+    }
+    req = urllib.request.Request(url, headers=headers)
+    for verify in (True, False):
+        try:
+            with urllib.request.urlopen(
+                req, timeout=REQUEST_TIMEOUT, context=_make_ctx(verify)
+            ) as resp:
+                cr = resp.headers.get("Content-Range", "")
+                # Format: "bytes 0-0/TOTAL"
+                if "/" in cr:
+                    try:
+                        return int(cr.split("/")[1])
+                    except (ValueError, IndexError):
+                        return None
+                return None
+        except ssl.SSLError:
+            if verify:
+                continue
+            return None
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError):
+            return None
+    return None
+
+
+def _build_cdn_url(dataset_id: str, csv_filename: str | None) -> str | None:
+    """Build the CDN URL for a dataset's CSV resource."""
+    if not csv_filename:
+        return None
+    encoded_name = urllib.parse.quote(f"{csv_filename}.csv")
+    return f"{DOWNLOAD_ODP}/{MOJ_ORG_ID}/{dataset_id}/v1/{encoded_name}"
+
+
 def _is_waf_block(data: bytes) -> bool:
     """Detect WAF/error page responses disguised as downloads."""
     if len(data) < 1000 and b"Request Rejected" in data:
@@ -626,6 +663,114 @@ def run(dry_run: bool = False, verbose: bool = False) -> int:
     return 0 if stats["failed"] == 0 else 1
 
 
+def check_updates(verbose: bool = False, redownload: bool = False) -> int:
+    """Check existing files for size changes on the portal (possible corrections)."""
+    if verbose:
+        log.setLevel(logging.DEBUG)
+
+    if not STATE_DB.exists():
+        log.error("State DB not found: %s", STATE_DB)
+        return 1
+
+    conn = sqlite3.connect(str(STATE_DB))
+    datasets = load_moj_datasets(conn)
+    conn.close()
+
+    log.info("Checking %d MOJ datasets for updates...", len(datasets))
+
+    checked = 0
+    changed = 0
+    errors = 0
+    unchanged = 0
+
+    for ds in datasets:
+        title_ar = ds["title_ar"]
+        ds_id = ds["dataset_id"]
+        csv_filename = ds["csv_filename"]
+
+        parsed = parse_dataset(title_ar)
+        if parsed is None:
+            continue
+
+        rel_dir, base_name = parsed
+        dest_path = REPO_ROOT / rel_dir / f"{base_name}.csv"
+
+        if not dest_path.exists():
+            continue  # new file, handled by run()
+
+        # Build CDN URL
+        cdn_url = _build_cdn_url(ds_id, csv_filename)
+        if not cdn_url:
+            continue
+
+        local_size = dest_path.stat().st_size
+        remote_size = _get_remote_size(cdn_url)
+        checked += 1
+
+        if remote_size is None:
+            # Try uppercase
+            if csv_filename:
+                encoded_name = urllib.parse.quote(f"{csv_filename}.csv")
+                cdn_url_upper = f"{DOWNLOAD_ODP}/{MOJ_ORG_ID.upper()}/{ds_id.upper()}/v1/{encoded_name}"
+                remote_size = _get_remote_size(cdn_url_upper)
+
+        if remote_size is None:
+            log.debug("  Could not get remote size: %s", base_name)
+            errors += 1
+            continue
+
+        # Account for BOM: we add 3-byte UTF-8 BOM if missing, so local
+        # may be 3 bytes larger than remote. Accept ±3 as unchanged.
+        size_diff = abs(remote_size - local_size)
+        if size_diff > 3:
+            diff = remote_size - local_size
+            sign = "+" if diff > 0 else ""
+            log.warning(
+                "  SIZE CHANGED: %s — local=%d, remote=%d (%s%d bytes)",
+                dest_path.relative_to(REPO_ROOT),
+                local_size,
+                remote_size,
+                sign,
+                diff,
+            )
+            if redownload:
+                log.info("  Re-downloading %s...", dest_path.name)
+                result = download_file(
+                    dataset_id=ds_id,
+                    resource_id=None,
+                    csv_filename=csv_filename,
+                    dest_path=dest_path,
+                )
+                if result == "ok":
+                    new_size = dest_path.stat().st_size
+                    log.info("  Updated: %d -> %d bytes", local_size, new_size)
+                else:
+                    log.warning("  Re-download failed for %s", dest_path.name)
+                time.sleep(DOWNLOAD_DELAY)
+            changed += 1
+        else:
+            log.debug("  OK: %s (%d bytes)", base_name, local_size)
+            unchanged += 1
+
+        time.sleep(0.5)  # gentle rate limit
+
+    print()
+    print("=" * 55)
+    print("Update check summary")
+    print("=" * 55)
+    print(f"  Checked:    {checked}")
+    print(f"  Unchanged:  {unchanged}")
+    print(f"  Changed:    {changed}")
+    print(f"  Errors:     {errors}")
+    print("=" * 55)
+
+    if changed > 0:
+        print(f"\n  {changed} file(s) have different sizes on the portal.")
+        print("  Re-run with --redownload-changed to update them.")
+
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Download new MOJ datasets from the Saudi Open Data portal."
@@ -640,7 +785,20 @@ def main() -> int:
         action="store_true",
         help="Show DEBUG-level output including already-exists entries.",
     )
+    parser.add_argument(
+        "--check-updates",
+        action="store_true",
+        help="Check existing files for size changes (corrections) on the portal.",
+    )
+    parser.add_argument(
+        "--redownload-changed",
+        action="store_true",
+        help="Re-download files whose size changed (use with --check-updates).",
+    )
     args = parser.parse_args()
+
+    if args.check_updates:
+        return check_updates(verbose=args.verbose, redownload=args.redownload_changed)
 
     if args.dry_run:
         print("[DRY-RUN mode — no files will be written]\n")

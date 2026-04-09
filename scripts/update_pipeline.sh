@@ -57,8 +57,10 @@ DL_OUTPUT=$(python3 scripts/download_new_data.py 2>&1) || true
 echo "$DL_OUTPUT"
 
 # Extract download count
-DL_COUNT=$(echo "$DL_OUTPUT" | grep -oP 'Downloaded:\s+\K\d+' || echo "0")
-FAIL_COUNT=$(echo "$DL_OUTPUT" | grep -oP 'Failed:\s+\K\d+' || echo "0")
+DL_COUNT=$(echo "$DL_OUTPUT" | sed -n 's/.*Downloaded:[[:space:]]*\([0-9]*\).*/\1/p' | tail -1)
+DL_COUNT=${DL_COUNT:-0}
+FAIL_COUNT=$(echo "$DL_OUTPUT" | sed -n 's/.*Failed:[[:space:]]*\([0-9]*\).*/\1/p' | tail -1)
+FAIL_COUNT=${FAIL_COUNT:-0}
 
 if [[ "$DL_COUNT" == "0" ]]; then
     log "No new files downloaded. Pipeline complete (nothing to do)."
@@ -74,8 +76,8 @@ REG_OUTPUT=$(python3 scripts/build_registry.py 2>&1)
 echo "$REG_OUTPUT" | grep -E "^(REGISTRY|  Files|  Total|FILES)" | head -10
 
 # Extract summary stats
-TOTAL_FILES=$(echo "$REG_OUTPUT" | grep -oP 'Files cataloged:\s+\K[\d,]+' | tr -d ',')
-TOTAL_ROWS=$(echo "$REG_OUTPUT" | grep -oP 'Total data rows:\s+\K[\d,]+' | tr -d ',')
+TOTAL_FILES=$(echo "$REG_OUTPUT" | sed -n 's/.*Files cataloged:[[:space:]]*\([0-9,]*\).*/\1/p' | tr -d ',' | tail -1)
+TOTAL_ROWS=$(echo "$REG_OUTPUT" | sed -n 's/.*Total data rows:[[:space:]]*\([0-9,]*\).*/\1/p' | tr -d ',' | tail -1)
 
 log "Registry: $TOTAL_FILES files, $TOTAL_ROWS rows"
 
