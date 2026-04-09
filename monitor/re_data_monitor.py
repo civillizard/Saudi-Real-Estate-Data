@@ -100,6 +100,16 @@ MONITORED_PAGES = [
         "url": "https://www.moj.gov.sa/ar/opendata/Pages/default.aspx",
         "description": "MOJ open data landing — new category announcements",
     },
+    {
+        "name": "NHC News",
+        "url": "https://www.nhc.sa/en/news",
+        "description": "National Housing Company news — Sakani, Ejar, housing policy",
+    },
+    {
+        "name": "REGA News",
+        "url": "https://www.rega.gov.sa/en/MediaCenter/news",
+        "description": "REGA regulatory updates — licensing, market rules, indicators",
+    },
 ]
 
 # ── API Endpoints to monitor ──────────────────────────────────────────
@@ -215,6 +225,21 @@ SEED_ENDPOINTS: list[dict] = [
         "name": "SAMA Financial Stability Reports Page",
         "url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/FinancialStabilityReport.aspx",
         "check_type": "json_hash",
+    },
+    # ── Etimad (Government Procurement — public API, no auth) ────────
+    {
+        "endpoint_id": "etimad-re-tenders",
+        "source": "ETIMAD",
+        "name": "Etimad RE & Land Tenders (Activity 4)",
+        "url": "https://tenders.etimad.sa/Tender/AllSupplierTendersForVisitorAsync?PageSize=10&pageNumber=1&TenderActivityId=4&IsSearch=true&Sort=SubmitionDate&SortDirection=DESC",
+        "check_type": "json_count",
+    },
+    {
+        "endpoint_id": "etimad-construction-tenders",
+        "source": "ETIMAD",
+        "name": "Etimad Construction Tenders (Activity 2, Active)",
+        "url": "https://tenders.etimad.sa/Tender/AllSupplierTendersForVisitorAsync?PageSize=10&pageNumber=1&TenderActivityId=2&TenderCategory=2&IsSearch=true&Sort=SubmitionDate&SortDirection=DESC",
+        "check_type": "json_count",
     },
 ]
 
