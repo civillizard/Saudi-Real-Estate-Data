@@ -104,7 +104,7 @@ MONITORED_PAGES = [
     },
     {
         "name": "NHC News",
-        "url": "https://www.nhc.sa/en/news",
+        "url": "https://www.nhc.sa/en/news/",
         "description": "National Housing Company news — Sakani, Ejar, housing policy",
     },
     {
@@ -210,7 +210,7 @@ SEED_ENDPOINTS: list[dict] = [
         "endpoint_id": "kapsarc-new-re-datasets",
         "source": "KAPSARC",
         "name": "New KAPSARC RE Datasets",
-        "url": 'https://data.kapsarc.org/api/explore/v2.1/catalog/datasets?where=search(title,"real estate") OR search(title,"housing") OR search(title,"construction") OR search(title,"mortgage")&order_by=modified DESC&limit=20',
+        "url": "https://data.kapsarc.org/api/explore/v2.1/catalog/datasets?where=search(title,%22real%20estate%22)%20OR%20search(title,%22housing%22)%20OR%20search(title,%22construction%22)%20OR%20search(title,%22mortgage%22)&order_by=modified%20DESC&limit=20",
         "check_type": "json_count",
     },
     # ── SAMA (Monthly Statistical Bulletin — primary RE finance data) ─
