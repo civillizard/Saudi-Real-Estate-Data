@@ -1,9 +1,9 @@
 # Real Estate Data — Analysis Ideas & Use Cases
 
 <p align="center">
-  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
+  <a href="https://www.[redacted]/track/r/rega-site-analysis-ideas?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/analysis-ideas" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
+  <a href="https://www.[redacted]/track/r/moj-site-analysis-ideas?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/analysis-ideas" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
 </p>
 
 **Created:** 2026-03-12

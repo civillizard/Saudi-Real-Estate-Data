@@ -1,9 +1,9 @@
 # Data Dictionary
 
 <p align="center">
-  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
+  <a href="https://www.[redacted]/track/r/rega-site-data-dictionary?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/data-dictionary" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
+  <a href="https://www.[redacted]/track/r/moj-site-data-dictionary?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/data-dictionary" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
 </p>
 
 Machine-readable field catalog for all 159 CSV files. Generated from [`registry.db`](#registry-database) built by [`scripts/build_registry.py`](../scripts/build_registry.py).

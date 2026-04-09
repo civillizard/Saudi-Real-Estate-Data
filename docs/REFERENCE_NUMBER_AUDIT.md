@@ -1,8 +1,8 @@
 # Ministry of Justice (MOJ; وزارة العدل) Real Estate Reference Number Audit
 <p align="center">
-  <a href="https://rega.gov.sa">REGA - Real Estate General Authority (الهيئة العامة للعقار)</a>
+  <a href="https://www.[redacted]/track/r/rega-site-reference-number-audit?dest=https://rega.gov.sa"><img src="https://www.[redacted]/track/rega/reference-number-audit" height="50" alt="REGA - Real Estate General Authority (الهيئة العامة للعقار)"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://moj.gov.sa">MOJ - Ministry of Justice (وزارة العدل)</a>
+  <a href="https://www.[redacted]/track/r/moj-site-reference-number-audit?dest=https://moj.gov.sa"><img src="https://www.[redacted]/track/moj/reference-number-audit" height="50" alt="MOJ - Ministry of Justice (وزارة العدل)"></a>
 </p>
 
 **Date:** 2026-03-12
