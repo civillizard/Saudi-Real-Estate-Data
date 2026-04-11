@@ -91,6 +91,20 @@ CLASSIFICATION_RULES = [
     (r"Rental-indicators-.*\.csv", "REGA", "rental_indicators"),
     (r"quarter-report-SI\.csv", "REGA", "consolidated"),
     (r"Registered-Real-Estate-.*\.csv", "REGA", "gender_stats"),
+    # GASTAT — General Authority for Statistics
+    (r"REPI-.*\.csv", "GASTAT", "repi"),  # Real Estate Price Index (quarterly)
+    (r"Census-2022-.*\.csv", "GASTAT", "census"),
+    # KAPSARC — King Abdullah Petroleum Studies and Research Center
+    (r"KAPSARC-RE-Price-Index-.*\.csv", "KAPSARC", "re_price_index"),
+    (r"KAPSARC-RE-Index-Regions-.*\.csv", "KAPSARC", "re_index_regions"),
+    (r"KAPSARC-Construction-Cost-Index\.csv", "KAPSARC", "construction_cost_index"),
+    (r"KAPSARC-Building-Permits\.csv", "KAPSARC", "building_permits"),
+    # SAMA — Saudi Central Bank (money, banking, finance)
+    (r"SAMA-Table-12[ef]\.csv", "SAMA", "money_banking"),
+    (r"SAMA-Table-2_[1347]\.csv", "SAMA", "finance_companies"),
+    (r"SAMA-Table-4_[23]\.csv", "SAMA", "gov_credit_institutions"),
+    (r"SAMA-Table-8_1\.csv", "SAMA", "price_indices"),
+    (r"SAMA-Table-.*\.csv", "SAMA", "other"),  # fallback
 ]
 
 # ── Arabic → canonical English mapping ───────────────────────────────
