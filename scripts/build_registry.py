@@ -94,6 +94,12 @@ CLASSIFICATION_RULES = [
     # GASTAT — General Authority for Statistics
     (r"REPI-.*\.csv", "GASTAT", "repi"),  # Real Estate Price Index (quarterly)
     (r"Census-2022-.*\.csv", "GASTAT", "census"),
+    (r"GASTAT-REPI-By-Type-Region-.*\.csv", "GASTAT", "repi_by_type_region"),
+    (r"GASTAT-CPI-Inflation-YoY\.csv", "GASTAT", "cpi_inflation"),
+    (r"GASTAT-CPI-Annual-Average-Divisions\.csv", "GASTAT", "cpi_divisions"),
+    (r"GASTAT-Cost-Of-Living-Index-.*\.csv", "GASTAT", "cost_of_living"),
+    (r"GASTAT-Housing-Electricity-Connection\.csv", "GASTAT", "housing_utilities"),
+    (r"GASTAT-Remittance-Costs\.csv", "GASTAT", "remittance_costs"),
     # KAPSARC — King Abdullah Petroleum Studies and Research Center
     (r"KAPSARC-RE-Price-Index-.*\.csv", "KAPSARC", "re_price_index"),
     (r"KAPSARC-RE-Index-Regions-.*\.csv", "KAPSARC", "re_index_regions"),
