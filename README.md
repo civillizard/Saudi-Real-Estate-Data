@@ -9,11 +9,11 @@
 
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Data: KSA Open Data License](https://img.shields.io/badge/data-KSA%20Open%20Data%20License-green.svg)](LICENSE-DATA.md)
-[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--09-orange.svg)](CHANGELOG.md)
+[![Last Updated](https://img.shields.io/badge/data%20updated-2026--04--11-orange.svg)](CHANGELOG.md)
 
 🌐 [النسخة العربية](README-AR.md)
 
-Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)**, **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, **KAPSARC**, and **SAMA (Saudi Central Bank)**, covering **7.5 million** real estate records across **312 CSV files** from 2014 to 2026.
+Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)**, **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, **KAPSARC**, and **SAMA (Saudi Central Bank)**, covering **9.0 million** real estate records across **372 CSV files** from 2014 to 2026.
 
 Saudi real estate data is scattered across multiple government portals, published in inconsistent formats with Arabic-only headers and undocumented schema changes. This project consolidates it into one place with clean documentation, a self-describing metadata registry, quality audits, and initial analysis — making it usable for researchers, analysts, investors, and developers.
 
@@ -48,6 +48,7 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 | **MOJ** | Sales transactions | 24 | 1,407,000 | 2020–2025 | Individual sale records: price, area, location, classification, reference number |
 | **MOJ** | RE operations (36 types) | 215 | 5,959,000 | 2023–2026 | Mortgages, seizures, transfers, POAs, enforcement, grants, compensation, deed updates, mergers, divisions, monthly aggregates |
 | **MOJ** | Market indices | 3 | 3,000 | 2018–2021 | Historical price indices by region, city, district |
+| **MOJ** | POA (non-RE) + regional quarterlies | 54 | 1,507,000 | 2024–2026 | Power-of-attorney datasets outside the real-estate taxonomy (courts, banks, traffic, civil status, commerce, foreign affairs, universities, boat/fishing licenses, annulled POAs) + REGA regional quarterly sales indicators + Makkah rental indicators. Staged under `moj/opportunistic/` pending reclassification. |
 | **REGA** | Sales indicators | 31 | 21,000 | 2024–2025 | Aggregate sales by region: avg/min/max price per m², deed counts |
 | **REGA** | Rental indicators | 13 | 20,000 | 2019–2024 | Rental market by city for all 13 administrative regions |
 | **REGA** | Other | 2 | 32,700 | 2024–2025 | Gender registration stats, consolidated quarterly report |
@@ -55,7 +56,7 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 | **KAPSARC** | RE price indices | 4 | 2,867 | 2014–2024 | National + regional RE price index (2014=100 and 2023=100 base years) |
 | **KAPSARC** | Construction | 1 | 449 | 2014–2024 | Construction cost index by sector and section |
 | **SAMA** | Finance & mortgage | 9 | 1,091 | 2009–2025 | Bank RE loans, new mortgages by type, finance company exposure, REDF lending, CPI housing |
-| | **Total** | **~312 CSVs** | **~7,480,000** | **2014–2026** | |
+| | **Total** | **~372 CSVs** | **~8,987,000** | **2014–2026** | |
 
 ### Key Numbers
 
