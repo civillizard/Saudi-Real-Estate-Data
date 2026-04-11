@@ -496,16 +496,29 @@ def fetch_dataset_resources(dataset_id: str) -> list[dict]:
 
 
 CAPTURABLE_FORMATS = {"CSV", "XLSX", "XLS", "JSON"}
-DOWNLOAD_ODP_BASE = "https://open.data.gov.sa/odp-public"
+
+# Shared portal client — imported lazily to keep monitor's stdlib-only header
+# test clean. See docs/saudi-open-data-portal.md for the full playbook.
+_PORTAL_OPENER = None
+
+
+def _get_portal_opener():
+    global _PORTAL_OPENER
+    if _PORTAL_OPENER is None:
+        sys.path.insert(0, str(SCRIPT_DIR.parent / "scripts"))
+        from portal_client import make_portal_client  # noqa: E402
+
+        _PORTAL_OPENER = make_portal_client()
+    return _PORTAL_OPENER
 
 
 def _try_capture_resource(
     source: str, dataset_id: str, res_name: str, res_format: str
 ) -> str | None:
-    """Attempt to download a new resource file to captured/ staging directory.
+    """Download a newly-discovered resource to captured/ before it disappears.
 
-    Returns the local file path on success, None on failure.
-    Gov portals may publish files temporarily — grab them while available.
+    Uses the shared portal client (full stealth bundle, URL encoding, retry,
+    WAF + NO DATA FOUND handling). Returns the local file path on success.
     """
     if res_format.upper() not in CAPTURABLE_FORMATS:
         return None
@@ -514,35 +527,48 @@ def _try_capture_resource(
     ext = res_format.lower()
     today = datetime.now().strftime("%Y%m%d")
     safe_name = re.sub(r"[^\w\-.]", "_", res_name)[:80]
-    local_path = CAPTURE_DIR / f"{source}_{today}_{safe_name}.{ext}"
+    local_path = CAPTURE_DIR / f"{source}_{today}_{dataset_id[:8]}_{safe_name}.{ext}"
 
-    if local_path.exists():
+    if local_path.exists() and local_path.stat().st_size > 100:
         return str(local_path)
 
-    # Try the dataset detail API to get the download URL
-    detail_url = f"https://open.data.gov.sa/api/datasets/{dataset_id}"
-    detail = fetch_json(detail_url)
-    if detail and isinstance(detail, dict):
-        for res in detail.get("resources", []):
-            if res.get("format", "").upper() == res_format.upper():
-                url_path = res.get("url", "")
-                if url_path:
-                    parts = url_path.split("/")
-                    if len(parts) >= 4:
-                        encoded = urllib.parse.quote(parts[-1])
-                        dl_url = f"{DOWNLOAD_ODP_BASE}/{'/'.join(parts[:-1])}/{encoded}"
-                    else:
-                        dl_url = f"{DOWNLOAD_ODP_BASE}/{urllib.parse.quote(url_path)}"
+    sys.path.insert(0, str(SCRIPT_DIR.parent / "scripts"))
+    from portal_client import (  # noqa: E402
+        DataWithdrawn,
+        WAFBlocked,
+        fetch_bytes,
+        get_dataset_resources,
+    )
 
-                    data = fetch_url(dl_url)
-                    if data and len(data) > 100 and b"Request Rejected" not in data:
-                        local_path.write_bytes(data)
-                        log.info(
-                            f"    CAPTURED: {local_path.name} ({len(data):,} bytes)"
-                        )
-                        return str(local_path)
+    opener = _get_portal_opener()
+    try:
+        resources = get_dataset_resources(opener, dataset_id)
+    except Exception as exc:
+        log.debug(f"    Could not list resources for {dataset_id}: {exc}")
+        return None
 
-    log.debug(f"    Could not capture {res_name}.{ext}")
+    for res in resources:
+        if res.get("format", "").upper() != res_format.upper():
+            continue
+        download_url = res.get("downloadUrl", "")
+        if not download_url:
+            continue
+        try:
+            data = fetch_bytes(opener, download_url)
+        except DataWithdrawn:
+            log.debug(f"    NO DATA FOUND for {res_name}.{ext}")
+            return None
+        except WAFBlocked as exc:
+            log.warning(f"    WAF blocked {res_name}.{ext}: {exc}")
+            return None
+        except Exception as exc:
+            log.debug(f"    Download failed for {res_name}.{ext}: {exc}")
+            return None
+        local_path.write_bytes(data)
+        log.info(f"    CAPTURED: {local_path.name} ({len(data):,} bytes)")
+        return str(local_path)
+
+    log.debug(f"    No matching format {res_format} for {dataset_id}")
     return None
 
 
