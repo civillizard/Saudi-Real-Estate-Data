@@ -19,7 +19,12 @@ __pycache__/
 
 # Monitor state and captured files (machine-specific)
 monitor/monitor_state.db
+monitor/monitor_state.db.bak-*
 monitor/captured/
+monitor/launchd_stderr.log
+monitor/launchd_stdout.log
+monitor/api_snapshots/
+monitor/page_snapshots/
 
 # Oversized data files (GeoJSON-bloated exports)
 kapsarc/KAPSARC-Building-Permits.csv
