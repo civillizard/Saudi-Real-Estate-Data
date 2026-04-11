@@ -25,6 +25,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib  # noqa: F401 — used in build_repo_hash_index + write loop
 import logging
 import re
 import sqlite3
@@ -91,6 +92,44 @@ def build_local_path(
     return (OPPORTUNISTIC_DIR / f"{slug}__{short_id}.{ext}", "opportunistic")
 
 
+def build_repo_hash_index(
+    extensions: tuple[str, ...] = (".csv", ".xlsx"),
+) -> dict[str, Path]:
+    # Walk the repo and build a MD5 index of every tracked data file.
+    # Used to detect byte-exact duplicates before writing new downloads —
+    # the portal sometimes renames existing datasets with new Arabic slugs
+    # and re-publishes them as "new" resources.
+    # Materialize iCloud files first so the hash loop doesn't stall on
+    # cold-cache blobs (see scripts/icloud_materialize.py).
+    try:
+        from icloud_materialize import materialize_files  # noqa: E402
+
+        materialize_files(REPO_ROOT, patterns=tuple(f"*{e}" for e in extensions))
+    except ImportError:
+        pass
+
+    index: dict[str, Path] = {}
+    skip_dirs = {".git", "node_modules", "__pycache__", "social", "notebooks"}
+    for p in REPO_ROOT.rglob("*"):
+        if not p.is_file():
+            continue
+        if p.suffix.lower() not in extensions:
+            continue
+        if any(part in skip_dirs for part in p.relative_to(REPO_ROOT).parts):
+            continue
+        try:
+            h = hashlib.md5(p.read_bytes()).hexdigest()
+        except OSError:
+            continue
+        # Prefer the shorter / more canonical path when collisions already
+        # exist in the repo (e.g. an Arabic-slug staging copy AND a
+        # canonical English-slug copy of the same bytes).
+        existing = index.get(h)
+        if existing is None or len(str(p)) < len(str(existing)):
+            index[h] = p
+    return index
+
+
 def fetch_new_datasets(conn: sqlite3.Connection, since: str) -> list[tuple[str, str]]:
     rows = conn.execute(
         """
@@ -119,6 +158,11 @@ def main() -> int:
     ap.add_argument(
         "--limit", type=int, default=0, help="Stop after N downloads (0 = no limit)"
     )
+    ap.add_argument(
+        "--no-dedup",
+        action="store_true",
+        help="Skip byte-exact dedup check against existing repo files",
+    )
     args = ap.parse_args()
 
     formats = {f.upper() for f in args.formats}
@@ -135,11 +179,18 @@ def main() -> int:
 
     OPPORTUNISTIC_DIR.mkdir(parents=True, exist_ok=True)
 
+    hash_index: dict[str, Path] = {}
+    if not args.no_dedup:
+        log.info("Building repo hash index for byte-exact dedup...")
+        hash_index = build_repo_hash_index()
+        log.info("  %d existing data files indexed", len(hash_index))
+
     opener = make_portal_client()
 
     counts = {
         "dl_ok": 0,
         "dl_skip_ondisk": 0,
+        "dl_dup_of_existing": 0,
         "dl_no_data": 0,
         "dl_waf": 0,
         "dl_err": 0,
@@ -214,8 +265,30 @@ def main() -> int:
                 )
                 continue
 
+            # Byte-exact dedup against existing repo files. Protects against
+            # the portal re-publishing the same dataset under a new Arabic
+            # slug — see 2026-04-11 recovery where 11 REGA "new" resources
+            # were hash-identical to existing files under old names.
+            if hash_index:
+                dl_hash = hashlib.md5(data).hexdigest()
+                existing = hash_index.get(dl_hash)
+                if existing is not None:
+                    counts["dl_dup_of_existing"] += 1
+                    log.info(
+                        "  DUP [%s] %s  ==  %s (byte-exact match, skipping)",
+                        category,
+                        title_ar[:50],
+                        existing.relative_to(REPO_ROOT),
+                    )
+                    time.sleep(args.rate)
+                    continue
+
             local_path.parent.mkdir(parents=True, exist_ok=True)
             local_path.write_bytes(data)
+            # Keep the index in sync so subsequent writes in the same run
+            # dedup against files we just landed.
+            if hash_index:
+                hash_index[hashlib.md5(data).hexdigest()] = local_path
             counts["dl_ok"] += 1
             line = (
                 f"  OK  [{category:12}] {len(data):>11,}B  "

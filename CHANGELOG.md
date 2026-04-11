@@ -12,7 +12,7 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 
 ---
 
-## 2026-04-11 — Opportunistic Recovery (138 files, +1.5M rows)
+## 2026-04-11 — Opportunistic Recovery + New Taxonomy (138 files, +2.0M rows)
 
 ### Data
 - **138 new MOJ files recovered** (60 CSV, 78 XLSX) from the Apr 7 monitor findings that our discovery-time capture path had silently dropped.
@@ -24,7 +24,23 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 - **`moj/real-estate/`** — 14 new XLSX siblings for existing quarterly sub-categories (Compensation, Compensation-Ruins, Deed-Define-Divide, Divide, Grant-Alternative, Merge-Deed Q2–Q4, Mortgage-Release, Ownership, POA-Ejar Q2+Q3, POA-RE-Fund, Transfers).
 - **`moj/monthly/`** — 14 new XLSX siblings (Monthly-Operations 2024-05/11, 2025-06/07/09/10/11, 2026-01; POA-Issued 2024-01/06/09, 2025-05/10, 2026-02).
 - **`moj/sales/`** — RE-Index Cities + Districts 2018-2021 XLSX siblings.
-- **Total:** 372 CSVs (was 312), ~9.0 M rows, 1.07 GB.
+- **Total:** 360 CSVs (was 312) + 85 XLSX, ~9.49 M rows, 1.07 GB. The net CSV delta is lower than the raw file count because 11 REGA "new" resources turned out to be byte-exact duplicates of existing files under new Arabic names — they were removed rather than double-tracked.
+
+### Reclassification — English-slug taxonomy
+- **New `moj/poa-other/` directory** (76 files = 38 × CSV + XLSX) for non-RE Power-of-Attorney quarterly sub-categories: Agricultural-Dev-Fund, Agricultural-Grants, Banks, Boat-Fishing-Licenses, Civil-Affairs, Claims-Courts, Commercial-Records, Companies, Compensation-Aid, Court-Completions, Foreign-POA-Attest, Gov-Authorities, Gov-Institutions, Housing-Grants, Labor-Recruitment, Municipalities, Post, Recruitment-Office, Salaries-Dues, Service-Requests, Social-Dev-Bank, Social-Security, Telecom-Companies, Traffic, University-Rewards, Vehicles.
+- **5 monthly `MOJ-POA-Annulled-*` files** added to `moj/monthly/` (2024-02, 2025-01, 2025-02, 2025-11, 2026-02). 8-column schema with dissolution reason + hijri date.
+- **11 REGA XLSX siblings** merged alongside existing canonical CSVs in `rega/` with their original English slug names.
+- `moj/opportunistic/` staging directory fully drained and removed.
+
+### Tools / infrastructure
+- **`scripts/portal_client.py`** (new) — shared Saudi Open Data client with full stealth bundle from request 1: Safari UA, warmup cookies, per-segment URL encoding, `downloadUrl` field used directly, `NO DATA FOUND` sentinel, retry for flaky `/data/api/datasets/resources` endpoint.
+- **`scripts/grab_new_findings.py`** (new) — reusable opportunistic recovery downloader. Sweeps `monitor/monitor_state.db` by `--since` date, dedups against all existing repo files by MD5 before writing, falls back to a staging dir for unrecognised titles. `--no-dedup` to override.
+- **`scripts/reclassify_opportunistic.py`** (new) — one-shot Arabic→English slug mover with git mv, guards against destination conflicts.
+- **`scripts/icloud_materialize.py`** (new) — force-downloads iCloud-backed files before batch reads. The repo lives in iCloud Drive and cold-cache files stall batch scripts at 0% CPU in `_bufferedreader_fill_buffer` with no error. Registry builder and the hash-index walk both call this at startup.
+- **`monitor/re_data_monitor.py`** — `_try_capture_resource()` rewritten to use the shared portal client. Verified working: fresh monitor run captured 53 files against the live portal (gitignored to `monitor/captured/`).
+- **`scripts/build_registry.py`** — `kapsarc/KAPSARC-Building-Permits.csv` (1.7 GB, gitignored), derived `data/registry_*.csv`, and `monitor/` dir all excluded from the scan.
+- **`docs/saudi-open-data-portal.md`** (new) — full portal playbook. Read before writing any script that talks to the portal.
+- **`monitor/monitor_state.db`** schema fix: `check_log.api_changes` column added via `ALTER TABLE` so post-run summary INSERTs stop failing.
 
 ### Tools
 - **`scripts/portal_client.py`** — new shared Saudi Open Data portal client. Every script that talks to the portal must use this helper instead of hand-rolling an HTTP path. Full stealth bundle from request 1: Safari User-Agent + warmup GET to `/en` to collect `dm2`, `BPfffdc833146`, `BP407814ff` cookies, per-segment URL encoding (portal now publishes files with spaces such as `Doc Attorney CSV.csv`), `downloadUrl` field used directly instead of reconstructed, `NO DATA FOUND` sentinel treated as data-withdrawn, retry with exponential backoff for the flaky `/data/api/datasets/resources` endpoint.

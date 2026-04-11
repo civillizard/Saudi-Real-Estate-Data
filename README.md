@@ -13,7 +13,7 @@
 
 🌐 [النسخة العربية](README-AR.md)
 
-Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)**, **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, **KAPSARC**, and **SAMA (Saudi Central Bank)**, covering **9.0 million** real estate records across **372 CSV files** from 2014 to 2026.
+Consolidated open data from Saudi Arabia's **Ministry of Justice (MOJ; وزارة العدل)**, **Real Estate General Authority (REGA; الهيئة العامة للعقار)**, **KAPSARC**, and **SAMA (Saudi Central Bank)**, covering **9.5 million** real estate records across **360 CSV files** from 2014 to 2026.
 
 Saudi real estate data is scattered across multiple government portals, published in inconsistent formats with Arabic-only headers and undocumented schema changes. This project consolidates it into one place with clean documentation, a self-describing metadata registry, quality audits, and initial analysis — making it usable for researchers, analysts, investors, and developers.
 
@@ -56,7 +56,7 @@ This is an experiment in progress. I'm exploring what use cases, correlations, a
 | **KAPSARC** | RE price indices | 4 | 2,867 | 2014–2024 | National + regional RE price index (2014=100 and 2023=100 base years) |
 | **KAPSARC** | Construction | 1 | 449 | 2014–2024 | Construction cost index by sector and section |
 | **SAMA** | Finance & mortgage | 9 | 1,091 | 2009–2025 | Bank RE loans, new mortgages by type, finance company exposure, REDF lending, CPI housing |
-| | **Total** | **~372 CSVs** | **~8,987,000** | **2014–2026** | |
+| | **Total** | **~360 CSVs** | **~9,488,000** | **2014–2026** | |
 
 ### Key Numbers
 
