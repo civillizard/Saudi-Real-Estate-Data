@@ -50,6 +50,17 @@ CLASSIFICATION_RULES = [
     (r"MOJ-POA-RealEstate-.*\.csv", "MOJ", "poa"),
     (r"MOJ-POA-Ejar-.*\.csv", "MOJ", "poa_ejar"),
     (r"MOJ-POA-Issued-.*\.csv", "MOJ", "poa_issued"),
+    (r"MOJ-POA-Annulled-.*\.csv", "MOJ", "poa_annulled"),
+    # Non-RE POA sub-categories (fallback — must come after all specific
+    # POA-* rules). Covers MOJ-POA-Traffic, Banks, Gov-Authorities,
+    # Gov-Institutions, Companies, Commercial-Records, Claims-Courts,
+    # Court-Completions, Housing-Grants, Agricultural-Grants,
+    # Agricultural-Dev-Fund, Social-Dev-Bank, Social-Security,
+    # Civil-Affairs, Municipalities, Compensation-Aid, Salaries-Dues,
+    # Vehicles, Labor-Recruitment, Recruitment-Office, Foreign-POA-Attest,
+    # Boat-Fishing-Licenses, Telecom-Companies, University-Rewards,
+    # Service-Requests, Post.
+    (r"MOJ-POA-.*\.csv", "MOJ", "poa_other"),
     (r"MOJ-Mortgage-Release-.*\.csv", "MOJ", "mortgage_release"),
     (r"MOJ-Mortgage-.*\.csv", "MOJ", "mortgage"),
     (r"MOJ-Physical-Registration-.*\.csv", "MOJ", "physical_reg"),
@@ -280,15 +291,40 @@ def get_date_column_idx(headers: list[str]) -> int | None:
     return None
 
 
+EXCLUDED_FILES = {
+    # 1.7 GB GeoJSON-bloated export — also in .gitignore, not part of the
+    # public release. Scanning it tanks registry build time for no benefit.
+    "kapsarc/KAPSARC-Building-Permits.csv",
+    # Derived exports from the registry itself — would be circular.
+    "data/registry_files.csv",
+    "data/registry_fields.csv",
+    "data/registry_enums.csv",
+    "data/region_mapping.csv",
+}
+
+EXCLUDED_DIRS = {
+    ".git",
+    "charts",
+    "__pycache__",
+    "node_modules",
+    "social",
+    "monitor",  # staging dir for fresh opportunistic captures, not part of release
+}
+
+
 def discover_csvs() -> list[Path]:
-    """Find all CSV files under BASE_DIR."""
+    """Find all CSV files under BASE_DIR (excluding gitignored + derived)."""
     csvs = []
     for root, dirs, files in os.walk(BASE_DIR):
-        # Skip hidden dirs and charts
-        dirs[:] = [d for d in dirs if not d.startswith(".") and d != "charts"]
+        dirs[:] = [d for d in dirs if not d.startswith(".") and d not in EXCLUDED_DIRS]
         for f in files:
-            if f.lower().endswith(".csv"):
-                csvs.append(Path(root) / f)
+            if not f.lower().endswith(".csv"):
+                continue
+            path = Path(root) / f
+            rel = str(path.relative_to(BASE_DIR))
+            if rel in EXCLUDED_FILES:
+                continue
+            csvs.append(path)
     csvs.sort(key=lambda p: p.name)
     return csvs
 
@@ -689,6 +725,18 @@ def main():
     print("REGA/MOJ Data Registry Builder")
     print(f"Scanning: {BASE_DIR}")
     print()
+
+    # Repo lives in iCloud Drive — cold files block mid-scan on
+    # _bufferedreader_fill_buffer. Pre-materialize every CSV before the
+    # scan loop starts so we don't stall silently. See docs/icloud-gotcha.md.
+    try:
+        from icloud_materialize import materialize_files  # noqa: E402
+
+        print("Materializing iCloud-backed CSVs (one-time cold-cache cost)...")
+        count, elapsed = materialize_files(BASE_DIR, patterns=("*.csv",))
+        print(f"  materialized {count} files in {elapsed:.1f}s\n")
+    except ImportError:
+        print("  (icloud_materialize helper not found, skipping prefetch)\n")
 
     # Discover CSVs
     csvs = discover_csvs()
