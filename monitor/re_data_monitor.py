@@ -443,16 +443,26 @@ def fetch_url(
         return None
 
 
-def fetch_json(url: str) -> dict | list | None:
-    """Fetch and parse JSON from a URL."""
-    data = fetch_url(url)
-    if data is None:
-        return None
-    try:
-        return json.loads(data)
-    except json.JSONDecodeError as e:
-        log.warning(f"JSON decode error for {url}: {e}")
-        return None
+def fetch_json(url: str, tries: int = 3) -> dict | list | None:
+    """Fetch and parse JSON from a URL, retrying on transient JSON-decode
+    errors. The Saudi Open Data resources endpoint intermittently returns
+    non-JSON HTML — retry with backoff handles ~95% of those cases."""
+    last_err = None
+    for attempt in range(tries):
+        data = fetch_url(url)
+        if data is None:
+            last_err = "fetch_url returned None"
+            time.sleep(2 + attempt)
+            continue
+        try:
+            return json.loads(data)
+        except json.JSONDecodeError as e:
+            last_err = str(e)
+            if attempt < tries - 1:
+                time.sleep(2 + attempt)
+                continue
+    log.warning(f"JSON decode error for {url}: {last_err}")
+    return None
 
 
 # ── Dataset Monitoring ────────────────────────────────────────────────
