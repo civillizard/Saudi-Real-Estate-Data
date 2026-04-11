@@ -12,6 +12,34 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 
 ---
 
+## 2026-04-11 — Opportunistic Recovery (138 files, +1.5M rows)
+
+### Data
+- **138 new MOJ files recovered** (60 CSV, 78 XLSX) from the Apr 7 monitor findings that our discovery-time capture path had silently dropped.
+- **`moj/opportunistic/`** — 108 files (54 CSV + 54 XLSX, ~222 MB, ~1.5 M rows) covering MOJ datasets that don't fit the main real-estate taxonomy:
+  - **Non-RE Power-of-Attorney sub-categories** — POAs issued in courts, banks, traffic authority, civil status, government offices, foreign affairs (تصديق الوكالات الخارجية), Ministry of Commerce, boat/fishing licenses, university rewards, and more. Each POA sub-category is published as a standalone quarterly dataset.
+  - **Annulled POAs (الوكالات المفسوخة)** — 4 monthly files (2024-02, 2025-01, 02, 11, 2026-02).
+  - **REGA regional sales indicators** — 10 quarterly files for Riyadh (Q1/Q2/Q3 2025), Makkah (Q3 2024), Madinah (Q1/Q2 2024), Al-Baha (Q1/Q3 2025), Hail (Q3 2025), Eastern Province (Q3 2025).
+  - **Makkah rental indicators** — city-level rental indicators for Makkah region.
+- **`moj/real-estate/`** — 14 new XLSX siblings for existing quarterly sub-categories (Compensation, Compensation-Ruins, Deed-Define-Divide, Divide, Grant-Alternative, Merge-Deed Q2–Q4, Mortgage-Release, Ownership, POA-Ejar Q2+Q3, POA-RE-Fund, Transfers).
+- **`moj/monthly/`** — 14 new XLSX siblings (Monthly-Operations 2024-05/11, 2025-06/07/09/10/11, 2026-01; POA-Issued 2024-01/06/09, 2025-05/10, 2026-02).
+- **`moj/sales/`** — RE-Index Cities + Districts 2018-2021 XLSX siblings.
+- **Total:** 372 CSVs (was 312), ~9.0 M rows, 1.07 GB.
+
+### Tools
+- **`scripts/portal_client.py`** — new shared Saudi Open Data portal client. Every script that talks to the portal must use this helper instead of hand-rolling an HTTP path. Full stealth bundle from request 1: Safari User-Agent + warmup GET to `/en` to collect `dm2`, `BPfffdc833146`, `BP407814ff` cookies, per-segment URL encoding (portal now publishes files with spaces such as `Doc Attorney CSV.csv`), `downloadUrl` field used directly instead of reconstructed, `NO DATA FOUND` sentinel treated as data-withdrawn, retry with exponential backoff for the flaky `/data/api/datasets/resources` endpoint.
+- **`scripts/grab_new_findings.py`** — one-shot recovery downloader. Sweeps `monitor/monitor_state.db` for datasets first discovered after `--since`, uses `parse_dataset()` from the main downloader for known RE categories and a slug fallback (`moj/opportunistic/`) for unrecognised titles. Handles dedup, WAF, NO DATA FOUND, and portal flakiness.
+- **`monitor/re_data_monitor.py`** — `_try_capture_resource()` now delegates to the shared portal client. The previous implementation was broken: it reconstructed URLs manually instead of using the API's `downloadUrl` field, did not URL-encode spaces, and did not warm up the WAF cookies. Apr 7 run silently captured zero files.
+- **`docs/saudi-open-data-portal.md`** — full playbook of every operational lesson learned from the portal (WAF bundle, flaky endpoints, generic placeholder filenames, sentinel handling, retry policy). Read this before writing any new portal code.
+
+### Notes
+- The Saudi Open Data portal has started publishing many MOJ datasets with **generic placeholder filenames** — every POA sub-category uses `Doc Attorney CSV.csv`, every deed aggregate uses `Total number of deeds transactions CSV.csv`, every annulment file uses `Total number of annulments CSV.csv`. These names are reused across dozens of unrelated datasets, so **uniqueness lives in the UUID path segment**, not the filename. The `moj/opportunistic/` directory uses Arabic-title slugs with a UUID prefix for disambiguation.
+- The recovery sweep probed 86 datasets and found 73 live on the first pass. A slower retry pass recovered 8 more from the flaky `/data/api/datasets/resources` endpoint. 4 files remain hard-404 (POA Aug/Sep 2023 × CSV + XLSX) — portal returns a `downloadUrl` that returns 404 at the odp-public blob path, a portal-side inconsistency we can't fix client-side.
+- The 10 datasets the Apr 9 note flagged as "missing from portal" (Doc Attorney 2023 monthly, Property Identity Q2 2025) are in fact live — the downloader was blocked by its own URL reconstruction bug, not a missing-file problem. These are now captured under `moj/opportunistic/` with the recovered data.
+- `moj/opportunistic/` is a staging directory. Files will be reclassified and merged into `moj/real-estate/`, `moj/monthly/`, or a new `moj/poa-other/` taxonomy in a future release once the non-RE POA categories have been enumerated and mapped.
+
+---
+
 ## 2026-04-09 — Data Corrections + Update Checker
 
 ### Data Corrections
