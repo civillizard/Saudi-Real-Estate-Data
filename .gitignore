@@ -11,6 +11,7 @@
 
 # Deployment artifacts (machine-specific)
 *.plist
+!ops/launchd/*.plist
 
 # Python
 __pycache__/
