@@ -208,7 +208,6 @@ document third, commit in logical groups, then tag.
 
 Rule of the release: **never probe a protected source with minimal
 headers and escalate on failure**. One permanent block from a throwaway
-probe is far worse than 10 extra lines of stealth upfront. This lesson is
-now encoded in `~/.claude/projects/-Users-mao/memory/feedback_stealth_full_from_start.md`
-and in the "Always use full stealth from the first request" section of
-the portal playbook.
+probe is far worse than 10 extra lines of stealth upfront. This lesson
+is now encoded in the "Always use full stealth from the first request"
+section of the portal playbook.

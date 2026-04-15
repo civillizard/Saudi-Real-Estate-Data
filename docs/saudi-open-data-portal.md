@@ -16,7 +16,7 @@ The portal uses a WAF (cookie fingerprint `BPfffdc833146`, `BP407814ff`, `dm2`) 
 - Python `urllib` with default UA (same rejection)
 - Requests without a portal cookie session (returns "Request Rejected" on data endpoints)
 
-**Always use the full stealth bundle from the very first request. Never probe with a minimal client.** See `~/.claude/projects/-Users-mao/memory/feedback_stealth_full_from_start.md`.
+**Always use the full stealth bundle from the very first request. Never probe with a minimal client.**
 
 ### Canonical working client (Python 3)
 
@@ -189,7 +189,7 @@ The `monitor/re_data_monitor.py` script has an opportunistic-capture path (`_try
 | Date | What we learned |
 |---|---|
 | 2026-03-12 | Initial monitor run tracked 495 datasets, 792 resources across MOJ+REGA+GASTAT+NHC. |
-| 2026-03-27 | Discovered WAF blocks curl + httpx default UA. Browser UA + Referer in Python urllib works. Documented in `~/.claude/CLAUDE.md` web-extraction pitfalls. |
+| 2026-03-27 | Discovered WAF blocks curl + httpx default UA. Browser UA + Referer in Python urllib works. Documented in project web-extraction pitfalls notes. |
 | 2026-04-07 | Monitor discovered 180 new resources (3 new datasets). Opportunistic capture silently failed — no files saved. |
 | 2026-04-11 | Root-caused the capture failure: (a) wrong URL source field, (b) no URL-encoding of spaces in generic placeholder filenames, (c) no warmup. Retry with full stealth bundle recovered **73 of 86** Apr-7 datasets as live and downloadable, totalling hundreds of MB of POA + deed transaction data. Only 13 failed — all to flaky `/data/api/datasets/resources` endpoint, recoverable via retry. |
 | 2026-04-11 | Learned the generic-placeholder-filename pattern — `Doc Attorney CSV.csv` etc. reused across dozens of datasets, uniqueness lives in the UUID path segment only. |
