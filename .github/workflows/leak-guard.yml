@@ -1,0 +1,97 @@
+name: leak-guard
+
+# Server-side leak detection for public repos. Add this file to
+# .github/workflows/leak-guard.yml in every public repo.
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download leak patterns
+        run: |
+          # Fetch the shared pattern catalog. Pin to a commit SHA in production
+          # to avoid supply-chain risk from the patterns file being tampered
+          # with. For initial rollout, pinning to main is acceptable.
+          mkdir -p .leak-guard
+          cat > .leak-guard/patterns.txt <<'PATTERNS'
+          # Inlined patterns — kept in-repo so this workflow is self-contained.
+          # Update whenever ~/claude-config/security/leak-patterns.txt changes.
+          \bsk-[A-Za-z0-9]{20,}\b
+          \bghp_[A-Za-z0-9]{20,}\b
+          \bAKIA[A-Z0-9]{16}\b
+          BEGIN .*(RSA |EC |OPENSSH |DSA )?PRIVATE KEY
+          \bsk-ant-api03-[A-Za-z0-9_-]{20,}\b
+          \bxoxb-[0-9]+-[0-9]+-[0-9]+-[a-f0-9]+\b
+          \bmr-ed\b
+          \b(macair|MacAir|Macair)1[35]\b
+          \bdr-ice\b
+          \b194\.180\.188\.208\b
+          \b82\.22\.53\.197\b
+          \b10\.(?:[0-9]{1,3}\.){2}[0-9]{1,3}\b
+          \b192\.168\.(?:[0-9]{1,3})\.(?:[0-9]{1,3})\b
+          /Users/mao\b
+          /home/civillizard\b
+          ~/\.claude/
+          \b6ra3\.com/track\b
+          \bmamdoh(?!\s*\.com)
+          \baloqiel\b
+          PATTERNS
+
+      - name: Scan diff for leak patterns
+        run: |
+          # For PRs: scan only the PR diff
+          # For push to main: scan the last commit
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+            HEAD="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+            HEAD="${{ github.event.after }}"
+          fi
+
+          # If BASE is all-zeros (first push), scan whole tree instead
+          if [[ "$BASE" == "0000000000000000000000000000000000000000" || -z "$BASE" ]]; then
+            SCAN_TARGET="HEAD"
+            echo "Initial push — scanning full tree"
+          else
+            SCAN_TARGET="$BASE..$HEAD"
+            echo "Scanning range $SCAN_TARGET"
+          fi
+
+          FAILED=0
+          while IFS= read -r pattern; do
+            [[ -z "$pattern" || "$pattern" =~ ^# ]] && continue
+            if [[ "$SCAN_TARGET" == "HEAD" ]]; then
+              MATCHES=$(git grep -nE "$pattern" HEAD -- . 2>/dev/null || true)
+            else
+              MATCHES=$(git log "$SCAN_TARGET" -p | grep -E "^\+" | grep -v "^\+\+\+" | grep -E "$pattern" || true)
+            fi
+            if [[ -n "$MATCHES" ]]; then
+              echo "❌ LEAK: pattern '$pattern'"
+              echo "$MATCHES" | head -5 | sed 's/^/    /'
+              FAILED=1
+            fi
+          done < .leak-guard/patterns.txt
+
+          if (( FAILED == 1 )); then
+            echo ""
+            echo "🛡  leak-guard blocked this push. Remove the flagged content and push again."
+            echo "Shared patterns: https://github.com/civillizard/claude-config/blob/main/security/leak-patterns.txt"
+            exit 1
+          fi
+
+          echo "✅ leak-guard: no patterns matched."
