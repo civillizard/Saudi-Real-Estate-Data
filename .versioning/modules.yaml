@@ -1,0 +1,10 @@
+# rega-data module registry for MAJOR.MINOR.SERIAL versioning.
+# See ~/claude-config/lib/versioning/bump.py
+
+project: rega-data
+
+modules:
+  data: data/
+  gastat: gastat/
+  kapsarc: kapsarc/
+  docs: docs/
