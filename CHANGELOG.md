@@ -12,6 +12,27 @@ Format: date-based versions. Each entry lists new data added, corrections, and d
 
 ---
 
+## 2026-04-28 — REGA Monthly Bulletins (5 PDFs + parsed timeseries)
+
+### Data
+- **5 new REGA-published PDFs** (24.2 MB) under new `rega/bulletins/pdfs/`:
+  - `2026-01-monthly-bulletin.pdf` (1.9 MB) — January 2026 monthly bulletin (النشرة الشهرية للسوق العقاري)
+  - `2026-02-monthly-bulletin.pdf` (1.7 MB) — February 2026 monthly bulletin
+  - `2026-03-monthly-bulletin.pdf` (1.7 MB) — March 2026 monthly bulletin
+  - `2026-01-indicators-report.pdf` (13.8 MB) — January 2026 quarterly indicators report (تقرير مؤشرات القطاع العقاري)
+  - `2026-02-indicators-report.pdf` (6.5 MB) — February 2026 indicators report
+- **Parsed timeseries** at `rega/bulletins/rega_bulletin_timeseries.csv` — 108 rows × 14 columns covering sales transaction count, sales value, MoM/YoY percentages by region and segment (residential, non-residential), extracted from the 5 PDFs above. Schema: `month, publication_date, section, indicator, segment, sub_type, region, region_rank, metric, value, unit, mom_pct, yoy_pct, source_pdf`.
+
+### Source
+REGA's Real Estate General Authority publishes monthly bulletins and quarterly indicator reports on rega.gov.sa. PDFs sourced from the original publication URLs; the timeseries CSV is a parsed extraction of the headline indicators in machine-readable form.
+
+### Notes
+- Original Arabic publication titles preserved in the bulletins themselves; English filenames used for predictability.
+- Indicator report sizes vary (Q1 includes a much larger geographic breakdown than monthly bulletins).
+- Timeseries currently covers only the headline national + regional indicators surfaced in the bulletins, not every figure published. A fuller extraction is planned for a later release.
+
+---
+
 ## 2026-04-11 — Opportunistic Recovery + New Taxonomy (138 files, +2.0M rows)
 
 ### Data
